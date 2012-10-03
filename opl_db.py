@@ -4,12 +4,13 @@ from google.appengine.api import users
 
 class GameDay(db.Model):
   	gamedate = db.StringProperty()
+	#game = db.ReferenceProperty(Game, collection_name='games')
   	created_date = db.DateProperty(default = datetime.datetime.now().date())
   	last_updated_date = db.DateProperty(default = datetime.datetime.now().date())
 
 class Game(db.Model):
   	gamecode = db.StringProperty()
-  	gameday_id = db.IntegerProperty()
+	gameday = db.ReferenceProperty(GameDay, collection_name='gamedays')
   	gametime = db.StringProperty()
   	hometeam = db.StringProperty()
   	awayteam = db.StringProperty()

@@ -7,6 +7,7 @@ import opl_db
 import json
 from collections import OrderedDict
 from time import strftime
+import webapp2
 
 def fetch_divisions():
 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html","html5lib"));
@@ -47,3 +48,11 @@ def delete_all_divisions():
 	t = opl_db.Division.all()
 	for r in t.run():
 		r.delete()
+
+class DivisionsHandler(webapp2.RequestHandler):
+	def get(self): 
+		delete_all_divisions()
+		fetch_divisions()
+		##t = opl_db.Division.all()
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(get_all_divisions())

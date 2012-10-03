@@ -22,15 +22,18 @@ import collections
 import division
 from google.appengine.api import users
 import opl_db
+from division import DivisionsHandler
+from opl import ScheduleResultsHandler
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-		division.delete_all_divisions()
-		division.fetch_divisions()
 		self.response.headers['Content-Type'] = 'text/html'
-		t = opl_db.Division.all()
-		self.response.write(division.get_all_divisions())
+		self.response.write("testing")
 
-app = webapp2.WSGIApplication([('/', MainPage)],
-                              debug=True)
+app = webapp2.WSGIApplication([
+	(r'/', MainPage),
+	(r'/fetch-divisions', DivisionsHandler),
+	(r'/fetch-schedule-results', ScheduleResultsHandler),
+],
+debug=True)
 
