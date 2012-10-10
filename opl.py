@@ -47,7 +47,8 @@ def fetch_schedule_results():
 				gd = opl_db.GameDay(gamedate = sib.td.text.strip())
 				gd.put()
 
-			t = convert(sib.get("class",''))
+			##t = convert(sib.get("class",''))
+			t = sib.get("class")
 			if isinstance(t,list):
 				if(t.index('sch-main-gm') > 0):
 					for td in sib.find_all('td'):
