@@ -5,8 +5,8 @@ from google.appengine.api import users
 class GameDay(db.Model):
   	gamedate = db.StringProperty()
 	#game = db.ReferenceProperty(Game, collection_name='games')
-  	created_date = db.DateProperty(default = datetime.datetime.now().date())
-  	last_updated_date = db.DateProperty(default = datetime.datetime.now().date())
+	created_date = db.DateTimeProperty(auto_now_add = True)
+	last_updated_date = db.DateTimeProperty(auto_now = True)
 
 class Game(db.Model):
   	gamecode = db.StringProperty()
@@ -16,8 +16,8 @@ class Game(db.Model):
   	awayteam = db.StringProperty()
   	homescore = db.IntegerProperty()
 	awayscore = db.IntegerProperty()
-  	created_date = db.DateProperty(default = datetime.datetime.now().date())
-  	last_updated_date = db.DateProperty(default = datetime.datetime.now().date())
+	created_date = db.DateTimeProperty(auto_now_add = True)
+	last_updated_date = db.DateTimeProperty(auto_now = True)
 
 class Division(db.Model):
 	gender = db.StringProperty()
@@ -28,3 +28,17 @@ class Division(db.Model):
   	last_updated_date = db.DateTimeProperty(auto_now = True)
 
 
+class Location(db.Mdodel):
+	name = db.StringProperty()
+	map_url = db.StringProperty()
+	formatted_address = db.StringProperty()
+	street_number = db.StringProperty()
+	address = db.StringProperty()
+	city = db.StringProperty()
+	state = db.StringProperty()
+	country = db.StringProperty()
+	latitude = db.StringProperty()
+	longitude = db.StringProperty()
+	created_date = db.DateTimeProperty(auto_now_add = True)
+	last_updated_date = db.DateTimeProperty(auto_now = True)
+	
