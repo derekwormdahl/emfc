@@ -115,6 +115,8 @@ def fetch_schedule_results():
 def get_all_schedule_results():
 	t = opl_db.GameDay.all()
 
+	gamedays = OrderedDict()
+
 	rowarray_list = []
 	for r in t.run():
 		t = OrderedDict()
@@ -136,8 +138,10 @@ def get_all_schedule_results():
  		t['created_date'] = r.created_date.strftime('%d-%b-%Y %H:%M:%S')
                 t['last_updated_date'] = r.last_updated_date.strftime('%d-%b-%Y %H:%M:%S')
 		rowarray_list.append(t)
+
+	gamedays['gamedays'] = rowarray_list
 	
-	j = json.dumps(rowarray_list)
+	j = json.dumps(gamedays)
 	return j
 
 def delete_all_schedule_results():
