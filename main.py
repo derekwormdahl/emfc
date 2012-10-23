@@ -24,6 +24,7 @@ from google.appengine.api import users
 import opl_db
 from division import DivisionsHandler
 from opl import ScheduleResultsHandler
+from opl import THandler
 from location import LocationHandler
 
 class MainPage(webapp2.RequestHandler):
@@ -36,6 +37,7 @@ app = webapp2.WSGIApplication([
 	(r'/fetch-divisions', DivisionsHandler),
 	(r'/fetch-schedule-results', ScheduleResultsHandler),
 	(r'/fetch-location', LocationHandler),
+	(r'/t', THandler)
 ],
 debug=True)
 

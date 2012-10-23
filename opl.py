@@ -9,6 +9,7 @@ from collections import OrderedDict
 import json
 import webapp2
 import opl_db
+import re
 
 def convert(data):
     if isinstance(data, unicode):
@@ -19,6 +20,26 @@ def convert(data):
         return type(data)(map(convert, data))
     else:
         return data
+
+def t():
+
+	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
+
+	t = doc.find("table").find(id="tblListGames2").find("tbody")
+	
+	#return t.tr
+
+	# if 'RowHeader' in t.tr.td['class']:
+	try: 
+		#if 'GameHeader' in t.tr.td['class']:	
+		t2 = t.tr.find_all('td',{'class': re.compile(r'/GameHeader/')})
+		return t2
+			#t1 = t.tr.td.find_previous_sibling('tr')
+			#gd = opl_db.GameDay(gamedate = t.tr.td.text.strip())
+			#gd.put()
+			### print "GameDay: ",t.tr.td.text.strip()
+	except KeyError:
+		pass
  
 
 def fetch_schedule_results():
@@ -26,11 +47,17 @@ def fetch_schedule_results():
 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
 
 	t = doc.find("table").find(id="tblListGames2").find("tbody")
+	
 
-	if 'RowHeader' in t.tr.td['class']:
-		gd = opl_db.GameDay(gamedate = t.tr.td.text.strip())
-		gd.put()
-		### print "GameDay: ",t.tr.td.text.strip()
+	# if 'RowHeader' in t.tr.td['class']:
+	try: 
+		if 'GameHeader' in t.tr.td['class']:				t1 = t.tr.td.find_previous_sibling('tr')
+			#gd = opl_db.GameDay(gamedate = t.tr.td.text.strip())
+			#gd.put()
+			### print "GameDay: ",t.tr.td.text.strip()
+		return t.tr.td
+	except KeyError:
+		pass	
 
 	for sib in t.tr.next_siblings:
 		if not isinstance(sib, NavigableString):
@@ -153,6 +180,10 @@ def delete_all_schedule_results():
 	for r1 in t1.run():
 		r1.delete()
 
+class THandler(webapp2.RequestHandler):	
+	def get(self):
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(t())
 
 class ScheduleResultsHandler(webapp2.RequestHandler):
 	def get(self):
