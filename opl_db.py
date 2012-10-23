@@ -28,7 +28,7 @@ class Division(db.Model):
   	last_updated_date = db.DateTimeProperty(auto_now = True)
 
 
-class Location(db.Mdodel):
+class Location(db.Model):
 	name = db.StringProperty()
 	map_url = db.StringProperty()
 	formatted_address = db.StringProperty()
