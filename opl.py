@@ -128,8 +128,10 @@ def fetch_schedule_results():
 	"""
 						
 
-def get_all_schedule_results():
+def get_all_schedule_results(gamedate = None):
 	t = opl_db.Game.all()
+	if gamedate is not None:
+		t.filter("gamedate = ", gamedate)
 
 	games = OrderedDict()
 
@@ -167,7 +169,7 @@ class THandler(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(t())
 
-class StoreGameSchedule(webapp2.Requesthandler):
+class StoreGameSchedule(webapp2.RequestHandler):
 	def get(self):
 		delete_all_schedule_results()
 		fetch_schedule_results()
@@ -177,7 +179,8 @@ class StoreGameSchedule(webapp2.Requesthandler):
 
 class GetSchedule(webapp2.RequestHandler):
 	def get(self):
+		dt = self.request.get("d")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(get_all_schedule_results())
+		self.response.write(get_all_schedule_results(dt))
 
 		
