@@ -1,0 +1,9 @@
+*.py	text
+*.txt 	text
+*.sh	text
+*.json	text
+*.xml 	text
+*.yaml 	text
+
+*.pyc	binary
+*.ico	binary
