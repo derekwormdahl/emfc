@@ -43,9 +43,11 @@ def t():
 		pass
  
 
-def fetch_schedule_results():
+def fetch_schedule_results(url, league, agegroup, gender, age):
 
-	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
+	#doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
+	logging.debug(url)
+	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
 	t = doc.find("table").find(id="tblListGames2").find("tbody")	
 
@@ -107,26 +109,17 @@ def fetch_schedule_results():
 							pass
 						try:
 							if 'sch-main-sc' in td['class']:
-								if td.text.strip() != 'vs':
-									homescore = td.text.strip().split('-')[0]
-									awayscore = td.text.strip().split('-')[1]
+								# if td.span.text.strip() != 'vs':
+								if td.span:
+									homescore = td.span.text.strip().split('-')[0]
+									awayscore = td.span.text.strip().split('-')[1]
 						except KeyError:
 							pass
 						except TypeError:
 							pass
 
-					opl_db.Game(gamecode = gamecode, gamedate = gd.gamedate, gametime = gametime, hometeam = hometeam, awayteam = awayteam, homescore = int(homescore), awayscore = int(awayscore)).put()
-	"""
-				print "    ",gamecode
-				print "    ",gametime
-				print "    ",hometeam
-				print "    ",awayteam
-				print "    ",gamelocation
-				print "    ",gamelocation_url
-				print "    ",homescore
-				print "    ",awayscore
-				print "    GD:",gd
-	"""
+					logging.debug(agegroup + " awayscore ="+awayscore)
+					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), agegroup = agegroup.strip(), gender = gender.strip(), age = age.strip()).put()
 						
 
 def get_all_schedule_results(gd=None):
@@ -166,6 +159,18 @@ def delete_all_schedule_results():
 	for r1 in t1.run():
 		r1.delete()
 
+def store_all_schedule_results(gender):
+	
+	q = opl_db.AgeGroup.all()
+	if gender:
+		q.filter("gender =",gender)
+
+	for r in q.run():
+		fetch_schedule_results(r.url, r.league, r.name, r.gender, r.age)
+	return 'done'
+		
+
+
 class THandler(webapp2.RequestHandler):	
 	def get(self):
 		self.response.headers['Content-Type'] = 'text/html'
@@ -173,10 +178,11 @@ class THandler(webapp2.RequestHandler):
 
 class StoreGameSchedule(webapp2.RequestHandler):
 	def get(self):
+		gender = self.request.get("g")
 		delete_all_schedule_results()
-		fetch_schedule_results()
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(get_all_schedule_results())
+		self.response.write(store_all_schedule_results(gender))
+		#self.response.write(get_all_schedule_results())
 		
 
 class GetSchedule(webapp2.RequestHandler):

@@ -45,6 +45,7 @@ app = webapp2.WSGIApplication([
 	(r'/t', THandler),
 	(r'/store-leagues', LeagueHandler),
 	(r'/fetch-agegroups', GetAgeGroups),
+	## (r'/fetch-leagues', GetLeagues),
 ],
 debug=True)
 

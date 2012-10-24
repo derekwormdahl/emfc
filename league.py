@@ -40,7 +40,7 @@ def store_leagues():
 	opl_db.AgeGroup(name="GU11 First Division",gender="G",age="U11",url="http://www.oregonpremierleague.com/schedules/Fall2012/47896542.html", league="Fall 2012").put()
 	opl_db.AgeGroup(name="GU11 Second Division",gender="G",age="U11",url="http://www.oregonpremierleague.com/schedules/Fall2012/47896545.html", league="Fall 2012").put()
 	opl_db.AgeGroup(name="GU11 Third Division",gender="G",age="U11",url="http://www.oregonpremierleague.com/schedules/Fall2012/51449135.html", league="Fall 2012").put()
-	opl_db.AgeGroup(name="GU11 Fourth Division",gender="G",age="U11",url="http://www.oregonpremierleague.com/schedules/Fall2012/5144136.html", league="Fall 2012").put()
+	opl_db.AgeGroup(name="GU11 Fourth Division",gender="G",age="U11",url="http://www.oregonpremierleague.com/schedules/Fall2012/51449136.html", league="Fall 2012").put()
 
 	opl_db.AgeGroup(name="GU12 Timbers NPL Premier Division",gender="G",age="U12",url="http://www.oregonpremierleague.com/schedules/Fall2012/47896538.html", league="Fall 2012").put()
 	opl_db.AgeGroup(name="GU12 First Division",gender="G",age="U12",url="http://www.oregonpremierleague.com/schedules/Fall2012/47896553.html", league="Fall 2012").put()

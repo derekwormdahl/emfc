@@ -25,13 +25,17 @@ class GameDay(db.Model):
 
 class Game(db.Model):
   	gamecode = db.StringProperty()
-	#gameday = db.ReferenceProperty(GameDay, collection_name='gamedays')
+	league = db.StringProperty()
+  	agegroup = db.StringProperty()
+	gender = db.StringProperty()
+	age = db.StringProperty()
+	url = db.StringProperty()
 	gamedate = db.StringProperty()
   	gametime = db.StringProperty()
   	hometeam = db.StringProperty()
   	awayteam = db.StringProperty()
-  	homescore = db.IntegerProperty()
-	awayscore = db.IntegerProperty()
+  	homescore = db.StringProperty()
+	awayscore = db.StringProperty()
 	created_date = db.DateTimeProperty(auto_now_add = True)
 	last_updated_date = db.DateTimeProperty(auto_now = True)
 
