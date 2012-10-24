@@ -10,6 +10,7 @@ import json
 import webapp2
 import opl_db
 import re
+import logging
 
 def convert(data):
     if isinstance(data, unicode):
@@ -128,15 +129,17 @@ def fetch_schedule_results():
 	"""
 						
 
-def get_all_schedule_results(gamedate = None):
-	t = opl_db.Game.all()
-	if gamedate is not None:
-		t.filter("gamedate = ", gamedate)
+def get_all_schedule_results(gd=None):
+	q = opl_db.Game.all()
+	if gd is not None:
+		logging.debug("gamedate ="+gd)
+		q.filter("gamedate = ", gd)
 
 	games = OrderedDict()
 
 	rowarray_list = []
-	for r in t.run():
+	for r in q.run():
+		logger.debug("code: "+r.gamecode)
 		t = OrderedDict()
 		t['id'] = r.key().id()
 		t['gamecode'] = r.gamecode
