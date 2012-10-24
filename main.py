@@ -23,9 +23,13 @@ import division
 from google.appengine.api import users
 import opl_db
 from division import DivisionsHandler
-from opl import ScheduleResultsHandler
+from opl import GetSchedule
 from opl import THandler
 from location import LocationHandler
+from league import LeagueHandler
+from league import GetAgeGroups
+from opl import StoreGameSchedule
+import logging
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
@@ -35,9 +39,20 @@ class MainPage(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
 	(r'/', MainPage),
 	(r'/fetch-divisions', DivisionsHandler),
-	(r'/fetch-schedule-results', ScheduleResultsHandler),
+	(r'/store-schedule', StoreGameSchedule),
+	(r'/fetch-schedule-results', GetSchedule),
 	(r'/fetch-location', LocationHandler),
-	(r'/t', THandler)
+	(r'/t', THandler),
+	(r'/store-leagues', LeagueHandler),
+	(r'/fetch-agegroups', GetAgeGroups),
 ],
 debug=True)
 
+"""
+def main():
+	logging.getLogger().setLevel(logging.DEBUG)
+	webapp2.util.run_wsgi_app(app)
+	
+if __name__ = "__main__":
+	main()
+"""

@@ -46,18 +46,7 @@ def fetch_schedule_results():
 
 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
 
-	t = doc.find("table").find(id="tblListGames2").find("tbody")
-	
-
-	# if 'RowHeader' in t.tr.td['class']:
-	try: 
-		if 'GameHeader' in t.tr.td['class']:				t1 = t.tr.td.find_previous_sibling('tr')
-			#gd = opl_db.GameDay(gamedate = t.tr.td.text.strip())
-			#gd.put()
-			### print "GameDay: ",t.tr.td.text.strip()
-		return t.tr.td
-	except KeyError:
-		pass	
+	t = doc.find("table").find(id="tblListGames2").find("tbody")	
 
 	for sib in t.tr.next_siblings:
 		if not isinstance(sib, NavigableString):
@@ -70,8 +59,8 @@ def fetch_schedule_results():
 			homescore = ''
 			awayscore = ''
 			
-			if(sib.select(".RowHeader")):
-				gd = opl_db.GameDay(gamedate = sib.td.text.strip())
+			if(sib.select(".GameHeader")):
+				gd = opl_db.GameDay(gamedate = sib.previous_sibling.previous_sibling.text.strip())
 				gd.put()
 
 			##t = convert(sib.get("class",''))
@@ -125,7 +114,7 @@ def fetch_schedule_results():
 						except TypeError:
 							pass
 
-					opl_db.Game(gamecode = gamecode, gameday = gd, gametime = gametime, hometeam = hometeam, awayteam = awayteam, homescore = int(homescore), awayscore = int(awayscore)).put()
+					opl_db.Game(gamecode = gamecode, gamedate = gd.gamedate, gametime = gametime, hometeam = hometeam, awayteam = awayteam, homescore = int(homescore), awayscore = int(awayscore)).put()
 	"""
 				print "    ",gamecode
 				print "    ",gametime
@@ -140,35 +129,28 @@ def fetch_schedule_results():
 						
 
 def get_all_schedule_results():
-	t = opl_db.GameDay.all()
+	t = opl_db.Game.all()
 
-	gamedays = OrderedDict()
+	games = OrderedDict()
 
 	rowarray_list = []
 	for r in t.run():
 		t = OrderedDict()
 		t['id'] = r.key().id()
+		t['gamecode'] = r.gamecode
 		t['gamedate'] = r.gamedate
-		games_list = []
-		for g in r.gamedays:
-			game = OrderedDict()
-			game['gamecode'] = g.gamecode
-			game['gametime'] = g.gametime
-			game['hometeam'] = g.hometeam
-			game['awayteam'] = g.awayteam
-			game['homescore'] = g.homescore
-			game['awayscore'] = g.awayscore
-			game['created_date'] = g.created_date.strftime('%d-%b-%Y %H:%M:%S')
-			game['last_updated_date'] = g.last_updated_date.strftime('%d-%b-%Y %H:%M:%S')
-			games_list.append(game)
-		t['games'] = games_list
- 		t['created_date'] = r.created_date.strftime('%d-%b-%Y %H:%M:%S')
-                t['last_updated_date'] = r.last_updated_date.strftime('%d-%b-%Y %H:%M:%S')
+		t['gametime'] = r.gametime
+		t['hometeam'] = r.hometeam
+		t['awayteam'] = r.awayteam
+		t['homescore'] = r.homescore
+		t['awayscore'] = r.awayscore
+		t['created_date'] = r.created_date.strftime('%d-%b-%Y %H:%M:%S')
+		t['last_updated_date'] = r.last_updated_date.strftime('%d-%b-%Y %H:%M:%S')
 		rowarray_list.append(t)
 
-	gamedays['gamedays'] = rowarray_list
+	games['games'] = rowarray_list
 	
-	j = json.dumps(gamedays)
+	j = json.dumps(games)
 	return j
 
 def delete_all_schedule_results():
@@ -185,10 +167,16 @@ class THandler(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(t())
 
-class ScheduleResultsHandler(webapp2.RequestHandler):
+class StoreGameSchedule(webapp2.Requesthandler):
 	def get(self):
 		delete_all_schedule_results()
 		fetch_schedule_results()
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(get_all_schedule_results())
+		
+
+class GetSchedule(webapp2.RequestHandler):
+	def get(self):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(get_all_schedule_results())
 

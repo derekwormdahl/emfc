@@ -2,6 +2,21 @@ import datetime
 from google.appengine.ext import db
 from google.appengine.api import users
 
+class League(db.Model):
+  	name = db.StringProperty()
+	created_date = db.DateTimeProperty(auto_now_add = True)
+	last_updated_date = db.DateTimeProperty(auto_now = True)
+
+class AgeGroup(db.Model):
+  	name = db.StringProperty()
+	gender = db.StringProperty()
+	age = db.StringProperty()
+	url = db.StringProperty()
+	#league = db.ReferenceProperty(League, collection_name='leagues')
+	league = db.StringProperty()
+	created_date = db.DateTimeProperty(auto_now_add = True)
+	last_updated_date = db.DateTimeProperty(auto_now = True)
+
 class GameDay(db.Model):
   	gamedate = db.StringProperty()
 	#game = db.ReferenceProperty(Game, collection_name='games')
@@ -10,7 +25,8 @@ class GameDay(db.Model):
 
 class Game(db.Model):
   	gamecode = db.StringProperty()
-	gameday = db.ReferenceProperty(GameDay, collection_name='gamedays')
+	#gameday = db.ReferenceProperty(GameDay, collection_name='gamedays')
+	gamedate = db.StringProperty()
   	gametime = db.StringProperty()
   	hometeam = db.StringProperty()
   	awayteam = db.StringProperty()

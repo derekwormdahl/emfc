@@ -1,0 +1,1436 @@
+
+   <html>
+<head> <!-- WebPoet(tm) Web Page Pull - ver 3.1 23-Oct-12 4:54 pm - /scripts/runisa.dll?M2:gp::73450+L3/+E+103+631941 ; \\10.10.10.25\html\oregonpremierleague.com\standingsandschedules\Fall2012\index_E.html expires 1m = 23-Oct-12 4:55 pm -->
+<title>Fall 2012 Schedules - Oregon Premier League</title>
+<META NAME="Description" CONTENT="Fall 2012 Schedules" />
+<link rel="alternate" type="application/rss+xml" href="http://www.oregonpremierleague.com/index.xml" title="RSS Feed">
+ <link rel="stylesheet" href="http://www.oregonpremierleague.com/common/css/master.css" type="text/css"/>
+ <script src="http://www.oregonpremierleague.com/common/js/ps1.8.2/protoaculous.min.js" language="JavaScript" type="text/javascript"></script>
+<script src="http://www.oregonpremierleague.com/common/js/dii_ondomready-0.1.0.js" language="JavaScript" type="text/javascript"></script>
+<script type="text/javascript">
+  document._observe = document.observe;
+  document.observe = function() {
+    var a = arguments, al = a.length;
+    if(al > 0){
+      if (a[0] == 'dom:loaded') {
+        for(var x = 1; x < al; x++) {
+          onDomReady.add(a[x]);
+        };
+      }else{
+        document._observe.apply(document, a);
+      };
+    };
+  };
+</script>
+<link rel="stylesheet" href="http://www.oregonpremierleague.com/common/js/jquery-ui-1.8.1/css/base/ui.all.css" type="text/css"/><link rel="stylesheet" href="http://www.oregonpremierleague.com/common/js/jquery.jqGrid-3.5.3/css/ui.jqgrid.css" type="text/css"/>
+<link rel="stylesheet" href="http://www.oregonpremierleague.com/menus.css" type="text/css">
+<style type="text/css">
+/* overall page layout styles */
+body {text-align: center; margin-top: 0px; background: #00381e url(/images/2011/bg.gif) repeat-x; padding: 0px;}
+#container {margin-left: auto; margin-right: auto; width: 960px; text-align: left;}
+#header {}
+#nav {background: url(/images/2011/navBg.gif) repeat-x;}
+#main {padding: 10px 0; background: #e2e2e2;}
+#articleBox {width: 631px; height: 418px; overflow: hidden;}
+#centerContent {background: #ffffff;}
+#sponsors {margin: 10px 0;}
+#sponsorsModule {padding: 10px; padding-top: 15px; height: 125px; background: #e2e2e2 url(/images/2011/sponsorsBg.gif) repeat-x;}
+#pageFooter {background: url(/images/2011/footerBg.png) repeat-x;}
+#latestNews {width: 289px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#twitter {width: 289px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#referees {width: 300px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#coachingEducation {width: 301px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#connect {width: 289px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#relatedLinks {width: 239px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+.copyright {margin: 8px 0 0 10px; font-weight: bold; color: #416956;}
+.copyrightDII {margin: 0 0 0 10px; font-weight: normal; color: #416956;}
+.ModuleImageDisplay537058 {float: left; margin-right: 5px;}
+.indexDIVL2Links-OuterBox {margin-left: 1px; margin-right: 2px; border: 1px solid #25507A;}
+.indexDIVL2Links-InnerBox {border: 1px solid #E5F3FF; background: #B0CBE4;}
+.indexDIVL2Links-2Line {margin-left: 1px; margin-right: 1px; border-top: 1px dotted #7D9EBF; padding: 4px; padding-left: 16px;}
+.indexDIVL2Links-2Line a {color: #00478C;}
+.indexDIVL2Links-5BkHd {padding-left: 4px; font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-style: bold; font-weight: bold; font-variant: normal; text-transform: none;}
+/* home page sidebar items */
+.indexDIVSideBar-OuterBox {margin: 0;}
+.indexDIVSideBar-InnerBox {}
+.indexDIVSideBar-2Line {margin: 0; border-bottom: 1px dotted #c3c3c3; padding: 5px; padding-left: 16px; font-weight: normal; font-size: 11px; background: url(/images/2011/bullet.gif) 5px 11px no-repeat; cursor: pointer;}
+.indexDIVSideBar-2Line ul {}
+.indexDIVSideBar-2Line a:link {color: #000;}
+.indexDIVSideBar-2Line a:hover {color: #000; text-decoration: none;}
+.indexDIVSideBar-2Line a:active {color: 000; text-decoration: none;}
+.indexDIVSideBar-2Line a:visited {color: #000; text-decoration: none;}
+.indexDIVSideBar-2LineLink {margin: 0; border-bottom: 1px dotted #c3c3c3; padding: 5px; padding-left: 16px; font-weight: bold;}
+.indexDIVSideBar-2LineLink a:link {color: #00331b; text-decoration: none;}
+.indexDIVSideBar-2LineLink a:hover {color: #00331b; text-decoration: none;}
+.indexDIVSideBar-2LineLink a:active {color: #00331b; text-decoration: none;}
+.indexDIVSideBar-2LineLink a:visited {color: #00331b; text-decoration: none;}
+.indexDIVSideBar-2LineP {color: #C00000;}
+.indexDIVSideBar-2LineP a:link {color: #990000; text-decoration: none;}
+.indexDIVSideBar-2LineP a:hover {color: #660000; text-decoration: none;}
+.indexDIVSideBar-2LineP a:active {color: #660000; text-decoration: none;}
+.indexDIVSideBar-2LineP a:visited {color: #660000; text-decoration: none;}
+/* L2 subdepartment list items */
+.L2DIVSideBar-OuterBox {margin: 0;}
+.L2DIVSideBar-InnerBox {}
+.L2DIVSideBar-2Line {margin: 0; border-bottom: 1px dotted #c3c3c3; padding: 5px; padding-left: 16px; font-weight: normal; font-size: 11px; background: url(/images/2011/bullet.gif) 5px 11px no-repeat; cursor: pointer;}
+.L2DIVSideBar-2Line ul {}
+.L2DIVSideBar-2Line a:link {color: #000;}
+.L2DIVSideBar-2Line a:hover {color: #000; text-decoration: none;}
+.L2DIVSideBar-2Line a:active {color: 000; text-decoration: none;}
+.L2DIVSideBar-2Line a:visited {color: #000; text-decoration: none;}
+.L2DIVSideBar-2LineLink {margin: 0; border-bottom: 1px dotted #c3c3c3; padding: 5px; padding-left: 16px; font-weight: bold;}
+.L2DIVSideBar-2LineLink a:link {color: #00331b; text-decoration: none;}
+.L2DIVSideBar-2LineLink a:hover {color: #00331b; text-decoration: none;}
+.L2DIVSideBar-2LineLink a:active {color: #00331b; text-decoration: none;}
+.L2DIVSideBar-2LineLink a:visited {color: #00331b; text-decoration: none;}
+.L2DIVSideBar-2LineP {color: #C00000;}
+.L2DIVSideBar-2LineP a:link {color: #990000; text-decoration: none;}
+.L2DIVSideBar-2LineP a:hover {color: #660000; text-decoration: none;}
+.L2DIVSideBar-2LineP a:active {color: #660000; text-decoration: none;}
+.L2DIVSideBar-2LineP a:visited {color: #660000; text-decoration: none;}
+.DIVSubDeptDescription-OuterBox {border: 1px solid #27445F; border-bottom: 0px;}
+.DIVSubDeptDescription-InnerBox {border: 1px solid #EFEFEF; border-bottom: 0px;}
+.DIVSubDeptDescription-DEPT1 {background: #B0CBE4; font-weight: bold; color: #FFFFFF;}
+.DIVSubDeptDescription-DEPT2 {background: #D0E2F2; font-weight: bold; color: #516D88;}
+.DIVSubDeptDescription-SUBDEPT1 {background: #C0D8ED; font-weight: bold; color: #FFFFFF;}
+.DIVSubDeptDescription-SUBDEPT2 {background: #DEEAF5; font-weight: bold; color: #6683A0;}
+.DIVAdminCenter-OuterBox {margin-bottom: 12px; border: 1px solid #27445F; border-top: 0px; background: #EFEFEF; padding: 1px;}
+.DIVAdminCenter-InnerBox {border: 1px solid #88A3BC; background: #ADBFD0;}
+.DIVNewCenterArticle {padding: 8px; text-align: center;}
+.DIVNewCenterElement {border-left: 1px solid #D1DFED; background: #ADBFD0; padding: 8px; text-align: center;}
+.DIVAdminSide-OuterBox {border: 1px solid #27445F; background: #516D88;}
+.DIVAdminSide-InnerBox {}
+.DIVNewSideArticle {padding: 2px; text-align: center;}
+.DIVNewSideElement {border-top: 1px dotted #6F8AA3; padding: 2px; padding-top: 4px; text-align: center;}
+.DIVNewSideOutsideLink {border-top: 1px dotted #6F8AA3; padding: 2px; padding-top: 4px; text-align: center;}
+.DIVNewSubDepartment {border-top: 1px dotted #6F8AA3; padding: 2px; padding-top: 4px; text-align: center;}
+.DIVMainAdmin-WW {border: 1px solid #90B1D0; background: #D0E2F2;}
+.DIVMainAdmin-WW table {padding-left: 16px;}
+.DIVMainAdmin-WW td {padding: 4px;}
+.DIVMainAdmin-WW div {border-left: 1px solid #FFFFFF; padding: 6px; background: #E4EEF7;}
+.DIVMainAdmin-WW input {border: 1px solid #ADBFD0;}
+.DIVMainAdmin-PE {border: 1px solid #90A090; background: #D0E0D0;}
+.DIVMainAdmin-PE table {padding-left: 16px;}
+.DIVMainAdmin-PE td {padding: 4px;}
+.DIVMainAdmin-PE div {border-left: 1px solid #FFFFFF; padding: 6px; background: #E0F0E0;}
+.DIVMainAdmin-PE input {border: 1px solid #A0B0A0;}
+.DIVMainAdmin-Submit {border: 1px solid #27445F; background: #ADBFD0;}
+.DIVSideBar-Admin {margin-top: 4px; margin-bottom: 2px; border: 1px solid #90B1D0; background: #D0E2F2;}
+.DIVSideBar-Admin table {}
+.DIVSideBar-Admin td {padding: 2px;}
+.DIVSideBar-Admin div {border-left: 1px solid #FFFFFF; padding: 4px; background: #E4EEF7;}
+.DIVSideBar-Admin input {border: 1px solid #ADBFD0; margin-left: 2px; margin-top: 1px;}
+.DIVSideBar-Submit {margin: 1px; border: 1px solid #27445F; background: #516D88; padding: 4px; text-align: center;}
+.indexDIVArticleBox-OuterBox {width: 440px; height: 500px; margin-right: 1px; overflow: hidden;}
+.indexDIVArticleBox-InnerBox1 {height: 100%; border: 1px solid #EFEFEF;}
+.indexDIVArticleBox-InnerBox2 {height: 100%; border: 1px solid #FFFFFF;}
+.indexDIVArticleBox-Caption {background: #000000; padding: 3px; padding-right: 8px; text-align: right; color: #AFAFAF;}
+.indexDIVArticleBox-Title {border: 1px solid #C0B296; background: #E3D7C0;}
+.indexDIVArticleBox-Headline {padding-left: 4px; padding-top: 2px; font-size: 18px; font-weight: bold;}
+.indexDIVArticleBox-SubHeadline {padding-left: 10px; padding-bottom: 4px;}
+.indexDIVArticleBox-Text {height: 100%; margin-top: 1px; border: 1px solid #E5DDCE; background: #FFF9ED; padding-left: 9px; padding-top: 2px; padding-right: 9px; padding-bottom: 4px; color: #413D36;}
+.indexDIVArticleBox-Links {width: 440px; margin-right: 1px; border: 1px solid #EFEFEF; border-top: 0px; background: #FFFFFF; padding: 1px;}
+img {border: none;}
+</style>
+<!--[if IE]>
+<style type="text/css">
+#latestNews {width: 299px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#referees {width: 310px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#coachingEducation {width: 311px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#connect {width: 299px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+#relatedLinks {width: 249px; padding: 4px; background: #ffffff; border: 1px solid #c3c3c3; border-top: 0;}
+</style>
+<![endif]-->
+<style type="text/css">
+div#tweets  a {
+    text-decoration: none;
+    }
+div#tweets  {
+    font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000;
+    height: 100%;
+    border: 0;
+    }
+div#tweets  ul{
+    list-style-type: none;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    background-color: white;
+    margin: 0;
+    }
+div#tweets  ul li.tweet {
+    border-bottom: 1px dotted #c3c3c3;
+    padding-top: 5px;
+    background-color: #fff;
+    line-height: 1.3em;
+    padding: 0.5em;
+    margin: 0 -.5em;
+    }
+ul#twitters ul li:last-child li.tweet{
+    border-bottom: 0;
+    }
+div#tweets  ul li.tweet:hover {
+    background-color: #efefef;
+    }
+div#tweets  ul li.tweet a {
+    color: #00331b;
+    text-decoration: none;
+    }
+div#tweets  ul li.tweet a:visited {
+    color: #00331b;
+    text-decoration: none;
+    }
+div#tweets  ul li.tweet a:hover {
+    color: #00331b;
+    text-decoration: none;
+    }
+div#tweets div#tweethead{
+    padding: 10px 10px;
+    text-align: center;
+    color: #00331b;
+    margin: -10px 15px;
+    }
+div#loading {
+    border-bottom: 1px dotted #c3c3c3;
+    padding: 10px 0;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    }
+div#tweetfoot {
+    padding: 10px 0;
+    text-align: center;
+    background: #00331b;
+    }
+div#tweetfoot a {
+    color: #ffdd00;
+    text-decoration: none;
+    font-weight: bold;
+    }
+div#tweets div#tweetfoot span {
+    color: #fff;
+    font-weight: bold;
+    }
+span.meta {
+    color: #666;
+    display: block;
+    font-size: 9px;
+    margin: 3px 0 0;
+    }
+</style>
+</head>
+<body>
+<table id="container" cellspacing="0" cellpadding="0" border="0">
+<tr><td>
+<table id="header" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td><a href="HTTP://www.oregonpremierleague.com/scripts/runisa.dll?M2:gp::73450+index/" ><img src="http://www.oregonpremierleague.com/images/2011/header.png" width="960" height="190" border="0"/></a></td>
+</tr>
+</table>
+<table id="nav" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td align="left">
+  <table id="nav" width="958" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top">
+  <td><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="23" height="40" border="0"/></td>
+  <td width="935">
+<div id="main-menu" class="diimenu" menuclass="mainmenu"></div>
+</td>
+  </tr>
+  </table>
+</td>
+<td width="100%"><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="1" height="40" border="0"/></td>
+<td align="right"><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="1" height="40" border="0"/></td>
+</tr>
+</table>
+<div id="main">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="10" height="1" border="0"/></td>
+<td>
+  <div><img src="http://www.oregonpremierleague.com/images/2011/relatedLinks.gif" width="249" height="34" border="0"/></div>
+  <div id="relatedLinks">
+<div class="L2DIVSideBar-OuterBox">
+<div class="L2DIVSideBar-InnerBox">
+<div >
+               <div class="textsmall L2DIVSideBar-2Line L2DIVSideBar-2Line1 " onmouseover="$(this).addClassName('L2DIVSideBar-2LineLink')" onmouseout="$(this).removeClassName('L2DIVSideBar-2LineLink')" style="cursor: pointer;" ><a href="/teams/Fall2012/accepted47896448.html" target="_top">Accepted Teams</a></div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="10" height="1" border="0"/></td>
+<td id="centerContent"><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="681" height="1" border="0"/><br/>
+<table width="100%" cellpadding="4" cellspacing="4" border="0">
+<tr><td>
+<!---- Begin Main Content ---->
+<div class="addthis_toolbox addthis_default_style"  style="float:right;">
+  <a class="addthis_button_email"></a>
+  <a class="addthis_button_print"></a>
+  <span class="addthis_separator">|</span>
+  <a class="addthis_button_twitter"></a>
+  <a class="addthis_button_google_plusone" g:plusone:count="false"></a>
+  <a class="addthis_button_facebook_like"></a>
+</div>
+<div style="clear:both;"></div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=demosphere"></script>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td class="textmain">
+<div class="ArticleMainContent ArticleMainContent ArticleElement">
+ <div style="font-weight:bold;" class="textlarge ArticleTitle ArticleTitle">Fall 2012 Schedules</div> <div class="ArticleTitleSpacer ArticleTitleSpacer"></div>
+      <style type="text/css">
+div.tg {padding: 4px 12px; font-size: 12px;}
+span.tg {padding: 4px 12px; font-size: 12px;}
+</style>
+<table width="100%" bgcolor=#C39B0F cellpadding="4" cellspacing="0" border="0" style="margin-bottom: 1px;">
+<tr><td class="textlarge" style="font-weight: bold; color: #FFFFFF;">&nbsp;Oregon Premier League Fall 2012</td></tr>
+</table>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="MainContent">
+<tr><td>
+ <table width="100%" bgcolor="#FFFFFF" cellpadding="0" cellspacing="1" border="0" class="bordergray"> <tr valign="top">
+<td width="50%" class="textsmall">
+<div class="textmedium RowBanner" style="margin-bottom: 1px; padding-left: 8px;">Boys</div>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 11</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896535.html">BU11 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896543.html">BU11 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896548.html">BU11 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/51445521.html">BU11 Third Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 12</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896544.html">BU12 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896541.html">BU12 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896547.html">BU12 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896558.html">BU12 Third Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/51445522.html">BU12 Fourth Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 13</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896536.html">BU13 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896552.html">BU13 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896546.html">BU13 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/51445523.html">BU13 Third Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 14</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896537.html">BU14 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896550.html">BU14 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896554.html">BU14 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896559.html">BU14 Third Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+</td>
+<td width="50%" class="textsmall">
+<div class="textmedium RowBanner" style="margin-bottom: 1px; padding-left: 8px;">Girls</div>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 11</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896534.html">GU11 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896542.html">GU11 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896545.html">GU11 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/51449135.html">GU11 Third Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/51449136.html">GU11 Fourth Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 12</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896538.html">GU12 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896553.html">GU12 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896555.html">GU12 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896560.html">GU12 Third Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 13</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896539.html">GU13 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896551.html">GU13 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896556.html">GU13 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896561.html">GU13 Third Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/51449141.html">GU13 Fourth Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+<div class="text RowGray2" style="padding: 4px; padding-left: 12px; font-weight: bold;">Under 14</div>
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr class="RowGray2"> <td width="4%">&nbsp;</td> <td width="96%"> <table width="100%" cellpadding="4" cellspacing="0" border="0"> <tr class="RowGray2"><td class="textsmall">
+ <div class="tg">
+<a href="/schedules/Fall2012/47896540.html">GU14 Timbers NPL Premier Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896549.html">GU14 First Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896557.html">GU14 Second Division</a>
+</div>
+ <div class="tg">
+<a href="/schedules/Fall2012/47896562.html">GU14 Third Division</a>
+</div>
+ </td></tr> </table> </td> </tr> </table>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</div>
+<div class="ArticleSpacer"></div>
+<div class="ArticleMainContent ArticleMainContent ArticleElement">
+ <div style="font-weight:bold;" class="textlarge ArticleTitle ArticleTitle">Standings</div> <div class="ArticleTitleSpacer ArticleTitleSpacer"></div>
+<style type="text/css">
+table#tbl1 {width: 100%; background: white; border: 1px solid #B0B0B0;}
+table#tbl1 tbody tr td {font-size: 10px; text-align: center; padding: 4px;}
+table#tbl1 tbody tr.tg-hd {background: #A0B0A0;}
+table#tbl1 tbody tr.tg-hd td {border: 1px solid #809080; font-weight: bold;}
+table#tbl1 tbody tr.tg-hd td.tgnm {text-align: left; padding-left: 1em; white-space: nowrap;}
+table#tbl1 tbody tr.flt-hd {background: #D0D0D0;}
+table#tbl1 tbody tr.flt-hd td {color: #555; font-weight: bold; text-align: left; padding-left: 1em;}
+table#tbl1 tbody tr.tm td.tmseq {color: #ccc; text-align: right;}
+table#tbl1 tbody tr.tm.odd  {background: #F0F0F0;}
+table#tbl1 tbody tr.tm.even {background: #E0E0E0;}
+table#tbl1 tbody tr.tm td.tmnm {text-align: left; white-space: nowrap;}
+table#tbl1 tbody tr.tg-ft {background: #CCCCCC;}
+table#tbl1 tbody tr.tg-ft td {height: 10px; border: 0; padding: 0;}
+table#tbl1 tbody tr.ftr {background: #888;}
+table#tbl1 tbody tr.ftr td {color: white; font-size: 10px;}
+table#tbl1 tbody tr.ftr td span.a {white-space: nowrap;}
+table#tbl1 tbody tr.ftr td span.a span.b {font-weight: bold;}
+</style>
+<script type="text/javascript">
+var diiStand47896448 = (function(){
+var diiStand = {
+  tms:{
+    "51451069":{"tm":"50526538","tmnm":"BSC Portland 01B Black","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"8","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"7","TOT_GA":"19","TOT_GD":"-12"}
+  , "51451070":{"tm":"50526573","tmnm":"BSC Portland 01B Gold","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"4","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"5","TOT_L":"1","TOT_T":"5","TOT_GF":"20","TOT_GA":"11","TOT_GD":"9"}
+  , "51451071":{"tm":"50529785","tmnm":"BSC Portland 01G Black","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"6","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"15","TOT_GA":"10","TOT_GD":"5"}
+  , "51451072":{"tm":"50529873","tmnm":"BSC Portland 01G Gold","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"4","bp":"","gp":"11","TOT_PTS":"11","TOT_GP":"11","TOT_W":"2","TOT_L":"4","TOT_T":"5","TOT_GF":"12","TOT_GA":"19","TOT_GD":"-7"}
+  , "51451073":{"tm":"50530967","tmnm":"BSC Portland 01G White","tmcd":"","tg":"51449136","tgseq":"22","tgnm":"GU11 Fourth Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"4","bp":"","gp":"10","TOT_PTS":"9","TOT_GP":"10","TOT_W":"2","TOT_L":"5","TOT_T":"3","TOT_GF":"5","TOT_GA":"11","TOT_GD":"-6"}
+  , "51451074":{"tm":"49623216","tmnm":"Canby United Grover U11","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027336","flt":"A","seed":"2","rank":"7","bp":"","gp":"9","TOT_PTS":"5","TOT_GP":"9","TOT_W":"0","TOT_L":"4","TOT_T":"5","TOT_GF":"3","TOT_GA":"13","TOT_GD":"-10"}
+  , "51451075":{"tm":"50551769","tmnm":"CFC u11 Black","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027341","flt":"A","seed":"3","rank":"6","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"2","TOT_L":"5","TOT_T":"4","TOT_GF":"9","TOT_GA":"17","TOT_GD":"-8"}
+  , "51451076":{"tm":"50551117","tmnm":"CFC U11 Boys","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"10","bp":"","gp":"10","TOT_PTS":"1","TOT_GP":"10","TOT_W":"0","TOT_L":"9","TOT_T":"1","TOT_GF":"18","TOT_GA":"44","TOT_GD":"-26"}
+  , "51451077":{"tm":"50551200","tmnm":"CFC u11 Red","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027341","flt":"A","seed":"1","rank":"2","bp":"","gp":"10","TOT_PTS":"20","TOT_GP":"10","TOT_W":"6","TOT_L":"2","TOT_T":"2","TOT_GF":"20","TOT_GA":"10","TOT_GD":"10"}
+  , "51451078":{"tm":"50604824","tmnm":"Clackamas United SC Power Rays","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027350","flt":"A","seed":"4","rank":"2","bp":"","gp":"11","TOT_PTS":"22","TOT_GP":"11","TOT_W":"6","TOT_L":"1","TOT_T":"4","TOT_GF":"19","TOT_GA":"11","TOT_GD":"8"}
+  , "51451079":{"tm":"50320898","tmnm":"Columbia River United FA 01G Royals","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027352","flt":"A","seed":"2","rank":"2","bp":"","gp":"10","TOT_PTS":"22","TOT_GP":"10","TOT_W":"7","TOT_L":"2","TOT_T":"1","TOT_GF":"24","TOT_GA":"5","TOT_GD":"19"}
+  , "51451080":{"tm":"50588713","tmnm":"Corvallis United Reign U-11","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027359","flt":"A","seed":"1","rank":"12","bp":"","gp":"12","TOT_PTS":"10","TOT_GP":"12","TOT_W":"3","TOT_L":"8","TOT_T":"1","TOT_GF":"17","TOT_GA":"36","TOT_GD":"-19"}
+  , "51451081":{"tm":"50575433","tmnm":"Eastside Timbers '01B Black","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"3","bp":"","gp":"11","TOT_PTS":"25","TOT_GP":"11","TOT_W":"8","TOT_L":"2","TOT_T":"1","TOT_GF":"36","TOT_GA":"11","TOT_GD":"25"}
+  , "51451082":{"tm":"40857595","tmnm":"Eastside Timbers '01B Red","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"3","rank":"2","bp":"","gp":"9","TOT_PTS":"27","TOT_GP":"9","TOT_W":"9","TOT_L":"0","TOT_T":"0","TOT_GF":"31","TOT_GA":"3","TOT_GD":"28"}
+  , "51451083":{"tm":"50575516","tmnm":"Eastside Timbers '01B White","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"2","bp":"","gp":"11","TOT_PTS":"23","TOT_GP":"11","TOT_W":"7","TOT_L":"2","TOT_T":"2","TOT_GF":"40","TOT_GA":"9","TOT_GD":"31"}
+  , "51451084":{"tm":"50575796","tmnm":"Eastside Timbers '01G Black","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027137","flt":"A","seed":"3","rank":"11","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"11","TOT_GA":"14","TOT_GD":"-3"}
+  , "51451085":{"tm":"50575595","tmnm":"Eastside Timbers '01G Red","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"6","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"5","TOT_L":"5","TOT_T":"1","TOT_GF":"14","TOT_GA":"13","TOT_GD":"1"}
+  , "51451086":{"tm":"50587405","tmnm":"EMFC 01 Cypress Blue","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027204","flt":"A","seed":"3","rank":"8","bp":"","gp":"12","TOT_PTS":"7","TOT_GP":"12","TOT_W":"2","TOT_L":"9","TOT_T":"1","TOT_GF":"8","TOT_GA":"23","TOT_GD":"-15"}
+  , "51451087":{"tm":"50587489","tmnm":"EMFC 01 Cypress White","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"4","rank":"9","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"15","TOT_GA":"21","TOT_GD":"-6"}
+  , "51451088":{"tm":"50587596","tmnm":"EMFC 01 Valencia","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"3","rank":"14","bp":"","gp":"11","TOT_PTS":"2","TOT_GP":"11","TOT_W":"0","TOT_L":"9","TOT_T":"2","TOT_GF":"8","TOT_GA":"38","TOT_GD":"-30"}
+  , "51451089":{"tm":"50591011","tmnm":"FC Portland Academy 2001 Boys Navy","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027074","flt":"A","seed":"4","rank":"11","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"15","TOT_GA":"32","TOT_GD":"-17"}
+  , "51451090":{"tm":"50590782","tmnm":"FC Portland Academy 2001 Girls Navy","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"4","rank":"3","bp":"","gp":"9","TOT_PTS":"19","TOT_GP":"9","TOT_W":"6","TOT_L":"2","TOT_T":"1","TOT_GF":"16","TOT_GA":"8","TOT_GD":"8"}
+  , "51451091":{"tm":"50590894","tmnm":"FC Portland Academy 2001 Girls White","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"37027074","flt":"A","seed":"1","rank":"5","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"13","TOT_GA":"17","TOT_GD":"-4"}
+  , "51451092":{"tm":"50596909","tmnm":"FC Salmon Creek FCSC Juventus 01","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027362","flt":"A","seed":"1","rank":"6","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"19","TOT_GA":"42","TOT_GD":"-23"}
+  , "51451093":{"tm":"50597260","tmnm":"FC Salmon Creek FCSC Nemesis 01","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"37027362","flt":"A","seed":"2","rank":"4","bp":"","gp":"9","TOT_PTS":"14","TOT_GP":"9","TOT_W":"4","TOT_L":"3","TOT_T":"2","TOT_GF":"15","TOT_GA":"10","TOT_GD":"5"}
+  , "51451094":{"tm":"49615924","tmnm":"FC West Inter","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"43386134","flt":"A","seed":"4","rank":"5","bp":"","gp":"10","TOT_PTS":"15","TOT_GP":"10","TOT_W":"5","TOT_L":"5","TOT_T":"0","TOT_GF":"16","TOT_GA":"20","TOT_GD":"-4"}
+  , "51451095":{"tm":"49614864","tmnm":"FC West Lady Vikings","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"43386134","flt":"A","seed":"3","rank":"7","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"3","TOT_L":"5","TOT_T":"2","TOT_GF":"9","TOT_GA":"17","TOT_GD":"-8"}
+  , "51451096":{"tm":"50424042","tmnm":"Hood River Dynamos B01 Blue","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027389","flt":"A","seed":"2","rank":"1","bp":"","gp":"12","TOT_PTS":"28","TOT_GP":"12","TOT_W":"9","TOT_L":"2","TOT_T":"1","TOT_GF":"56","TOT_GA":"17","TOT_GD":"39"}
+  , "51451097":{"tm":"50424158","tmnm":"Hood River Dynamos B01 White","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027389","flt":"A","seed":"3","rank":"9","bp":"","gp":"10","TOT_PTS":"0","TOT_GP":"10","TOT_W":"0","TOT_L":"10","TOT_T":"0","TOT_GF":"5","TOT_GA":"45","TOT_GD":"-40"}
+  , "51451099":{"tm":"50602616","tmnm":"HSC 01B United","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"4","rank":"7","bp":"","gp":"10","TOT_PTS":"10","TOT_GP":"10","TOT_W":"2","TOT_L":"4","TOT_T":"4","TOT_GF":"12","TOT_GA":"18","TOT_GD":"-6"}
+  , "51451100":{"tm":"50550907","tmnm":"HSC Spartans","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027379","flt":"A","seed":"3","rank":"8","bp":"","gp":"10","TOT_PTS":"4","TOT_GP":"10","TOT_W":"1","TOT_L":"8","TOT_T":"1","TOT_GF":"13","TOT_GA":"37","TOT_GD":"-24"}
+  , "51451101":{"tm":"50544456","tmnm":"HSC Storm","tmcd":"","tg":"51449136","tgseq":"22","tgnm":"GU11 Fourth Division","tghr":"-","cb":"37027379","flt":"A","seed":"2","rank":"6","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"3","TOT_GA":"15","TOT_GD":"-12"}
+  , "51451102":{"tm":"50376436","tmnm":"HSC Tiki Taka","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"4","rank":"6","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"3","TOT_L":"5","TOT_T":"2","TOT_GF":"7","TOT_GA":"14","TOT_GD":"-7"}
+  , "51451103":{"tm":"50586196","tmnm":"Lake Oswego SC Comets","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37024870","flt":"A","seed":"5","rank":"1","bp":"","gp":"10","TOT_PTS":"23","TOT_GP":"10","TOT_W":"7","TOT_L":"1","TOT_T":"2","TOT_GF":"27","TOT_GA":"16","TOT_GD":"11"}
+  , "51451104":{"tm":"50585969","tmnm":"Lake Oswego SC Flamengo","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37024870","flt":"A","seed":"5","rank":"9","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"20","TOT_GA":"43","TOT_GD":"-23"}
+  , "51451105":{"tm":"50586705","tmnm":"Lake Oswego SC Storm","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37024870","flt":"A","seed":"5","rank":"9","bp":"","gp":"10","TOT_PTS":"3","TOT_GP":"10","TOT_W":"1","TOT_L":"9","TOT_T":"0","TOT_GF":"5","TOT_GA":"27","TOT_GD":"-22"}
+  , "51451106":{"tm":"50586754","tmnm":"Lake Oswego SC Thunder","tmcd":"","tg":"51449136","tgseq":"22","tgnm":"GU11 Fourth Division","tghr":"-","cb":"37024870","flt":"A","seed":"3","rank":"5","bp":"","gp":"10","TOT_PTS":"9","TOT_GP":"10","TOT_W":"2","TOT_L":"5","TOT_T":"3","TOT_GF":"7","TOT_GA":"30","TOT_GD":"-23"}
+  , "51451107":{"tm":"50573204","tmnm":"NEU Barcelona Blue","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"37027402","flt":"A","seed":"5","rank":"8","bp":"","gp":"8","TOT_PTS":"4","TOT_GP":"8","TOT_W":"1","TOT_L":"6","TOT_T":"1","TOT_GF":"2","TOT_GA":"27","TOT_GD":"-25"}
+  , "51451108":{"tm":"50572945","tmnm":"NEU Barcelona White","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027402","flt":"A","seed":"5","rank":"3","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"6","TOT_L":"1","TOT_T":"3","TOT_GF":"17","TOT_GA":"4","TOT_GD":"13"}
+  , "51451109":{"tm":"50363290","tmnm":"NEU Lazio Blue","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027402","flt":"A","seed":"5","rank":"4","bp":"","gp":"11","TOT_PTS":"22","TOT_GP":"11","TOT_W":"7","TOT_L":"3","TOT_T":"1","TOT_GF":"30","TOT_GA":"14","TOT_GD":"16"}
+  , "51451110":{"tm":"48719724","tmnm":"NEU Lazio White","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027402","flt":"A","seed":"6","rank":"5","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"15","TOT_GA":"16","TOT_GD":"-1"}
+  , "51451111":{"tm":"50555111","tmnm":"Oregon City SC Fusion","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027429","flt":"A","seed":"6","rank":"7","bp":"","gp":"12","TOT_PTS":"14","TOT_GP":"12","TOT_W":"4","TOT_L":"6","TOT_T":"2","TOT_GF":"21","TOT_GA":"29","TOT_GD":"-8"}
+  , "51451112":{"tm":"50599043","tmnm":"OSA Cosmos","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027143","flt":"A","seed":"6","rank":"6","bp":"","gp":"11","TOT_PTS":"19","TOT_GP":"11","TOT_W":"6","TOT_L":"4","TOT_T":"1","TOT_GF":"31","TOT_GA":"22","TOT_GD":"9"}
+  , "51451113":{"tm":"50599799","tmnm":"OSA Foothills U11B Blue Falcons","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027143","flt":"A","seed":"7","rank":"3","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"6","TOT_L":"1","TOT_T":"3","TOT_GF":"22","TOT_GA":"11","TOT_GD":"11"}
+  , "51451114":{"tm":"50598949","tmnm":"OSA Forza","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37027143","flt":"A","seed":"6","rank":"7","bp":"","gp":"12","TOT_PTS":"10","TOT_GP":"12","TOT_W":"3","TOT_L":"8","TOT_T":"1","TOT_GF":"25","TOT_GA":"32","TOT_GD":"-7"}
+  , "51451115":{"tm":"50092392","tmnm":"Pacific FC B01 Blue","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027473","flt":"A","seed":"8","rank":"10","bp":"","gp":"5","TOT_PTS":"12","TOT_GP":"5","TOT_W":"4","TOT_L":"1","TOT_T":"0","TOT_GF":"16","TOT_GA":"8","TOT_GD":"8"}
+  , "51451116":{"tm":"50095005","tmnm":"Pacific FC B01 Orange","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027473","flt":"A","seed":"8","rank":"6","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"26","TOT_GA":"17","TOT_GD":"9"}
+  , "51451117":{"tm":"50093053","tmnm":"Pacific FC G01 White Lightning","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027473","flt":"A","seed":"7","rank":"13","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"8","TOT_GA":"13","TOT_GD":"-5"}
+  , "51451118":{"tm":"50657570","tmnm":"PCU 01B Black","tmcd":"","tg":"51445521","tgseq":"4","tgnm":"BU11 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"9","rank":"8","bp":"","gp":"12","TOT_PTS":"8","TOT_GP":"12","TOT_W":"2","TOT_L":"8","TOT_T":"2","TOT_GF":"8","TOT_GA":"32","TOT_GD":"-24"}
+  , "51451161":{"tm":"50657542","tmnm":"PCU 01B Red","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027144","flt":"A","seed":"5","rank":"2","bp":"","gp":"11","TOT_PTS":"24","TOT_GP":"11","TOT_W":"8","TOT_L":"3","TOT_T":"0","TOT_GF":"42","TOT_GA":"22","TOT_GD":"20"}
+  , "51451162":{"tm":"50657256","tmnm":"PCU 01G Black","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"6","rank":"9","bp":"","gp":"10","TOT_PTS":"1","TOT_GP":"10","TOT_W":"0","TOT_L":"9","TOT_T":"1","TOT_GF":"2","TOT_GA":"26","TOT_GD":"-24"}
+  , "51451163":{"tm":"50655907","tmnm":"PCU 01G Red","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027144","flt":"A","seed":"8","rank":"10","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"15","TOT_GA":"21","TOT_GD":"-6"}
+  , "51451164":{"tm":"50657687","tmnm":"PCU SESC Celtic","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027144","flt":"A","seed":"7","rank":"7","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"16","TOT_GA":"15","TOT_GD":"1"}
+  , "51451165":{"tm":"50657762","tmnm":"PCU SESC Dynamite","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027144","flt":"A","seed":"9","rank":"5","bp":"","gp":"10","TOT_PTS":"20","TOT_GP":"10","TOT_W":"6","TOT_L":"2","TOT_T":"2","TOT_GF":"17","TOT_GA":"6","TOT_GD":"11"}
+  , "51451166":{"tm":"43203593","tmnm":"RPSC River","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"40960751","flt":"A","seed":"6","rank":"4","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"25","TOT_GA":"25","TOT_GD":"0"}
+  , "51451167":{"tm":"49580660","tmnm":"RPSC River 24k","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"40960751","flt":"A","seed":"7","rank":"6","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"31","TOT_GA":"42","TOT_GD":"-11"}
+  , "51451168":{"tm":"50584088","tmnm":"Southside SC Rage","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027139","flt":"A","seed":"4","rank":"5","bp":"","gp":"4","TOT_PTS":"9","TOT_GP":"4","TOT_W":"3","TOT_L":"1","TOT_T":"0","TOT_GF":"12","TOT_GA":"7","TOT_GD":"5"}
+  , "51451169":{"tm":"50583963","tmnm":"Southside SC Storm","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027139","flt":"A","seed":"10","rank":"12","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"11","TOT_GA":"30","TOT_GD":"-19"}
+  , "51451170":{"tm":"50601823","tmnm":"Thelo United FC Cosmo","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027479","flt":"A","seed":"9","rank":"13","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"7","TOT_GA":"30","TOT_GD":"-23"}
+  , "51451171":{"tm":"50603148","tmnm":"Thelo United FC Dynamite","tmcd":"","tg":"51449136","tgseq":"22","tgnm":"GU11 Fourth Division","tghr":"-","cb":"37027479","flt":"A","seed":"4","rank":"2","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"4","TOT_L":"2","TOT_T":"4","TOT_GF":"12","TOT_GA":"7","TOT_GD":"5"}
+  , "51451172":{"tm":"50535311","tmnm":"Tualatin Hills United SC United Element","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027145","flt":"A","seed":"6","rank":"7","bp":"","gp":"9","TOT_PTS":"14","TOT_GP":"9","TOT_W":"4","TOT_L":"3","TOT_T":"2","TOT_GF":"8","TOT_GA":"8","TOT_GD":"0"}
+  , "51451173":{"tm":"50535347","tmnm":"Tualatin Hills United SC United Lithium","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027145","flt":"A","seed":"11","rank":"14","bp":"","gp":"11","TOT_PTS":"0","TOT_GP":"11","TOT_W":"0","TOT_L":"11","TOT_T":"0","TOT_GF":"0","TOT_GA":"48","TOT_GD":"-48"}
+  , "51451174":{"tm":"50535544","tmnm":"Tualatin Hills United SC United Titanium","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37027145","flt":"A","seed":"8","rank":"4","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"6","TOT_L":"3","TOT_T":"1","TOT_GF":"30","TOT_GA":"19","TOT_GD":"11"}
+  , "51451175":{"tm":"50535644","tmnm":"Tualatin Hills United SC United Uranium","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027145","flt":"A","seed":"7","rank":"7","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"2","TOT_L":"8","TOT_T":"1","TOT_GF":"8","TOT_GA":"52","TOT_GD":"-44"}
+  , "51451176":{"tm":"50597171","tmnm":"United SA Gladiators","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027482","flt":"A","seed":"10","rank":"8","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"15","TOT_GA":"16","TOT_GD":"-1"}
+  , "51451177":{"tm":"50597117","tmnm":"United SA Hurricanes","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"37027482","flt":"A","seed":"7","rank":"3","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"4","TOT_L":"3","TOT_T":"4","TOT_GF":"15","TOT_GA":"10","TOT_GD":"5"}
+  , "51451178":{"tm":"50598975","tmnm":"Valley Futball Club Glory","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"39759621","flt":"A","seed":"8","rank":"2","bp":"","gp":"10","TOT_PTS":"28","TOT_GP":"10","TOT_W":"9","TOT_L":"0","TOT_T":"1","TOT_GF":"22","TOT_GA":"3","TOT_GD":"19"}
+  , "51451179":{"tm":"50423692","tmnm":"Vancouver Timbers BU 01 Black","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027487","flt":"A","seed":"11","rank":"1","bp":"","gp":"11","TOT_PTS":"25","TOT_GP":"11","TOT_W":"8","TOT_L":"2","TOT_T":"1","TOT_GF":"41","TOT_GA":"7","TOT_GD":"34"}
+  , "51451180":{"tm":"50423297","tmnm":"Vancouver Timbers BU 01 Orange","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027487","flt":"A","seed":"12","rank":"2","bp":"","gp":"10","TOT_PTS":"25","TOT_GP":"10","TOT_W":"8","TOT_L":"1","TOT_T":"1","TOT_GF":"25","TOT_GA":"7","TOT_GD":"18"}
+  , "51451181":{"tm":"50424695","tmnm":"Vancouver Timbers GU 01 Blue","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027487","flt":"A","seed":"5","rank":"3","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"4","TOT_L":"2","TOT_T":"4","TOT_GF":"15","TOT_GA":"7","TOT_GD":"8"}
+  , "51451182":{"tm":"50424366","tmnm":"Vancouver Timbers GU 01 Red","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027487","flt":"A","seed":"7","rank":"1","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"13","TOT_GA":"5","TOT_GD":"8"}
+  , "51451183":{"tm":"50424481","tmnm":"Vancouver Timbers GU 01 White","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027487","flt":"A","seed":"8","rank":"4","bp":"","gp":"9","TOT_PTS":"16","TOT_GP":"9","TOT_W":"5","TOT_L":"3","TOT_T":"1","TOT_GF":"15","TOT_GA":"8","TOT_GD":"7"}
+  , "51451184":{"tm":"50599872","tmnm":"WAFC Cobras","tmcd":"","tg":"51449136","tgseq":"22","tgnm":"GU11 Fourth Division","tghr":"-","cb":"42446095","flt":"A","seed":"5","rank":"1","bp":"","gp":"10","TOT_PTS":"28","TOT_GP":"10","TOT_W":"9","TOT_L":"0","TOT_T":"1","TOT_GF":"52","TOT_GA":"9","TOT_GD":"43"}
+  , "51451185":{"tm":"50600205","tmnm":"WAFC Storm","tmcd":"","tg":"51449135","tgseq":"21","tgnm":"GU11 Third Division","tghr":"-","cb":"42446095","flt":"A","seed":"9","rank":"1","bp":"","gp":"11","TOT_PTS":"29","TOT_GP":"11","TOT_W":"9","TOT_L":"0","TOT_T":"2","TOT_GF":"43","TOT_GA":"4","TOT_GD":"39"}
+  , "51451186":{"tm":"50599937","tmnm":"WAFC Strikers","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"42446095","flt":"A","seed":"6","rank":"1","bp":"","gp":"11","TOT_PTS":"31","TOT_GP":"11","TOT_W":"10","TOT_L":"0","TOT_T":"1","TOT_GF":"39","TOT_GA":"11","TOT_GD":"28"}
+  , "51451187":{"tm":"50384656","tmnm":"Washington Soccer Academy Bravery","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"12","rank":"4","bp":"","gp":"10","TOT_PTS":"20","TOT_GP":"10","TOT_W":"6","TOT_L":"2","TOT_T":"2","TOT_GF":"21","TOT_GA":"7","TOT_GD":"14"}
+  , "51451188":{"tm":"50378983","tmnm":"Washington Soccer Academy United","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37535463","flt":"A","seed":"9","rank":"1","bp":"","gp":"11","TOT_PTS":"30","TOT_GP":"11","TOT_W":"10","TOT_L":"1","TOT_T":"0","TOT_GF":"36","TOT_GA":"13","TOT_GD":"23"}
+  , "51451189":{"tm":"50432537","tmnm":"Willamette United SC Arsenal Navy","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"37027166","flt":"A","seed":"8","rank":"3","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"17","TOT_GA":"22","TOT_GD":"-5"}
+  , "51451190":{"tm":"50432470","tmnm":"Willamette United SC Arsenal White","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027166","flt":"A","seed":"13","rank":"9","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"15","TOT_GA":"22","TOT_GD":"-7"}
+  , "51451191":{"tm":"50432310","tmnm":"Willamette United SC Levante Navy","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027166","flt":"A","seed":"7","rank":"5","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"2","TOT_L":"5","TOT_T":"4","TOT_GF":"9","TOT_GA":"16","TOT_GD":"-7"}
+  , "51451192":{"tm":"50431838","tmnm":"Willamette United SC Levante White","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027166","flt":"A","seed":"13","rank":"1","bp":"","gp":"10","TOT_PTS":"27","TOT_GP":"10","TOT_W":"9","TOT_L":"1","TOT_T":"0","TOT_GF":"43","TOT_GA":"7","TOT_GD":"36"}
+  , "51451193":{"tm":"49835411","tmnm":"WT B01 Copa","tmcd":"","tg":"47896535","tgseq":"1","tgnm":"BU11 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"10","rank":"3","bp":"","gp":"9","TOT_PTS":"21","TOT_GP":"9","TOT_W":"7","TOT_L":"2","TOT_T":"0","TOT_GF":"33","TOT_GA":"12","TOT_GD":"21"}
+  , "51451194":{"tm":"49835913","tmnm":"WT B01 Samba","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"14","rank":"5","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"6","TOT_L":"3","TOT_T":"1","TOT_GF":"30","TOT_GA":"14","TOT_GD":"16"}
+  , "51451195":{"tm":"49835991","tmnm":"WT G01 Copa","tmcd":"","tg":"47896542","tgseq":"19","tgnm":"GU11 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"14","rank":"8","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"10","TOT_GA":"13","TOT_GD":"-3"}
+  , "51451196":{"tm":"49837607","tmnm":"WT G01 Copa TS","tmcd":"","tg":"47896534","tgseq":"18","tgnm":"GU11 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"9","rank":"5","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"4","TOT_L":"3","TOT_T":"4","TOT_GF":"16","TOT_GA":"13","TOT_GD":"3"}
+  , "51451197":{"tm":"49837661","tmnm":"WT G01 Samba TS","tmcd":"","tg":"47896545","tgseq":"20","tgnm":"GU11 Second Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"8","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"0","TOT_L":"5","TOT_T":"5","TOT_GF":"3","TOT_GA":"15","TOT_GD":"-12"}
+  , "51451672":{"tm":"50568183","tmnm":"AU Rangers","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027324","flt":"A","seed":"1","rank":"8","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"12","TOT_GA":"42","TOT_GD":"-30"}
+  , "51451673":{"tm":"50534906","tmnm":"Azul FC Blue Ninjas","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37674712","flt":"A","seed":"1","rank":"1","bp":"","gp":"10","TOT_PTS":"26","TOT_GP":"10","TOT_W":"8","TOT_L":"0","TOT_T":"2","TOT_GF":"35","TOT_GA":"10","TOT_GD":"25"}
+  , "51451674":{"tm":"50534272","tmnm":"Azul FC Thunder","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37674712","flt":"A","seed":"1","rank":"1","bp":"","gp":"11","TOT_PTS":"33","TOT_GP":"11","TOT_W":"11","TOT_L":"0","TOT_T":"0","TOT_GF":"52","TOT_GA":"3","TOT_GD":"49"}
+  , "51451675":{"tm":"37838080","tmnm":"BSC Portland 00B Black","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"8","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"1","TOT_L":"6","TOT_T":"3","TOT_GF":"12","TOT_GA":"26","TOT_GD":"-14"}
+  , "51451676":{"tm":"50529672","tmnm":"BSC Portland 00B White","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"4","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"13","TOT_GA":"15","TOT_GD":"-2"}
+  , "51451677":{"tm":"37837426","tmnm":"BSC Portland 00G Black","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"1","bp":"","gp":"10","TOT_PTS":"30","TOT_GP":"10","TOT_W":"10","TOT_L":"0","TOT_T":"0","TOT_GF":"31","TOT_GA":"7","TOT_GD":"24"}
+  , "51451678":{"tm":"37841788","tmnm":"BSC Portland 00G Black II","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027320","flt":"A","seed":"2","rank":"7","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"13","TOT_GA":"14","TOT_GD":"-1"}
+  , "51451679":{"tm":"37842428","tmnm":"BSC Portland 00G Gold","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"2","rank":"11","bp":"","gp":"11","TOT_PTS":"3","TOT_GP":"11","TOT_W":"1","TOT_L":"10","TOT_T":"0","TOT_GF":"7","TOT_GA":"49","TOT_GD":"-42"}
+  , "51451680":{"tm":"42800966","tmnm":"BSC Portland 00G White","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"3","rank":"9","bp":"","gp":"9","TOT_PTS":"9","TOT_GP":"9","TOT_W":"2","TOT_L":"4","TOT_T":"3","TOT_GF":"12","TOT_GA":"21","TOT_GD":"-9"}
+  , "51451681":{"tm":"37984703","tmnm":"CFC Crush","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"6","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"5","TOT_L":"4","TOT_T":"1","TOT_GF":"19","TOT_GA":"16","TOT_GD":"3"}
+  , "51451682":{"tm":"50551241","tmnm":"CFC United","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"2","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"30","TOT_GA":"16","TOT_GD":"14"}
+  , "51451683":{"tm":"37912828","tmnm":"Clackamas United SC FORCE","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027350","flt":"A","seed":"1","rank":"7","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"4","TOT_GA":"22","TOT_GD":"-18"}
+  , "51451685":{"tm":"37976431","tmnm":"Clackamas United SC Thunder","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"37027350","flt":"A","seed":"1","rank":"6","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"4","TOT_GA":"28","TOT_GD":"-24"}
+  , "51451686":{"tm":"37958348","tmnm":"Columbia River United FA 00B Man U","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027352","flt":"A","seed":"1","rank":"6","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"3","TOT_L":"4","TOT_T":"4","TOT_GF":"29","TOT_GA":"24","TOT_GD":"5"}
+  , "51451687":{"tm":"37958504","tmnm":"Columbia River United FA 00G Liverpool","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027352","flt":"A","seed":"4","rank":"4","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"14","TOT_GA":"6","TOT_GD":"8"}
+  , "51451688":{"tm":"37884376","tmnm":"Corvallis United Reign U-12","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027359","flt":"A","seed":"2","rank":"2","bp":"","gp":"11","TOT_PTS":"22","TOT_GP":"11","TOT_W":"7","TOT_L":"3","TOT_T":"1","TOT_GF":"34","TOT_GA":"17","TOT_GD":"17"}
+  , "51451689":{"tm":"37977005","tmnm":"Eastside Timbers '00B Black","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027137","flt":"A","seed":"3","rank":"9","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"11","TOT_GA":"23","TOT_GD":"-12"}
+  , "51451690":{"tm":"37976711","tmnm":"Eastside Timbers '00B Red","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"7","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"1","TOT_L":"5","TOT_T":"4","TOT_GF":"14","TOT_GA":"29","TOT_GD":"-15"}
+  , "51451691":{"tm":"37866568","tmnm":"Eastside Timbers '00G Black","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027137","flt":"A","seed":"3","rank":"8","bp":"","gp":"10","TOT_PTS":"10","TOT_GP":"10","TOT_W":"3","TOT_L":"6","TOT_T":"1","TOT_GF":"9","TOT_GA":"15","TOT_GD":"-6"}
+  , "51451692":{"tm":"37866454","tmnm":"Eastside Timbers '00G Red","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"2","bp":"","gp":"10","TOT_PTS":"24","TOT_GP":"10","TOT_W":"8","TOT_L":"2","TOT_T":"0","TOT_GF":"18","TOT_GA":"6","TOT_GD":"12"}
+  , "51451693":{"tm":"37736746","tmnm":"EMFC 00 Rover White","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"37027204","flt":"A","seed":"2","rank":"5","bp":"","gp":"10","TOT_PTS":"10","TOT_GP":"10","TOT_W":"3","TOT_L":"6","TOT_T":"1","TOT_GF":"20","TOT_GA":"36","TOT_GD":"-16"}
+  , "51451694":{"tm":"37736471","tmnm":"EMFC 00 Rovers Blue","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"3","rank":"9","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"16","TOT_GA":"20","TOT_GD":"-4"}
+  , "51451695":{"tm":"37728443","tmnm":"EMFC 00 Sol Blue","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"3","rank":"5","bp":"","gp":"11","TOT_PTS":"18","TOT_GP":"11","TOT_W":"5","TOT_L":"3","TOT_T":"3","TOT_GF":"22","TOT_GA":"15","TOT_GD":"7"}
+  , "51451696":{"tm":"37735409","tmnm":"EMFC 00 Sol White","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027204","flt":"A","seed":"4","rank":"9","bp":"","gp":"11","TOT_PTS":"3","TOT_GP":"11","TOT_W":"1","TOT_L":"10","TOT_T":"0","TOT_GF":"4","TOT_GA":"33","TOT_GD":"-29"}
+  , "51451697":{"tm":"37971271","tmnm":"FC Portland Academy 2000B  Navy","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"1","bp":"","gp":"10","TOT_PTS":"30","TOT_GP":"10","TOT_W":"10","TOT_L":"0","TOT_T":"0","TOT_GF":"45","TOT_GA":"10","TOT_GD":"35"}
+  , "51451698":{"tm":"37971643","tmnm":"FC Portland Academy 2000B White","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"3","bp":"","gp":"12","TOT_PTS":"24","TOT_GP":"12","TOT_W":"8","TOT_L":"4","TOT_T":"0","TOT_GF":"32","TOT_GA":"23","TOT_GD":"9"}
+  , "51451699":{"tm":"37972048","tmnm":"FC Portland Academy 2000G Navy","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"6","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"10","TOT_GA":"21","TOT_GD":"-11"}
+  , "51451700":{"tm":"37973304","tmnm":"FC Portland Academy 2000G White","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027074","flt":"A","seed":"5","rank":"2","bp":"","gp":"10","TOT_PTS":"23","TOT_GP":"10","TOT_W":"7","TOT_L":"1","TOT_T":"2","TOT_GF":"23","TOT_GA":"9","TOT_GD":"14"}
+  , "51451701":{"tm":"37993346","tmnm":"FC Salmon Creek FCSC Juventus 00","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027362","flt":"A","seed":"4","rank":"6","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"4","TOT_L":"6","TOT_T":"0","TOT_GF":"25","TOT_GA":"31","TOT_GD":"-6"}
+  , "51451702":{"tm":"37994484","tmnm":"FC Salmon Creek FCSC Nemesis 00","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027362","flt":"A","seed":"4","rank":"1","bp":"","gp":"11","TOT_PTS":"27","TOT_GP":"11","TOT_W":"9","TOT_L":"2","TOT_T":"0","TOT_GF":"30","TOT_GA":"9","TOT_GD":"21"}
+  , "51451703":{"tm":"37994653","tmnm":"FC Salmon Creek FCSC Nemesis Real Blue 00","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027362","flt":"A","seed":"6","rank":"4","bp":"","gp":"11","TOT_PTS":"19","TOT_GP":"11","TOT_W":"5","TOT_L":"2","TOT_T":"4","TOT_GF":"23","TOT_GA":"10","TOT_GD":"13"}
+  , "51451704":{"tm":"49614576","tmnm":"FC West Halcones","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"43386134","flt":"A","seed":"5","rank":"1","bp":"","gp":"10","TOT_PTS":"28","TOT_GP":"10","TOT_W":"9","TOT_L":"0","TOT_T":"1","TOT_GF":"40","TOT_GA":"12","TOT_GD":"28"}
+  , "51451705":{"tm":"43459924","tmnm":"FC West Vikings","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"43386134","flt":"A","seed":"2","rank":"1","bp":"","gp":"10","TOT_PTS":"27","TOT_GP":"10","TOT_W":"9","TOT_L":"1","TOT_T":"0","TOT_GF":"51","TOT_GA":"9","TOT_GD":"42"}
+  , "51451706":{"tm":"50424504","tmnm":"Hood River Dynamos G00 Blue","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027389","flt":"A","seed":"5","rank":"12","bp":"","gp":"11","TOT_PTS":"2","TOT_GP":"11","TOT_W":"0","TOT_L":"9","TOT_T":"2","TOT_GF":"8","TOT_GA":"38","TOT_GD":"-30"}
+  , "51451707":{"tm":"50654882","tmnm":"HSC Fusion U12G","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"6","rank":"7","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"13","TOT_GA":"13","TOT_GD":"0"}
+  , "51451708":{"tm":"43461860","tmnm":"HSC Lokomotiv","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027379","flt":"A","seed":"6","rank":"7","bp":"","gp":"10","TOT_PTS":"10","TOT_GP":"10","TOT_W":"2","TOT_L":"4","TOT_T":"4","TOT_GF":"8","TOT_GA":"15","TOT_GD":"-7"}
+  , "51451709":{"tm":"38067475","tmnm":"HSC Pumas","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027379","flt":"A","seed":"7","rank":"5","bp":"","gp":"10","TOT_PTS":"18","TOT_GP":"10","TOT_W":"5","TOT_L":"2","TOT_T":"3","TOT_GF":"13","TOT_GA":"7","TOT_GD":"6"}
+  , "51451710":{"tm":"50544673","tmnm":"HSC Richocet","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"37027379","flt":"A","seed":"3","rank":"7","bp":"","gp":"10","TOT_PTS":"0","TOT_GP":"10","TOT_W":"0","TOT_L":"10","TOT_T":"0","TOT_GF":"2","TOT_GA":"45","TOT_GD":"-43"}
+  , "51451711":{"tm":"37984613","tmnm":"Lake Oswego SC Cyclones","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37024870","flt":"A","seed":"4","rank":"1","bp":"","gp":"12","TOT_PTS":"25","TOT_GP":"12","TOT_W":"7","TOT_L":"1","TOT_T":"4","TOT_GF":"33","TOT_GA":"20","TOT_GD":"13"}
+  , "51451712":{"tm":"37984941","tmnm":"Lake Oswego SC Dynasty","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37024870","flt":"A","seed":"5","rank":"5","bp":"","gp":"12","TOT_PTS":"15","TOT_GP":"12","TOT_W":"5","TOT_L":"7","TOT_T":"0","TOT_GF":"11","TOT_GA":"22","TOT_GD":"-11"}
+  , "51451713":{"tm":"37984973","tmnm":"Lake Oswego SC Rain","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37024870","flt":"A","seed":"8","rank":"10","bp":"","gp":"10","TOT_PTS":"1","TOT_GP":"10","TOT_W":"0","TOT_L":"9","TOT_T":"1","TOT_GF":"4","TOT_GA":"30","TOT_GD":"-26"}
+  , "51451714":{"tm":"37956081","tmnm":"NEU Arsenal Gunners","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027402","flt":"A","seed":"6","rank":"8","bp":"","gp":"11","TOT_PTS":"4","TOT_GP":"11","TOT_W":"1","TOT_L":"9","TOT_T":"1","TOT_GF":"10","TOT_GA":"24","TOT_GD":"-14"}
+  , "51451715":{"tm":"37968305","tmnm":"NEU Hot Spurs","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027402","flt":"A","seed":"7","rank":"5","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"5","TOT_L":"4","TOT_T":"1","TOT_GF":"14","TOT_GA":"8","TOT_GD":"6"}
+  , "51451716":{"tm":"37835151","tmnm":"NEU Napoli","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"37027402","flt":"A","seed":"4","rank":"7","bp":"","gp":"12","TOT_PTS":"1","TOT_GP":"12","TOT_W":"0","TOT_L":"11","TOT_T":"1","TOT_GF":"5","TOT_GA":"56","TOT_GD":"-51"}
+  , "51451717":{"tm":"37987077","tmnm":"NEU Rangers","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027402","flt":"A","seed":"5","rank":"8","bp":"","gp":"12","TOT_PTS":"13","TOT_GP":"12","TOT_W":"4","TOT_L":"7","TOT_T":"1","TOT_GF":"20","TOT_GA":"36","TOT_GD":"-16"}
+  , "51451718":{"tm":"50534324","tmnm":"NSC Blue Angels","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027418","flt":"A","seed":"8","rank":"10","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"1","TOT_L":"6","TOT_T":"3","TOT_GF":"12","TOT_GA":"28","TOT_GD":"-16"}
+  , "51451719":{"tm":"50555267","tmnm":"Oregon City SC Legacy","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"37027429","flt":"A","seed":"4","rank":"4","bp":"","gp":"11","TOT_PTS":"15","TOT_GP":"11","TOT_W":"4","TOT_L":"4","TOT_T":"3","TOT_GF":"17","TOT_GA":"21","TOT_GD":"-4"}
+  , "51451720":{"tm":"43365623","tmnm":"Oregon Rush 00 Boys Nike","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027448","flt":"A","seed":"6","rank":"5","bp":"","gp":"9","TOT_PTS":"18","TOT_GP":"9","TOT_W":"5","TOT_L":"1","TOT_T":"3","TOT_GF":"16","TOT_GA":"6","TOT_GD":"10"}
+  , "51451721":{"tm":"37952511","tmnm":"Oregon Rush 00 Girls Nike","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027448","flt":"A","seed":"4","rank":"8","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"3","TOT_L":"5","TOT_T":"2","TOT_GF":"17","TOT_GA":"23","TOT_GD":"-6"}
+  , "51451827":{"tm":"50599200","tmnm":"OSA Lightning","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"37027143","flt":"A","seed":"5","rank":"5","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"3","TOT_L":"5","TOT_T":"2","TOT_GF":"18","TOT_GA":"19","TOT_GD":"-1"}
+  , "51451828":{"tm":"38085512","tmnm":"OSA Thunder","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027143","flt":"A","seed":"7","rank":"10","bp":"","gp":"11","TOT_PTS":"11","TOT_GP":"11","TOT_W":"3","TOT_L":"6","TOT_T":"2","TOT_GF":"15","TOT_GA":"25","TOT_GD":"-10"}
+  , "51451829":{"tm":"50092868","tmnm":"Pacific FC B00 Orange","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"37027473","flt":"A","seed":"6","rank":"2","bp":"","gp":"11","TOT_PTS":"25","TOT_GP":"11","TOT_W":"8","TOT_L":"2","TOT_T":"1","TOT_GF":"31","TOT_GA":"6","TOT_GD":"25"}
+  , "51451830":{"tm":"43277472","tmnm":"Pacific FC G00 Blue","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027473","flt":"A","seed":"9","rank":"2","bp":"","gp":"10","TOT_PTS":"25","TOT_GP":"10","TOT_W":"8","TOT_L":"1","TOT_T":"1","TOT_GF":"27","TOT_GA":"1","TOT_GD":"26"}
+  , "51451831":{"tm":"37994485","tmnm":"PCU 00B Black","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"5","rank":"6","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"12","TOT_GA":"23","TOT_GD":"-11"}
+  , "51451832":{"tm":"37994462","tmnm":"PCU 00B Red","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027144","flt":"A","seed":"8","rank":"4","bp":"","gp":"12","TOT_PTS":"20","TOT_GP":"12","TOT_W":"6","TOT_L":"4","TOT_T":"2","TOT_GF":"24","TOT_GA":"14","TOT_GD":"10"}
+  , "51451833":{"tm":"37994391","tmnm":"PCU 00B White","tmcd":"","tg":"51445522","tgseq":"9","tgnm":"BU12 Fourth Division","tghr":"-","cb":"37027144","flt":"A","seed":"7","rank":"3","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"24","TOT_GA":"19","TOT_GD":"5"}
+  , "51451834":{"tm":"50657289","tmnm":"PCU 00G Army Black","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"10","rank":"3","bp":"","gp":"12","TOT_PTS":"23","TOT_GP":"12","TOT_W":"7","TOT_L":"3","TOT_T":"2","TOT_GF":"14","TOT_GA":"8","TOT_GD":"6"}
+  , "51451835":{"tm":"37994422","tmnm":"PCU 00G Army Red","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027144","flt":"A","seed":"5","rank":"11","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"10","TOT_GA":"23","TOT_GD":"-13"}
+  , "51451836":{"tm":"49577725","tmnm":"RPSC Halcones","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"40960751","flt":"A","seed":"6","rank":"1","bp":"","gp":"11","TOT_PTS":"31","TOT_GP":"11","TOT_W":"10","TOT_L":"0","TOT_T":"1","TOT_GF":"37","TOT_GA":"8","TOT_GD":"29"}
+  , "51451837":{"tm":"50427854","tmnm":"RVTSC GU12 Red","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37910625","flt":"A","seed":"6","rank":"2","bp":"","gp":"12","TOT_PTS":"29","TOT_GP":"12","TOT_W":"9","TOT_L":"1","TOT_T":"2","TOT_GF":"30","TOT_GA":"11","TOT_GD":"19"}
+  , "51451838":{"tm":"37979392","tmnm":"Southside SC Freedom","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027139","flt":"A","seed":"7","rank":"14","bp":"","gp":"10","TOT_PTS":"3","TOT_GP":"10","TOT_W":"1","TOT_L":"9","TOT_T":"0","TOT_GF":"4","TOT_GA":"28","TOT_GD":"-24"}
+  , "51451839":{"tm":"37973815","tmnm":"Southside SC SSC Azzuri 19","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"37027139","flt":"A","seed":"4","rank":"6","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"15","TOT_GA":"32","TOT_GD":"-17"}
+  , "51451840":{"tm":"37984093","tmnm":"Tualatin Hills United SC Rhodium","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027145","flt":"A","seed":"9","rank":"3","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"14","TOT_GA":"10","TOT_GD":"4"}
+  , "51451841":{"tm":"37971299","tmnm":"Tualatin Hills United SC Silver","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027145","flt":"A","seed":"7","rank":"4","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"6","TOT_L":"3","TOT_T":"1","TOT_GF":"14","TOT_GA":"11","TOT_GD":"3"}
+  , "51451842":{"tm":"38652293","tmnm":"United SA Panthers","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027482","flt":"A","seed":"9","rank":"3","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"6","TOT_L":"1","TOT_T":"3","TOT_GF":"23","TOT_GA":"15","TOT_GD":"8"}
+  , "51451843":{"tm":"43491394","tmnm":"Valley Futball Club Fire","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"39759621","flt":"A","seed":"8","rank":"10","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"1","TOT_L":"5","TOT_T":"5","TOT_GF":"14","TOT_GA":"22","TOT_GD":"-8"}
+  , "51451844":{"tm":"37883160","tmnm":"Vancouver Timbers BU 00 Red","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"37027487","flt":"A","seed":"5","rank":"3","bp":"","gp":"11","TOT_PTS":"19","TOT_GP":"11","TOT_W":"6","TOT_L":"4","TOT_T":"1","TOT_GF":"31","TOT_GA":"23","TOT_GD":"8"}
+  , "51451845":{"tm":"50428885","tmnm":"Vancouver Timbers GU 00 Blue","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027487","flt":"A","seed":"9","rank":"13","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"9","TOT_GA":"26","TOT_GD":"-17"}
+  , "51451846":{"tm":"37887552","tmnm":"Vancouver Timbers GU 00 Red","tmcd":"","tg":"47896538","tgseq":"23","tgnm":"GU12 Timbers NPL Premier Division","tghr":"-","cb":"37027487","flt":"A","seed":"8","rank":"3","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"7","TOT_L":"3","TOT_T":"0","TOT_GF":"32","TOT_GA":"14","TOT_GD":"18"}
+  , "51451847":{"tm":"50599199","tmnm":"WAFC Aztecas","tmcd":"","tg":"47896558","tgseq":"8","tgnm":"BU12 Third Division","tghr":"-","cb":"42446095","flt":"A","seed":"7","rank":"2","bp":"","gp":"11","TOT_PTS":"26","TOT_GP":"11","TOT_W":"8","TOT_L":"1","TOT_T":"2","TOT_GF":"50","TOT_GA":"8","TOT_GD":"42"}
+  , "51451848":{"tm":"43332865","tmnm":"WAFC Barca","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"42446095","flt":"A","seed":"10","rank":"12","bp":"","gp":"10","TOT_PTS":"3","TOT_GP":"10","TOT_W":"0","TOT_L":"7","TOT_T":"3","TOT_GF":"15","TOT_GA":"29","TOT_GD":"-14"}
+  , "51451849":{"tm":"43333978","tmnm":"WAFC Juventus","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"42446095","flt":"A","seed":"6","rank":"5","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"18","TOT_GA":"25","TOT_GD":"-7"}
+  , "51451850":{"tm":"43382532","tmnm":"WAFC Real Madrid","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"42446095","flt":"A","seed":"7","rank":"2","bp":"","gp":"11","TOT_PTS":"24","TOT_GP":"11","TOT_W":"7","TOT_L":"1","TOT_T":"3","TOT_GF":"32","TOT_GA":"26","TOT_GD":"6"}
+  , "51451851":{"tm":"37731558","tmnm":"Washington Soccer Academy Independence","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"10","rank":"9","bp":"","gp":"10","TOT_PTS":"8","TOT_GP":"10","TOT_W":"2","TOT_L":"6","TOT_T":"2","TOT_GF":"7","TOT_GA":"15","TOT_GD":"-8"}
+  , "51451852":{"tm":"37709851","tmnm":"Washington Soccer Academy Rangers","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"11","rank":"7","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"18","TOT_GA":"25","TOT_GD":"-7"}
+  , "51451853":{"tm":"37935897","tmnm":"Willamette United SC Boca Jrs","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027166","flt":"A","seed":"7","rank":"4","bp":"","gp":"11","TOT_PTS":"17","TOT_GP":"11","TOT_W":"4","TOT_L":"2","TOT_T":"5","TOT_GF":"19","TOT_GA":"13","TOT_GD":"6"}
+  , "51451854":{"tm":"50431149","tmnm":"Willamette United SC Celtic Navy","tmcd":"","tg":"47896555","tgseq":"25","tgnm":"GU12 Second Division","tghr":"-","cb":"37027166","flt":"A","seed":"10","rank":"6","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"14","TOT_GA":"14","TOT_GD":"0"}
+  , "51451855":{"tm":"37980414","tmnm":"Willamette United SC Celtic White","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027166","flt":"A","seed":"11","rank":"7","bp":"","gp":"11","TOT_PTS":"12","TOT_GP":"11","TOT_W":"3","TOT_L":"5","TOT_T":"3","TOT_GF":"18","TOT_GA":"20","TOT_GD":"-2"}
+  , "51451856":{"tm":"49836278","tmnm":"WT B00 Copa","tmcd":"","tg":"47896544","tgseq":"5","tgnm":"BU12 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"4","bp":"","gp":"11","TOT_PTS":"15","TOT_GP":"11","TOT_W":"4","TOT_L":"4","TOT_T":"3","TOT_GF":"27","TOT_GA":"23","TOT_GD":"4"}
+  , "51451857":{"tm":"49837763","tmnm":"WT B00 Copa TS","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"5","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"14","TOT_GA":"21","TOT_GD":"-7"}
+  , "51451858":{"tm":"49836033","tmnm":"WT B00 Mundial","tmcd":"","tg":"47896547","tgseq":"7","tgnm":"BU12 Second Division","tghr":"-","cb":"37027148","flt":"A","seed":"9","rank":"3","bp":"","gp":"11","TOT_PTS":"18","TOT_GP":"11","TOT_W":"5","TOT_L":"3","TOT_T":"3","TOT_GF":"35","TOT_GA":"21","TOT_GD":"14"}
+  , "51451859":{"tm":"49836357","tmnm":"WT B00 Samba","tmcd":"","tg":"47896541","tgseq":"6","tgnm":"BU12 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"12","rank":"11","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"17","TOT_GA":"29","TOT_GD":"-12"}
+  , "51451860":{"tm":"49836549","tmnm":"WT G00 Copa","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"12","rank":"12","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"6","TOT_GA":"25","TOT_GD":"-19"}
+  , "51451861":{"tm":"49837894","tmnm":"WT G00 Copa TS","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"13","rank":"3","bp":"","gp":"10","TOT_PTS":"28","TOT_GP":"10","TOT_W":"9","TOT_L":"0","TOT_T":"1","TOT_GF":"38","TOT_GA":"1","TOT_GD":"37"}
+  , "51451862":{"tm":"49838096","tmnm":"WT G00 Mundial TS","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027148","flt":"A","seed":"11","rank":"8","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"15","TOT_GA":"14","TOT_GD":"1"}
+  , "51451863":{"tm":"49836148","tmnm":"WT G01 Samba","tmcd":"","tg":"51449136","tgseq":"22","tgnm":"GU11 Fourth Division","tghr":"-","cb":"37027148","flt":"A","seed":"6","rank":"3","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"5","TOT_L":"4","TOT_T":"1","TOT_GF":"12","TOT_GA":"19","TOT_GD":"-7"}
+  , "51451864":{"tm":"49838004","tmnm":"WT G00 Samba TS","tmcd":"","tg":"47896553","tgseq":"24","tgnm":"GU12 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"14","rank":"4","bp":"","gp":"10","TOT_PTS":"22","TOT_GP":"10","TOT_W":"7","TOT_L":"2","TOT_T":"1","TOT_GF":"17","TOT_GA":"10","TOT_GD":"7"}
+  , "51452361":{"tm":"37841006","tmnm":"BSC Portland 99B Black","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"7","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"25","TOT_GA":"30","TOT_GD":"-5"}
+  , "51452362":{"tm":"37841232","tmnm":"BSC Portland 99B Gold","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"6","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"12","TOT_GA":"18","TOT_GD":"-6"}
+  , "51452363":{"tm":"37839038","tmnm":"BSC Portland 99G Black","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"7","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"2","TOT_L":"8","TOT_T":"1","TOT_GF":"8","TOT_GA":"26","TOT_GD":"-18"}
+  , "51452364":{"tm":"37839923","tmnm":"BSC Portland 99G Gold","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"2","bp":"","gp":"10","TOT_PTS":"23","TOT_GP":"10","TOT_W":"7","TOT_L":"1","TOT_T":"2","TOT_GF":"17","TOT_GA":"5","TOT_GD":"12"}
+  , "51452365":{"tm":"37939325","tmnm":"Canby United Primavera","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027336","flt":"A","seed":"1","rank":"6","bp":"","gp":"11","TOT_PTS":"9","TOT_GP":"11","TOT_W":"2","TOT_L":"6","TOT_T":"3","TOT_GF":"15","TOT_GA":"16","TOT_GD":"-1"}
+  , "51452366":{"tm":"37984933","tmnm":"CFC Barcelona","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"8","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"16","TOT_GA":"23","TOT_GD":"-7"}
+  , "51452367":{"tm":"50551611","tmnm":"CFC Galacticos","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027341","flt":"A","seed":"3","rank":"3","bp":"","gp":"11","TOT_PTS":"28","TOT_GP":"11","TOT_W":"9","TOT_L":"1","TOT_T":"1","TOT_GF":"75","TOT_GA":"11","TOT_GD":"64"}
+  , "51452368":{"tm":"50551549","tmnm":"CFC Dynamo","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"1","bp":"","gp":"11","TOT_PTS":"30","TOT_GP":"11","TOT_W":"10","TOT_L":"1","TOT_T":"0","TOT_GF":"45","TOT_GA":"4","TOT_GD":"41"}
+  , "51452369":{"tm":"37917119","tmnm":"Clackamas United SC Arsenal","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027350","flt":"A","seed":"1","rank":"8","bp":"","gp":"11","TOT_PTS":"11","TOT_GP":"11","TOT_W":"3","TOT_L":"6","TOT_T":"2","TOT_GF":"9","TOT_GA":"18","TOT_GD":"-9"}
+  , "51452370":{"tm":"37918037","tmnm":"Clackamas United SC Avalanche","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027350","flt":"A","seed":"2","rank":"3","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"7","TOT_L":"3","TOT_T":"0","TOT_GF":"28","TOT_GA":"19","TOT_GD":"9"}
+  , "51452371":{"tm":"37884232","tmnm":"Corvallis United Reign U-13","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027359","flt":"A","seed":"4","rank":"4","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"6","TOT_L":"3","TOT_T":"1","TOT_GF":"18","TOT_GA":"21","TOT_GD":"-3"}
+  , "51452372":{"tm":"50591570","tmnm":"Eastside Timbers '99B Black","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027137","flt":"A","seed":"3","rank":"2","bp":"","gp":"11","TOT_PTS":"27","TOT_GP":"11","TOT_W":"9","TOT_L":"2","TOT_T":"0","TOT_GF":"50","TOT_GA":"6","TOT_GD":"44"}
+  , "51452373":{"tm":"37913972","tmnm":"Eastside Timbers '99B Red","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"1","rank":"8","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"7","TOT_GA":"33","TOT_GD":"-26"}
+  , "51452374":{"tm":"37871903","tmnm":"Eastside Timbers '99G Black","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027137","flt":"A","seed":"1","rank":"10","bp":"","gp":"11","TOT_PTS":"6","TOT_GP":"11","TOT_W":"0","TOT_L":"5","TOT_T":"6","TOT_GF":"8","TOT_GA":"13","TOT_GD":"-5"}
+  , "51452375":{"tm":"37871621","tmnm":"Eastside Timbers '99G Red","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"3","bp":"","gp":"11","TOT_PTS":"22","TOT_GP":"11","TOT_W":"6","TOT_L":"1","TOT_T":"4","TOT_GF":"18","TOT_GA":"7","TOT_GD":"11"}
+  , "51452376":{"tm":"37737484","tmnm":"EMFC 99 Athletic White","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027204","flt":"A","seed":"2","rank":"2","bp":"","gp":"10","TOT_PTS":"23","TOT_GP":"10","TOT_W":"7","TOT_L":"1","TOT_T":"2","TOT_GF":"30","TOT_GA":"10","TOT_GD":"20"}
+  , "51452377":{"tm":"37737436","tmnm":"EMFC 99 Athletica Blue","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027204","flt":"A","seed":"2","rank":"1","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"6","TOT_L":"1","TOT_T":"3","TOT_GF":"23","TOT_GA":"11","TOT_GD":"12"}
+  , "51452378":{"tm":"37736800","tmnm":"EMFC 99 Celtic","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"5","rank":"5","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"5","TOT_L":"5","TOT_T":"1","TOT_GF":"21","TOT_GA":"30","TOT_GD":"-9"}
+  , "51452379":{"tm":"37973790","tmnm":"FC Portland Academy 1999B Navy","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"2","rank":"2","bp":"","gp":"10","TOT_PTS":"25","TOT_GP":"10","TOT_W":"8","TOT_L":"1","TOT_T":"1","TOT_GF":"31","TOT_GA":"12","TOT_GD":"19"}
+  , "51452380":{"tm":"37974106","tmnm":"FC Portland Academy 1999B White","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027074","flt":"A","seed":"1","rank":"7","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"30","TOT_GA":"28","TOT_GD":"2"}
+  , "51452381":{"tm":"37977078","tmnm":"FC Portland Academy 1999G Navy","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"3","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"4","TOT_L":"1","TOT_T":"5","TOT_GF":"15","TOT_GA":"4","TOT_GD":"11"}
+  , "51452382":{"tm":"37978089","tmnm":"FC Portland Academy 1999G White","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"5","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"20","TOT_GA":"17","TOT_GD":"3"}
+  , "51452383":{"tm":"37994529","tmnm":"FC Salmon Creek FCSC Nemesis 99","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027362","flt":"A","seed":"4","rank":"5","bp":"","gp":"11","TOT_PTS":"15","TOT_GP":"11","TOT_W":"4","TOT_L":"4","TOT_T":"3","TOT_GF":"20","TOT_GA":"22","TOT_GD":"-2"}
+  , "51452384":{"tm":"37848752","tmnm":"Hood River Dynamos B99 Blue","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027389","flt":"A","seed":"3","rank":"3","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"5","TOT_L":"3","TOT_T":"2","TOT_GF":"25","TOT_GA":"16","TOT_GD":"9"}
+  , "51452385":{"tm":"37848887","tmnm":"Hood River Dynamos B99 White","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027389","flt":"A","seed":"4","rank":"7","bp":"","gp":"11","TOT_PTS":"11","TOT_GP":"11","TOT_W":"3","TOT_L":"6","TOT_T":"2","TOT_GF":"16","TOT_GA":"22","TOT_GD":"-6"}
+  , "51452386":{"tm":"37875634","tmnm":"Hood River Dynamos G99 Blue","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027389","flt":"A","seed":"3","rank":"3","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"6","TOT_L":"3","TOT_T":"1","TOT_GF":"15","TOT_GA":"8","TOT_GD":"7"}
+  , "51452387":{"tm":"50544532","tmnm":"HSC Force","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027379","flt":"A","seed":"2","rank":"8","bp":"","gp":"10","TOT_PTS":"2","TOT_GP":"10","TOT_W":"0","TOT_L":"8","TOT_T":"2","TOT_GF":"5","TOT_GA":"22","TOT_GD":"-17"}
+  , "51452388":{"tm":"37715830","tmnm":"HSC Fury","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027379","flt":"A","seed":"2","rank":"4","bp":"","gp":"11","TOT_PTS":"22","TOT_GP":"11","TOT_W":"7","TOT_L":"3","TOT_T":"1","TOT_GF":"32","TOT_GA":"23","TOT_GD":"9"}
+  , "51452389":{"tm":"38067310","tmnm":"HSC Impact","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027379","flt":"A","seed":"3","rank":"9","bp":"","gp":"12","TOT_PTS":"7","TOT_GP":"12","TOT_W":"1","TOT_L":"7","TOT_T":"4","TOT_GF":"12","TOT_GA":"28","TOT_GD":"-16"}
+  , "51452390":{"tm":"50544733","tmnm":"HSC Select Few","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"5","rank":"9","bp":"","gp":"11","TOT_PTS":"0","TOT_GP":"11","TOT_W":"0","TOT_L":"11","TOT_T":"0","TOT_GF":"4","TOT_GA":"72","TOT_GD":"-68"}
+  , "51452391":{"tm":"37984659","tmnm":"Lake Oswego SC Arsenal","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37024870","flt":"A","seed":"6","rank":"10","bp":"","gp":"10","TOT_PTS":"10","TOT_GP":"10","TOT_W":"3","TOT_L":"6","TOT_T":"1","TOT_GF":"9","TOT_GA":"32","TOT_GD":"-23"}
+  , "51452392":{"tm":"37985082","tmnm":"Lake Oswego SC Freedom","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37024870","flt":"A","seed":"4","rank":"3","bp":"","gp":"10","TOT_PTS":"23","TOT_GP":"10","TOT_W":"7","TOT_L":"1","TOT_T":"2","TOT_GF":"18","TOT_GA":"6","TOT_GD":"12"}
+  , "51452393":{"tm":"37985024","tmnm":"Lake Oswego SC Spirit","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37024870","flt":"A","seed":"5","rank":"4","bp":"","gp":"12","TOT_PTS":"15","TOT_GP":"12","TOT_W":"3","TOT_L":"3","TOT_T":"6","TOT_GF":"18","TOT_GA":"11","TOT_GD":"7"}
+  , "51452394":{"tm":"37943972","tmnm":"NEU Galazios","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027402","flt":"A","seed":"4","rank":"6","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"2","TOT_L":"7","TOT_T":"1","TOT_GF":"11","TOT_GA":"32","TOT_GD":"-21"}
+  , "51452395":{"tm":"37892987","tmnm":"NEU Internazionale","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027402","flt":"A","seed":"7","rank":"12","bp":"","gp":"11","TOT_PTS":"1","TOT_GP":"11","TOT_W":"0","TOT_L":"10","TOT_T":"1","TOT_GF":"5","TOT_GA":"59","TOT_GD":"-54"}
+  , "51452396":{"tm":"37975883","tmnm":"NEU Juventus Blue","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027402","flt":"A","seed":"5","rank":"13","bp":"","gp":"10","TOT_PTS":"4","TOT_GP":"10","TOT_W":"0","TOT_L":"6","TOT_T":"4","TOT_GF":"3","TOT_GA":"25","TOT_GD":"-22"}
+  , "51452397":{"tm":"37975763","tmnm":"NEU Juventus White","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027402","flt":"A","seed":"4","rank":"13","bp":"","gp":"11","TOT_PTS":"5","TOT_GP":"11","TOT_W":"1","TOT_L":"8","TOT_T":"2","TOT_GF":"14","TOT_GA":"28","TOT_GD":"-14"}
+  , "51452398":{"tm":"50803876","tmnm":"NEU Las Aguias","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027402","flt":"A","seed":"6","rank":"1","bp":"","gp":"10","TOT_PTS":"30","TOT_GP":"10","TOT_W":"10","TOT_L":"0","TOT_T":"0","TOT_GF":"33","TOT_GA":"1","TOT_GD":"32"}
+  , "51452399":{"tm":"37701630","tmnm":"NSC Dragons","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027418","flt":"A","seed":"3","rank":"6","bp":"","gp":"11","TOT_PTS":"15","TOT_GP":"11","TOT_W":"4","TOT_L":"4","TOT_T":"3","TOT_GF":"16","TOT_GA":"23","TOT_GD":"-7"}
+  , "51452400":{"tm":"37701977","tmnm":"NSC Revolution","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027418","flt":"A","seed":"6","rank":"11","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"1","TOT_L":"6","TOT_T":"3","TOT_GF":"7","TOT_GA":"16","TOT_GD":"-9"}
+  , "51452401":{"tm":"37952741","tmnm":"Oregon Rush 99 Boys Nike","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027448","flt":"A","seed":"5","rank":"4","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"5","TOT_L":"4","TOT_T":"1","TOT_GF":"26","TOT_GA":"21","TOT_GD":"5"}
+  , "51452402":{"tm":"37952937","tmnm":"Oregon Rush 99 Girls Nike","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027448","flt":"A","seed":"5","rank":"2","bp":"","gp":"9","TOT_PTS":"22","TOT_GP":"9","TOT_W":"7","TOT_L":"1","TOT_T":"1","TOT_GF":"24","TOT_GA":"8","TOT_GD":"16"}
+  , "51452403":{"tm":"38085566","tmnm":"OSA Tsunami","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027143","flt":"A","seed":"4","rank":"4","bp":"","gp":"11","TOT_PTS":"12","TOT_GP":"11","TOT_W":"3","TOT_L":"5","TOT_T":"3","TOT_GF":"12","TOT_GA":"26","TOT_GD":"-14"}
+  , "51452404":{"tm":"37686579","tmnm":"Pacific FC B99 Fire","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027473","flt":"A","seed":"6","rank":"5","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"18","TOT_GA":"13","TOT_GD":"5"}
+  , "51452405":{"tm":"37688993","tmnm":"Pacific FC B99 Lightning","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027473","flt":"A","seed":"8","rank":"11","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"2","TOT_L":"8","TOT_T":"1","TOT_GF":"11","TOT_GA":"31","TOT_GD":"-20"}
+  , "51452406":{"tm":"38064718","tmnm":"Pacific FC G99 Black","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027473","flt":"A","seed":"5","rank":"7","bp":"","gp":"10","TOT_PTS":"1","TOT_GP":"10","TOT_W":"0","TOT_L":"9","TOT_T":"1","TOT_GF":"3","TOT_GA":"23","TOT_GD":"-20"}
+  , "51452407":{"tm":"38081212","tmnm":"Pacific FC G99 Blue","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027473","flt":"A","seed":"6","rank":"7","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"5","TOT_L":"5","TOT_T":"1","TOT_GF":"18","TOT_GA":"22","TOT_GD":"-4"}
+  , "51452408":{"tm":"50095403","tmnm":"Pacific FC G99 Ice","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027473","flt":"A","seed":"3","rank":"7","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"2","TOT_L":"8","TOT_T":"0","TOT_GF":"7","TOT_GA":"27","TOT_GD":"-20"}
+  , "51452409":{"tm":"37693395","tmnm":"Pacific FC G99 Orange Reign","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027473","flt":"A","seed":"7","rank":"5","bp":"","gp":"11","TOT_PTS":"19","TOT_GP":"11","TOT_W":"6","TOT_L":"4","TOT_T":"1","TOT_GF":"20","TOT_GA":"17","TOT_GD":"3"}
+  , "51452410":{"tm":"50092585","tmnm":"Pacific FC G99 White Lightning","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027473","flt":"A","seed":"6","rank":"5","bp":"","gp":"11","TOT_PTS":"11","TOT_GP":"11","TOT_W":"3","TOT_L":"6","TOT_T":"2","TOT_GF":"10","TOT_GA":"18","TOT_GD":"-8"}
+  , "51452651":{"tm":"37994369","tmnm":"PCU 99B Black","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"7","rank":"8","bp":"","gp":"9","TOT_PTS":"5","TOT_GP":"9","TOT_W":"1","TOT_L":"6","TOT_T":"2","TOT_GF":"8","TOT_GA":"21","TOT_GD":"-13"}
+  , "51452652":{"tm":"37994330","tmnm":"PCU 99B Red","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027144","flt":"A","seed":"4","rank":"8","bp":"","gp":"11","TOT_PTS":"9","TOT_GP":"11","TOT_W":"3","TOT_L":"8","TOT_T":"0","TOT_GF":"10","TOT_GA":"29","TOT_GD":"-19"}
+  , "51452653":{"tm":"37994304","tmnm":"PCU 99G Black Magic","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027144","flt":"A","seed":"4","rank":"3","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"17","TOT_GA":"8","TOT_GD":"9"}
+  , "51452654":{"tm":"37994278","tmnm":"PCU 99G Red Storm","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027144","flt":"A","seed":"8","rank":"8","bp":"","gp":"11","TOT_PTS":"9","TOT_GP":"11","TOT_W":"2","TOT_L":"6","TOT_T":"3","TOT_GF":"8","TOT_GA":"19","TOT_GD":"-11"}
+  , "51452655":{"tm":"38112843","tmnm":"PCU SESC Furies","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027144","flt":"A","seed":"5","rank":"4","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"5","TOT_L":"4","TOT_T":"1","TOT_GF":"16","TOT_GA":"17","TOT_GD":"-1"}
+  , "51452656":{"tm":"50657428","tmnm":"PCU White Lightning","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027144","flt":"A","seed":"6","rank":"5","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"3","TOT_L":"5","TOT_T":"2","TOT_GF":"7","TOT_GA":"13","TOT_GD":"-6"}
+  , "51452657":{"tm":"37914226","tmnm":"RVTSC Velocity","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37910625","flt":"A","seed":"7","rank":"4","bp":"","gp":"12","TOT_PTS":"20","TOT_GP":"12","TOT_W":"5","TOT_L":"2","TOT_T":"5","TOT_GF":"18","TOT_GA":"12","TOT_GD":"6"}
+  , "51452658":{"tm":"37978285","tmnm":"Southside SC Barcelona 18","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027139","flt":"A","seed":"7","rank":"7","bp":"","gp":"11","TOT_PTS":"6","TOT_GP":"11","TOT_W":"1","TOT_L":"7","TOT_T":"3","TOT_GF":"7","TOT_GA":"24","TOT_GD":"-17"}
+  , "51452659":{"tm":"37979678","tmnm":"Southside SC Fury 18","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027139","flt":"A","seed":"8","rank":"10","bp":"","gp":"10","TOT_PTS":"9","TOT_GP":"10","TOT_W":"2","TOT_L":"5","TOT_T":"3","TOT_GF":"15","TOT_GA":"16","TOT_GD":"-1"}
+  , "51452660":{"tm":"37982277","tmnm":"Southside SC Real Madrid 18","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37027139","flt":"A","seed":"8","rank":"5","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"29","TOT_GA":"25","TOT_GD":"4"}
+  , "51452661":{"tm":"37979840","tmnm":"Southside SC Shockwave 18","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027139","flt":"A","seed":"7","rank":"1","bp":"","gp":"11","TOT_PTS":"31","TOT_GP":"11","TOT_W":"10","TOT_L":"0","TOT_T":"1","TOT_GF":"28","TOT_GA":"8","TOT_GD":"20"}
+  , "51452662":{"tm":"37613737","tmnm":"Thelo United FC Chaos","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027479","flt":"A","seed":"9","rank":"7","bp":"","gp":"10","TOT_PTS":"14","TOT_GP":"10","TOT_W":"4","TOT_L":"4","TOT_T":"2","TOT_GF":"10","TOT_GA":"9","TOT_GD":"1"}
+  , "51452663":{"tm":"50600730","tmnm":"Thelo United FC Force","tmcd":"","tg":"47896561","tgseq":"30","tgnm":"GU13 Third Division","tghr":"-","cb":"37027479","flt":"A","seed":"7","rank":"6","bp":"","gp":"11","TOT_PTS":"9","TOT_GP":"11","TOT_W":"2","TOT_L":"6","TOT_T":"3","TOT_GF":"7","TOT_GA":"25","TOT_GD":"-18"}
+  , "51452664":{"tm":"37742145","tmnm":"Thelo United FC Pride","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027479","flt":"A","seed":"5","rank":"2","bp":"","gp":"11","TOT_PTS":"24","TOT_GP":"11","TOT_W":"7","TOT_L":"1","TOT_T":"3","TOT_GF":"33","TOT_GA":"11","TOT_GD":"22"}
+  , "51452665":{"tm":"37901880","tmnm":"Tualatin Hills United SC Chromium","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027145","flt":"A","seed":"9","rank":"12","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"2","TOT_L":"8","TOT_T":"1","TOT_GF":"11","TOT_GA":"34","TOT_GD":"-23"}
+  , "51452666":{"tm":"37918224","tmnm":"Tualatin Hills United SC Iron","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027145","flt":"A","seed":"6","rank":"10","bp":"","gp":"11","TOT_PTS":"0","TOT_GP":"11","TOT_W":"0","TOT_L":"11","TOT_T":"0","TOT_GF":"6","TOT_GA":"55","TOT_GD":"-49"}
+  , "51452667":{"tm":"50536288","tmnm":"Tualatin Hills United SC United Argon","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027145","flt":"A","seed":"9","rank":"6","bp":"","gp":"12","TOT_PTS":"14","TOT_GP":"12","TOT_W":"4","TOT_L":"6","TOT_T":"2","TOT_GF":"22","TOT_GA":"24","TOT_GD":"-2"}
+  , "51452668":{"tm":"37885107","tmnm":"Tualatin Hills United SC Zirconium","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027145","flt":"A","seed":"6","rank":"2","bp":"","gp":"10","TOT_PTS":"20","TOT_GP":"10","TOT_W":"6","TOT_L":"2","TOT_T":"2","TOT_GF":"20","TOT_GA":"10","TOT_GD":"10"}
+  , "51452669":{"tm":"43491271","tmnm":"Valley Futball Club Spirit","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"39759621","flt":"A","seed":"10","rank":"4","bp":"","gp":"10","TOT_PTS":"22","TOT_GP":"10","TOT_W":"7","TOT_L":"2","TOT_T":"1","TOT_GF":"28","TOT_GA":"9","TOT_GD":"19"}
+  , "51452670":{"tm":"50424084","tmnm":"Vancouver Timbers BU 99 Blue","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027487","flt":"A","seed":"7","rank":"9","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"14","TOT_GA":"29","TOT_GD":"-15"}
+  , "51452671":{"tm":"50424004","tmnm":"Vancouver Timbers BU 99 Red","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027487","flt":"A","seed":"10","rank":"9","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"21","TOT_GA":"27","TOT_GD":"-6"}
+  , "51452672":{"tm":"50424193","tmnm":"Vancouver Timbers BU 99 White","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027487","flt":"A","seed":"8","rank":"3","bp":"","gp":"11","TOT_PTS":"24","TOT_GP":"11","TOT_W":"7","TOT_L":"1","TOT_T":"3","TOT_GF":"32","TOT_GA":"13","TOT_GD":"19"}
+  , "51452673":{"tm":"37920447","tmnm":"Vancouver Timbers GU 99 Blue","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027487","flt":"A","seed":"10","rank":"9","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"15","TOT_GA":"22","TOT_GD":"-7"}
+  , "51452674":{"tm":"43332866","tmnm":"WAFC America","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"42446095","flt":"A","seed":"11","rank":"1","bp":"","gp":"11","TOT_PTS":"30","TOT_GP":"11","TOT_W":"10","TOT_L":"1","TOT_T":"0","TOT_GF":"38","TOT_GA":"6","TOT_GD":"32"}
+  , "51452675":{"tm":"43334267","tmnm":"WAFC Real Madrid","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"42446095","flt":"A","seed":"9","rank":"1","bp":"","gp":"11","TOT_PTS":"28","TOT_GP":"11","TOT_W":"9","TOT_L":"1","TOT_T":"1","TOT_GF":"53","TOT_GA":"13","TOT_GD":"40"}
+  , "51452676":{"tm":"37819240","tmnm":"Washington Soccer Academy Freedom","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37535463","flt":"A","seed":"11","rank":"12","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"7","TOT_GA":"26","TOT_GD":"-19"}
+  , "51452677":{"tm":"37843911","tmnm":"Washington Soccer Academy Galaxy 99","tmcd":"","tg":"51445523","tgseq":"13","tgnm":"BU13 Third Division","tghr":"-","cb":"37535463","flt":"A","seed":"9","rank":"4","bp":"","gp":"11","TOT_PTS":"17","TOT_GP":"11","TOT_W":"5","TOT_L":"4","TOT_T":"2","TOT_GF":"16","TOT_GA":"12","TOT_GD":"4"}
+  , "51452678":{"tm":"37717901","tmnm":"Washington Soccer Academy Liberty","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"11","rank":"6","bp":"","gp":"10","TOT_PTS":"18","TOT_GP":"10","TOT_W":"6","TOT_L":"4","TOT_T":"0","TOT_GF":"24","TOT_GA":"20","TOT_GD":"4"}
+  , "51452679":{"tm":"50384688","tmnm":"Washington Soccer Academy Valencia","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"12","rank":"1","bp":"","gp":"11","TOT_PTS":"31","TOT_GP":"11","TOT_W":"10","TOT_L":"0","TOT_T":"1","TOT_GF":"35","TOT_GA":"8","TOT_GD":"27"}
+  , "51452680":{"tm":"37943860","tmnm":"Willamette United SC PSV NAVY","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"37027166","flt":"A","seed":"12","rank":"6","bp":"","gp":"10","TOT_PTS":"16","TOT_GP":"10","TOT_W":"4","TOT_L":"2","TOT_T":"4","TOT_GF":"17","TOT_GA":"12","TOT_GD":"5"}
+  , "51452681":{"tm":"37943628","tmnm":"Willamette United SC PSV WHITE","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027166","flt":"A","seed":"7","rank":"6","bp":"","gp":"10","TOT_PTS":"14","TOT_GP":"10","TOT_W":"4","TOT_L":"4","TOT_T":"2","TOT_GF":"11","TOT_GA":"16","TOT_GD":"-5"}
+  , "51452682":{"tm":"49836652","tmnm":"WT B99 Copa","tmcd":"","tg":"47896536","tgseq":"10","tgnm":"BU13 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"1","bp":"","gp":"10","TOT_PTS":"28","TOT_GP":"10","TOT_W":"9","TOT_L":"0","TOT_T":"1","TOT_GF":"35","TOT_GA":"9","TOT_GD":"26"}
+  , "51452683":{"tm":"49838142","tmnm":"WT B99 Copa TS","tmcd":"","tg":"47896546","tgseq":"12","tgnm":"BU13 Second Division","tghr":"-","cb":"37027148","flt":"A","seed":"10","rank":"5","bp":"","gp":"12","TOT_PTS":"17","TOT_GP":"12","TOT_W":"5","TOT_L":"5","TOT_T":"2","TOT_GF":"28","TOT_GA":"30","TOT_GD":"-2"}
+  , "51452684":{"tm":"49836837","tmnm":"WT B99 Samba","tmcd":"","tg":"47896552","tgseq":"11","tgnm":"BU13 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"12","rank":"2","bp":"","gp":"11","TOT_PTS":"28","TOT_GP":"11","TOT_W":"9","TOT_L":"1","TOT_T":"1","TOT_GF":"47","TOT_GA":"14","TOT_GD":"33"}
+  , "51452685":{"tm":"49836879","tmnm":"WT G99 Copa","tmcd":"","tg":"47896539","tgseq":"27","tgnm":"GU13 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"8","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"12","TOT_GA":"27","TOT_GD":"-15"}
+  , "51452686":{"tm":"49838165","tmnm":"WT G99 Copa TS","tmcd":"","tg":"47896551","tgseq":"28","tgnm":"GU13 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"13","rank":"11","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"2","TOT_L":"8","TOT_T":"1","TOT_GF":"13","TOT_GA":"22","TOT_GD":"-9"}
+  , "51452687":{"tm":"49836584","tmnm":"WT G99 Samba","tmcd":"","tg":"51449141","tgseq":"31","tgnm":"GU13 Fourth Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"2","bp":"","gp":"11","TOT_PTS":"25","TOT_GP":"11","TOT_W":"8","TOT_L":"2","TOT_T":"1","TOT_GF":"22","TOT_GA":"6","TOT_GD":"16"}
+  , "51462780":{"tm":"37948974","tmnm":"AU Gunners","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027324","flt":"A","seed":"1","rank":"2","bp":"","gp":"11","TOT_PTS":"26","TOT_GP":"11","TOT_W":"8","TOT_L":"1","TOT_T":"2","TOT_GF":"23","TOT_GA":"5","TOT_GD":"18"}
+  , "51462781":{"tm":"37708366","tmnm":"Azul FC Aztecas","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37674712","flt":"A","seed":"1","rank":"8","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"1","TOT_L":"6","TOT_T":"3","TOT_GF":"13","TOT_GA":"28","TOT_GD":"-15"}
+  , "51462782":{"tm":"37949763","tmnm":"Azul FC Blue Devils","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37674712","flt":"A","seed":"1","rank":"3","bp":"","gp":"11","TOT_PTS":"23","TOT_GP":"11","TOT_W":"7","TOT_L":"2","TOT_T":"2","TOT_GF":"31","TOT_GA":"12","TOT_GD":"19"}
+  , "51462783":{"tm":"38079131","tmnm":"BSC Portland 98B Black","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"11","bp":"","gp":"10","TOT_PTS":"8","TOT_GP":"10","TOT_W":"2","TOT_L":"6","TOT_T":"2","TOT_GF":"11","TOT_GA":"18","TOT_GD":"-7"}
+  , "51462784":{"tm":"37840099","tmnm":"BSC Portland 98G Black","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027320","flt":"A","seed":"1","rank":"10","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"8","TOT_GA":"11","TOT_GD":"-3"}
+  , "51462785":{"tm":"37840384","tmnm":"BSC Portland 98G Gold","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027320","flt":"A","seed":"2","rank":"12","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"1","TOT_L":"6","TOT_T":"4","TOT_GF":"12","TOT_GA":"17","TOT_GD":"-5"}
+  , "51462786":{"tm":"37949189","tmnm":"Canby United Velocity","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027336","flt":"A","seed":"1","rank":"5","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"20","TOT_GA":"10","TOT_GD":"10"}
+  , "51462787":{"tm":"50551337","tmnm":"CFC Olimpia","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"9","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"11","TOT_GA":"15","TOT_GD":"-4"}
+  , "51462788":{"tm":"43484657","tmnm":"CFC Real Madrid","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027341","flt":"A","seed":"2","rank":"1","bp":"","gp":"11","TOT_PTS":"33","TOT_GP":"11","TOT_W":"11","TOT_L":"0","TOT_T":"0","TOT_GF":"63","TOT_GA":"4","TOT_GD":"59"}
+  , "51462789":{"tm":"37917754","tmnm":"Clackamas United SC Fusion","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027350","flt":"A","seed":"3","rank":"7","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"8","TOT_GA":"9","TOT_GD":"-1"}
+  , "51462790":{"tm":"37916704","tmnm":"Clackamas United SC Triple Threat Black","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027350","flt":"A","seed":"3","rank":"10","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"18","TOT_GA":"29","TOT_GD":"-11"}
+  , "51462791":{"tm":"50596410","tmnm":"Clackamas United SC Triple Threat Red","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"37027350","flt":"A","seed":"1","rank":"3","bp":"","gp":"12","TOT_PTS":"24","TOT_GP":"12","TOT_W":"8","TOT_L":"4","TOT_T":"0","TOT_GF":"37","TOT_GA":"21","TOT_GD":"16"}
+  , "51462792":{"tm":"37958455","tmnm":"Columbia River United FA 98G Lazio","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027352","flt":"A","seed":"4","rank":"13","bp":"","gp":"11","TOT_PTS":"0","TOT_GP":"11","TOT_W":"0","TOT_L":"11","TOT_T":"0","TOT_GF":"3","TOT_GA":"25","TOT_GD":"-22"}
+  , "51462793":{"tm":"50588796","tmnm":"Corvallis United Reign U14","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027359","flt":"A","seed":"2","rank":"9","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"3","TOT_L":"4","TOT_T":"4","TOT_GF":"11","TOT_GA":"16","TOT_GD":"-5"}
+  , "51462794":{"tm":"37945899","tmnm":"Eastside Timbers '98B Black","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"10","bp":"","gp":"9","TOT_PTS":"8","TOT_GP":"9","TOT_W":"1","TOT_L":"3","TOT_T":"5","TOT_GF":"9","TOT_GA":"13","TOT_GD":"-4"}
+  , "51462795":{"tm":"37926260","tmnm":"Eastside Timbers '98B Red","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"2","rank":"4","bp":"","gp":"9","TOT_PTS":"15","TOT_GP":"9","TOT_W":"4","TOT_L":"2","TOT_T":"3","TOT_GF":"13","TOT_GA":"6","TOT_GD":"7"}
+  , "51462796":{"tm":"37958229","tmnm":"Eastside Timbers '98G Black","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027137","flt":"A","seed":"3","rank":"11","bp":"","gp":"10","TOT_PTS":"9","TOT_GP":"10","TOT_W":"2","TOT_L":"5","TOT_T":"3","TOT_GF":"8","TOT_GA":"16","TOT_GD":"-8"}
+  , "51462797":{"tm":"37958134","tmnm":"Eastside Timbers '98G Red","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027137","flt":"A","seed":"1","rank":"4","bp":"","gp":"10","TOT_PTS":"14","TOT_GP":"10","TOT_W":"4","TOT_L":"4","TOT_T":"2","TOT_GF":"11","TOT_GA":"12","TOT_GD":"-1"}
+  , "51462798":{"tm":"37737971","tmnm":"EMFC 98 Juventus","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"4","rank":"8","bp":"","gp":"12","TOT_PTS":"11","TOT_GP":"12","TOT_W":"3","TOT_L":"7","TOT_T":"2","TOT_GF":"18","TOT_GA":"33","TOT_GD":"-15"}
+  , "51462799":{"tm":"37737575","tmnm":"EMFC 98 Storm","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027204","flt":"A","seed":"4","rank":"7","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"3","TOT_L":"4","TOT_T":"4","TOT_GF":"17","TOT_GA":"15","TOT_GD":"2"}
+  , "51462800":{"tm":"37974267","tmnm":"FC Portland Academy 1998B Navy","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"1","bp":"","gp":"9","TOT_PTS":"20","TOT_GP":"9","TOT_W":"6","TOT_L":"1","TOT_T":"2","TOT_GF":"18","TOT_GA":"9","TOT_GD":"9"}
+  , "51462801":{"tm":"37974830","tmnm":"FC Portland Academy 1998B White","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027074","flt":"A","seed":"5","rank":"9","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"3","TOT_L":"5","TOT_T":"2","TOT_GF":"14","TOT_GA":"28","TOT_GD":"-14"}
+  , "51462803":{"tm":"37975511","tmnm":"FC Portland Academy 1998G Navy","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027074","flt":"A","seed":"2","rank":"6","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"4","TOT_L":"5","TOT_T":"1","TOT_GF":"14","TOT_GA":"25","TOT_GD":"-11"}
+  , "51462805":{"tm":"37975862","tmnm":"FC Portland Academy 1998G White","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027074","flt":"A","seed":"3","rank":"1","bp":"","gp":"12","TOT_PTS":"31","TOT_GP":"12","TOT_W":"10","TOT_L":"1","TOT_T":"1","TOT_GF":"29","TOT_GA":"9","TOT_GD":"20"}
+  , "51462806":{"tm":"50601885","tmnm":"FC Salmon Creek FCSC Copas 98","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027362","flt":"A","seed":"5","rank":"3","bp":"","gp":"11","TOT_PTS":"22","TOT_GP":"11","TOT_W":"7","TOT_L":"3","TOT_T":"1","TOT_GF":"20","TOT_GA":"12","TOT_GD":"8"}
+  , "51462807":{"tm":"37994577","tmnm":"FC Salmon Creek FCSC Nemesis 98","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027362","flt":"A","seed":"3","rank":"3","bp":"","gp":"10","TOT_PTS":"15","TOT_GP":"10","TOT_W":"4","TOT_L":"3","TOT_T":"3","TOT_GF":"14","TOT_GA":"17","TOT_GD":"-3"}
+  , "51462808":{"tm":"43460005","tmnm":"FC West Manchester United","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"43386134","flt":"A","seed":"4","rank":"2","bp":"","gp":"11","TOT_PTS":"28","TOT_GP":"11","TOT_W":"9","TOT_L":"1","TOT_T":"1","TOT_GF":"35","TOT_GA":"12","TOT_GD":"23"}
+  , "51462809":{"tm":"37848675","tmnm":"Hood River Dynamos HR Dynamites","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027389","flt":"A","seed":"3","rank":"9","bp":"","gp":"11","TOT_PTS":"10","TOT_GP":"11","TOT_W":"3","TOT_L":"7","TOT_T":"1","TOT_GF":"9","TOT_GA":"24","TOT_GD":"-15"}
+  , "51462810":{"tm":"37715522","tmnm":"HSC Freeze","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37027379","flt":"A","seed":"4","rank":"3","bp":"","gp":"11","TOT_PTS":"19","TOT_GP":"11","TOT_W":"5","TOT_L":"2","TOT_T":"4","TOT_GF":"12","TOT_GA":"10","TOT_GD":"2"}
+  , "51462811":{"tm":"38067154","tmnm":"HSC Fusion","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"5","rank":"4","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"5","TOT_L":"1","TOT_T":"4","TOT_GF":"16","TOT_GA":"8","TOT_GD":"8"}
+  , "51462812":{"tm":"43374493","tmnm":"HSC Patriots","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"6","rank":"11","bp":"","gp":"10","TOT_PTS":"7","TOT_GP":"10","TOT_W":"1","TOT_L":"5","TOT_T":"4","TOT_GF":"5","TOT_GA":"8","TOT_GD":"-3"}
+  , "51462813":{"tm":"50543942","tmnm":"HSC RED BULLS","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"37027379","flt":"A","seed":"2","rank":"7","bp":"","gp":"11","TOT_PTS":"1","TOT_GP":"11","TOT_W":"0","TOT_L":"10","TOT_T":"1","TOT_GF":"10","TOT_GA":"49","TOT_GD":"-39"}
+  , "51462814":{"tm":"37984753","tmnm":"Lake Oswego SC Crew","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37024870","flt":"A","seed":"6","rank":"13","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"1","TOT_L":"6","TOT_T":"3","TOT_GF":"9","TOT_GA":"27","TOT_GD":"-18"}
+  , "51462815":{"tm":"37984726","tmnm":"Lake Oswego SC Edge","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37024870","flt":"A","seed":"5","rank":"7","bp":"","gp":"11","TOT_PTS":"7","TOT_GP":"11","TOT_W":"2","TOT_L":"8","TOT_T":"1","TOT_GF":"12","TOT_GA":"32","TOT_GD":"-20"}
+  , "51462816":{"tm":"37985168","tmnm":"Lake Oswego SC Lightning","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37024870","flt":"A","seed":"4","rank":"5","bp":"","gp":"12","TOT_PTS":"14","TOT_GP":"12","TOT_W":"4","TOT_L":"6","TOT_T":"2","TOT_GF":"18","TOT_GA":"30","TOT_GD":"-12"}
+  , "51462817":{"tm":"37985196","tmnm":"Lake Oswego SC Sol","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37024870","flt":"A","seed":"6","rank":"2","bp":"","gp":"11","TOT_PTS":"25","TOT_GP":"11","TOT_W":"8","TOT_L":"2","TOT_T":"1","TOT_GF":"20","TOT_GA":"7","TOT_GD":"13"}
+  , "51462818":{"tm":"50602066","tmnm":"MYS Pride Orange","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"50601809","flt":"A","seed":"7","rank":"11","bp":"","gp":"10","TOT_PTS":"8","TOT_GP":"10","TOT_W":"2","TOT_L":"6","TOT_T":"2","TOT_GF":"7","TOT_GA":"13","TOT_GD":"-6"}
+  , "51462819":{"tm":"50603659","tmnm":"MYS Pride White","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"50601809","flt":"A","seed":"7","rank":"10","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"9","TOT_GA":"25","TOT_GD":"-16"}
+  , "51462820":{"tm":"37886061","tmnm":"NEU Fulham","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027402","flt":"A","seed":"4","rank":"7","bp":"","gp":"9","TOT_PTS":"15","TOT_GP":"9","TOT_W":"4","TOT_L":"2","TOT_T":"3","TOT_GF":"14","TOT_GA":"9","TOT_GD":"5"}
+  , "51462821":{"tm":"37837474","tmnm":"NEU Gamba","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37027402","flt":"A","seed":"6","rank":"5","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"12","TOT_GA":"12","TOT_GD":"0"}
+  , "51462822":{"tm":"37702280","tmnm":"NSC Sparq","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027418","flt":"A","seed":"8","rank":"8","bp":"","gp":"10","TOT_PTS":"12","TOT_GP":"10","TOT_W":"3","TOT_L":"4","TOT_T":"3","TOT_GF":"9","TOT_GA":"12","TOT_GD":"-3"}
+  , "51462823":{"tm":"37702143","tmnm":"NSC United","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027418","flt":"A","seed":"7","rank":"14","bp":"","gp":"11","TOT_PTS":"4","TOT_GP":"11","TOT_W":"1","TOT_L":"9","TOT_T":"1","TOT_GF":"9","TOT_GA":"55","TOT_GD":"-46"}
+  , "51462824":{"tm":"50555583","tmnm":"Oregon City SC Fury","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027429","flt":"A","seed":"8","rank":"13","bp":"","gp":"11","TOT_PTS":"0","TOT_GP":"11","TOT_W":"0","TOT_L":"11","TOT_T":"0","TOT_GF":"4","TOT_GA":"39","TOT_GD":"-35"}
+  , "51462825":{"tm":"37926261","tmnm":"Oregon City SC Red Racers","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027429","flt":"A","seed":"9","rank":"7","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"26","TOT_GA":"27","TOT_GD":"-1"}
+  , "51462826":{"tm":"37953043","tmnm":"Oregon Rush 98 Boys Nike","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027448","flt":"A","seed":"8","rank":"3","bp":"","gp":"12","TOT_PTS":"21","TOT_GP":"12","TOT_W":"6","TOT_L":"3","TOT_T":"3","TOT_GF":"16","TOT_GA":"16","TOT_GD":"0"}
+  , "51462827":{"tm":"37953345","tmnm":"Oregon Rush 98 Girls Nike","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027448","flt":"A","seed":"5","rank":"7","bp":"","gp":"10","TOT_PTS":"10","TOT_GP":"10","TOT_W":"3","TOT_L":"6","TOT_T":"1","TOT_GF":"15","TOT_GA":"22","TOT_GD":"-7"}
+  , "51462828":{"tm":"37953465","tmnm":"Oregon Rush 98 Girls Swoosh","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027448","flt":"A","seed":"10","rank":"9","bp":"","gp":"9","TOT_PTS":"8","TOT_GP":"9","TOT_W":"2","TOT_L":"5","TOT_T":"2","TOT_GF":"7","TOT_GA":"19","TOT_GD":"-12"}
+  , "51462829":{"tm":"38085676","tmnm":"OSA Alliance","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027143","flt":"A","seed":"5","rank":"8","bp":"","gp":"11","TOT_PTS":"12","TOT_GP":"11","TOT_W":"3","TOT_L":"5","TOT_T":"3","TOT_GF":"16","TOT_GA":"20","TOT_GD":"-4"}
+  , "51462830":{"tm":"38085763","tmnm":"OSA Storm","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027143","flt":"A","seed":"9","rank":"10","bp":"","gp":"11","TOT_PTS":"9","TOT_GP":"11","TOT_W":"2","TOT_L":"6","TOT_T":"3","TOT_GF":"12","TOT_GA":"28","TOT_GD":"-16"}
+  , "51463607":{"tm":"50602912","tmnm":"Pacific FC B98 Orange","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"37027473","flt":"A","seed":"3","rank":"2","bp":"","gp":"11","TOT_PTS":"25","TOT_GP":"11","TOT_W":"8","TOT_L":"2","TOT_T":"1","TOT_GF":"35","TOT_GA":"18","TOT_GD":"17"}
+  , "51463608":{"tm":"37847407","tmnm":"Pacific FC G98 Ice","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027473","flt":"A","seed":"5","rank":"4","bp":"","gp":"11","TOT_PTS":"20","TOT_GP":"11","TOT_W":"6","TOT_L":"3","TOT_T":"2","TOT_GF":"15","TOT_GA":"11","TOT_GD":"4"}
+  , "51463609":{"tm":"50163201","tmnm":"Pacific FC Strikers B98 Blue","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027473","flt":"A","seed":"6","rank":"4","bp":"","gp":"11","TOT_PTS":"18","TOT_GP":"11","TOT_W":"5","TOT_L":"3","TOT_T":"3","TOT_GF":"33","TOT_GA":"27","TOT_GD":"6"}
+  , "51463610":{"tm":"37994254","tmnm":"PCU 98B Black","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"4","rank":"6","bp":"","gp":"11","TOT_PTS":"5","TOT_GP":"11","TOT_W":"1","TOT_L":"8","TOT_T":"2","TOT_GF":"8","TOT_GA":"32","TOT_GD":"-24"}
+  , "51463611":{"tm":"37994225","tmnm":"PCU 98B Red","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027144","flt":"A","seed":"7","rank":"1","bp":"","gp":"11","TOT_PTS":"28","TOT_GP":"11","TOT_W":"9","TOT_L":"1","TOT_T":"1","TOT_GF":"24","TOT_GA":"8","TOT_GD":"16"}
+  , "51463612":{"tm":"37993871","tmnm":"PCU 98G Black","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027144","flt":"A","seed":"10","rank":"12","bp":"","gp":"10","TOT_PTS":"8","TOT_GP":"10","TOT_W":"2","TOT_L":"6","TOT_T":"2","TOT_GF":"4","TOT_GA":"14","TOT_GD":"-10"}
+  , "51463613":{"tm":"37993743","tmnm":"PCU 98G Red","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027144","flt":"A","seed":"6","rank":"8","bp":"","gp":"10","TOT_PTS":"13","TOT_GP":"10","TOT_W":"3","TOT_L":"3","TOT_T":"4","TOT_GF":"8","TOT_GA":"11","TOT_GD":"-3"}
+  , "51463614":{"tm":"50657518","tmnm":"PCU 98G White","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027144","flt":"A","seed":"11","rank":"8","bp":"","gp":"11","TOT_PTS":"14","TOT_GP":"11","TOT_W":"4","TOT_L":"5","TOT_T":"2","TOT_GF":"12","TOT_GA":"16","TOT_GD":"-4"}
+  , "51463615":{"tm":"37921199","tmnm":"RVTSC IMPACT","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37910625","flt":"A","seed":"7","rank":"13","bp":"","gp":"9","TOT_PTS":"4","TOT_GP":"9","TOT_W":"0","TOT_L":"5","TOT_T":"4","TOT_GF":"13","TOT_GA":"23","TOT_GD":"-10"}
+  , "51463616":{"tm":"37913903","tmnm":"RVTSC Nitro","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37910625","flt":"A","seed":"9","rank":"7","bp":"","gp":"12","TOT_PTS":"17","TOT_GP":"12","TOT_W":"5","TOT_L":"5","TOT_T":"2","TOT_GF":"31","TOT_GA":"30","TOT_GD":"1"}
+  , "51463617":{"tm":"37980062","tmnm":"Southside SC Pride","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027139","flt":"A","seed":"6","rank":"8","bp":"","gp":"11","TOT_PTS":"1","TOT_GP":"11","TOT_W":"0","TOT_L":"10","TOT_T":"1","TOT_GF":"11","TOT_GA":"38","TOT_GD":"-27"}
+  , "51463618":{"tm":"37979937","tmnm":"Southside SC Stealth","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027139","flt":"A","seed":"8","rank":"1","bp":"","gp":"11","TOT_PTS":"29","TOT_GP":"11","TOT_W":"9","TOT_L":"0","TOT_T":"2","TOT_GF":"28","TOT_GA":"3","TOT_GD":"25"}
+  , "51463619":{"tm":"37980171","tmnm":"Southside SC Villa","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027139","flt":"A","seed":"12","rank":"5","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"5","TOT_L":"3","TOT_T":"2","TOT_GF":"12","TOT_GA":"9","TOT_GD":"3"}
+  , "51463620":{"tm":"37742750","tmnm":"Thelo United FC cobras","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027479","flt":"A","seed":"10","rank":"5","bp":"","gp":"10","TOT_PTS":"19","TOT_GP":"10","TOT_W":"6","TOT_L":"3","TOT_T":"1","TOT_GF":"23","TOT_GA":"19","TOT_GD":"4"}
+  , "51463621":{"tm":"37743464","tmnm":"Thelo United FC Havoc","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027479","flt":"A","seed":"11","rank":"1","bp":"","gp":"10","TOT_PTS":"27","TOT_GP":"10","TOT_W":"9","TOT_L":"1","TOT_T":"0","TOT_GF":"25","TOT_GA":"5","TOT_GD":"20"}
+  , "51463622":{"tm":"37901790","tmnm":"Tualatin Hills United SC Gallium","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027145","flt":"A","seed":"9","rank":"2","bp":"","gp":"11","TOT_PTS":"26","TOT_GP":"11","TOT_W":"8","TOT_L":"1","TOT_T":"2","TOT_GF":"16","TOT_GA":"4","TOT_GD":"12"}
+  , "51463623":{"tm":"37882328","tmnm":"Tualatin Hills United SC Indium","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027145","flt":"A","seed":"11","rank":"12","bp":"","gp":"11","TOT_PTS":"8","TOT_GP":"11","TOT_W":"2","TOT_L":"7","TOT_T":"2","TOT_GF":"10","TOT_GA":"24","TOT_GD":"-14"}
+  , "51463624":{"tm":"37895642","tmnm":"Tualatin Hills United SC Onyx","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027145","flt":"A","seed":"7","rank":"1","bp":"","gp":"10","TOT_PTS":"30","TOT_GP":"10","TOT_W":"10","TOT_L":"0","TOT_T":"0","TOT_GF":"51","TOT_GA":"4","TOT_GD":"47"}
+  , "51463625":{"tm":"37882625","tmnm":"Tualatin Hills United SC Tungsten","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027145","flt":"A","seed":"8","rank":"12","bp":"","gp":"11","TOT_PTS":"0","TOT_GP":"11","TOT_W":"0","TOT_L":"11","TOT_T":"0","TOT_GF":"2","TOT_GA":"38","TOT_GD":"-36"}
+  , "51463626":{"tm":"50535522","tmnm":"Tualatin Hills United SC United Gold","tmcd":"","tg":"47896562","tgseq":"35","tgnm":"GU14 Third Division","tghr":"-","cb":"37027145","flt":"A","seed":"13","rank":"6","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"5","TOT_L":"3","TOT_T":"2","TOT_GF":"15","TOT_GA":"12","TOT_GD":"3"}
+  , "51463627":{"tm":"38652494","tmnm":"United SA Arsenal","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027482","flt":"A","seed":"9","rank":"11","bp":"","gp":"10","TOT_PTS":"5","TOT_GP":"10","TOT_W":"1","TOT_L":"7","TOT_T":"2","TOT_GF":"9","TOT_GA":"28","TOT_GD":"-19"}
+  , "51463628":{"tm":"38651929","tmnm":"United SA Extreme","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027482","flt":"A","seed":"10","rank":"12","bp":"","gp":"10","TOT_PTS":"6","TOT_GP":"10","TOT_W":"2","TOT_L":"8","TOT_T":"0","TOT_GF":"4","TOT_GA":"28","TOT_GD":"-24"}
+  , "51463629":{"tm":"37884749","tmnm":"Vancouver Timbers BU 98 Red","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37027487","flt":"A","seed":"7","rank":"6","bp":"","gp":"10","TOT_PTS":"11","TOT_GP":"10","TOT_W":"2","TOT_L":"3","TOT_T":"5","TOT_GF":"12","TOT_GA":"11","TOT_GD":"1"}
+  , "51463630":{"tm":"37882751","tmnm":"Vancouver Timbers GU 98 Blue","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37027487","flt":"A","seed":"12","rank":"6","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"5","TOT_L":"3","TOT_T":"2","TOT_GF":"18","TOT_GA":"10","TOT_GD":"8"}
+  , "51463631":{"tm":"37931475","tmnm":"Vancouver Timbers GU 98 Red","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027487","flt":"A","seed":"11","rank":"3","bp":"","gp":"10","TOT_PTS":"22","TOT_GP":"10","TOT_W":"7","TOT_L":"2","TOT_T":"1","TOT_GF":"21","TOT_GA":"10","TOT_GD":"11"}
+  , "51463632":{"tm":"43332559","tmnm":"WAFC Cougars","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"42446095","flt":"A","seed":"12","rank":"2","bp":"","gp":"11","TOT_PTS":"30","TOT_GP":"11","TOT_W":"10","TOT_L":"1","TOT_T":"0","TOT_GF":"45","TOT_GA":"6","TOT_GD":"39"}
+  , "51463633":{"tm":"50598893","tmnm":"WAFC Scorpions","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"42446095","flt":"A","seed":"10","rank":"3","bp":"","gp":"10","TOT_PTS":"23","TOT_GP":"10","TOT_W":"7","TOT_L":"1","TOT_T":"2","TOT_GF":"41","TOT_GA":"7","TOT_GD":"34"}
+  , "51463634":{"tm":"50599088","tmnm":"WAFC Tigres","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"42446095","flt":"A","seed":"5","rank":"5","bp":"","gp":"11","TOT_PTS":"13","TOT_GP":"11","TOT_W":"4","TOT_L":"6","TOT_T":"1","TOT_GF":"11","TOT_GA":"15","TOT_GD":"-4"}
+  , "51463635":{"tm":"50384762","tmnm":"Washington Soccer Academy Blazers","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"13","rank":"4","bp":"","gp":"10","TOT_PTS":"21","TOT_GP":"10","TOT_W":"7","TOT_L":"3","TOT_T":"0","TOT_GF":"20","TOT_GA":"4","TOT_GD":"16"}
+  , "51463636":{"tm":"50384839","tmnm":"Washington Soccer Academy Predators","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"37535463","flt":"A","seed":"6","rank":"4","bp":"","gp":"11","TOT_PTS":"18","TOT_GP":"11","TOT_W":"6","TOT_L":"5","TOT_T":"0","TOT_GF":"34","TOT_GA":"25","TOT_GD":"9"}
+  , "51463637":{"tm":"37768949","tmnm":"Washington Soccer Academy Pride","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37535463","flt":"A","seed":"12","rank":"5","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"5","TOT_L":"3","TOT_T":"2","TOT_GF":"16","TOT_GA":"14","TOT_GD":"2"}
+  , "51463638":{"tm":"37803265","tmnm":"Washington Soccer Academy Reliance","tmcd":"","tg":"47896557","tgseq":"34","tgnm":"GU14 Second Division","tghr":"-","cb":"37535463","flt":"A","seed":"13","rank":"4","bp":"","gp":"11","TOT_PTS":"21","TOT_GP":"11","TOT_W":"7","TOT_L":"4","TOT_T":"0","TOT_GF":"13","TOT_GA":"10","TOT_GD":"3"}
+  , "51463639":{"tm":"37726682","tmnm":"Washington Soccer Academy Wolves","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37535463","flt":"A","seed":"11","rank":"6","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"5","TOT_L":"5","TOT_T":"1","TOT_GF":"24","TOT_GA":"21","TOT_GD":"3"}
+  , "51463640":{"tm":"37935895","tmnm":"Willamette United SC Barcelona","tmcd":"","tg":"47896550","tgseq":"15","tgnm":"BU14 First Division","tghr":"-","cb":"37027166","flt":"A","seed":"14","rank":"6","bp":"","gp":"11","TOT_PTS":"18","TOT_GP":"11","TOT_W":"5","TOT_L":"3","TOT_T":"3","TOT_GF":"27","TOT_GA":"21","TOT_GD":"6"}
+  , "51463641":{"tm":"37957649","tmnm":"Willamette United SC Inter Milan","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027166","flt":"A","seed":"13","rank":"14","bp":"","gp":"11","TOT_PTS":"4","TOT_GP":"11","TOT_W":"1","TOT_L":"9","TOT_T":"1","TOT_GF":"11","TOT_GA":"31","TOT_GD":"-20"}
+  , "51463642":{"tm":"49837340","tmnm":"WT B98 Copa","tmcd":"","tg":"47896537","tgseq":"14","tgnm":"BU14 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"2","bp":"","gp":"11","TOT_PTS":"19","TOT_GP":"11","TOT_W":"5","TOT_L":"2","TOT_T":"4","TOT_GF":"34","TOT_GA":"18","TOT_GD":"16"}
+  , "51463643":{"tm":"49836919","tmnm":"WT B98 Samba","tmcd":"","tg":"47896554","tgseq":"16","tgnm":"BU14 Second Division","tghr":"-","cb":"37027148","flt":"A","seed":"12","rank":"5","bp":"","gp":"11","TOT_PTS":"16","TOT_GP":"11","TOT_W":"5","TOT_L":"5","TOT_T":"1","TOT_GF":"14","TOT_GA":"18","TOT_GD":"-4"}
+  , "51463644":{"tm":"49837411","tmnm":"WT G98 Copa","tmcd":"","tg":"47896549","tgseq":"33","tgnm":"GU14 First Division","tghr":"-","cb":"37027148","flt":"A","seed":"14","rank":"6","bp":"","gp":"10","TOT_PTS":"17","TOT_GP":"10","TOT_W":"5","TOT_L":"3","TOT_T":"2","TOT_GF":"26","TOT_GA":"9","TOT_GD":"17"}
+  , "51463645":{"tm":"49838190","tmnm":"WT G98 Copa TS","tmcd":"","tg":"47896540","tgseq":"32","tgnm":"GU14 Timbers NPL Premier Division","tghr":"-","cb":"37027148","flt":"A","seed":"8","rank":"2","bp":"","gp":"9","TOT_PTS":"21","TOT_GP":"9","TOT_W":"7","TOT_L":"2","TOT_T":"0","TOT_GF":"22","TOT_GA":"8","TOT_GD":"14"}
+  , "51659269":{"tm":"51658954","tmnm":"Albany Futbol Club Forza","tmcd":"","tg":"47896556","tgseq":"29","tgnm":"GU13 Second Division","tghr":"-","cb":"51658470","flt":"A","seed":"13","rank":"1","bp":"","gp":"11","TOT_PTS":"33","TOT_GP":"11","TOT_W":"11","TOT_L":"0","TOT_T":"0","TOT_GF":"28","TOT_GA":"6","TOT_GD":"22"}
+  , "51784236":{"tm":"51730957","tmnm":"Eastside Timbers '00G White","tmcd":"","tg":"47896560","tgseq":"26","tgnm":"GU12 Third Division","tghr":"-","cb":"37027137","flt":"A","seed":"12","rank":"6","bp":"","gp":"9","TOT_PTS":"14","TOT_GP":"9","TOT_W":"4","TOT_L":"3","TOT_T":"2","TOT_GF":"16","TOT_GA":"15","TOT_GD":"1"}
+  , "51784237":{"tm":"51274358","tmnm":"Pacific FC B98 Cheetahs","tmcd":"","tg":"47896559","tgseq":"17","tgnm":"BU14 Third Division","tghr":"-","cb":"37027473","flt":"A","seed":"7","rank":"1","bp":"","gp":"11","TOT_PTS":"28","TOT_GP":"11","TOT_W":"9","TOT_L":"1","TOT_T":"1","TOT_GF":"42","TOT_GA":"17","TOT_GD":"25"}
+  , "56729610":{"tm":"56729608","tmnm":"Southside SC Rage Placeholder","tmcd":"","tg":"47896543","tgseq":"2","tgnm":"BU11 First Division","tghr":"-","cb":"","flt":"A","seed":"1","rank":"15","bp":"","gp":"0","TOT_PTS":"0","TOT_GP":"0","TOT_W":"0","TOT_L":"0","TOT_T":"0","TOT_GF":"0","TOT_GA":"0","TOT_GD":"0"}
+  , "56729947":{"tm":"56729945","tmnm":"Pacific FC B01 Blue Placeholder","tmcd":"","tg":"47896548","tgseq":"3","tgnm":"BU11 Second Division","tghr":"-","cb":"","flt":"A","seed":"1","rank":"9","bp":"","gp":"0","TOT_PTS":"0","TOT_GP":"0","TOT_W":"0","TOT_L":"0","TOT_T":"0","TOT_GF":"0","TOT_GA":"0","TOT_GD":"0"}
+}
+,
+  descrs: {
+    "2834118":{"a":"TOT_PTS","g_descr":"Aggregate Points","c":"Pts","seq2":"1","seq3":"1","s_descr":""}
+  , "2834119":{"a":"TOT_GP","g_descr":"Games Played","c":"GP","seq2":"2","seq3":"2","s_descr":""}
+  , "2834120":{"a":"TOT_W","g_descr":"Aggregate Wins","c":"W","seq2":"3","seq3":"3","s_descr":""}
+  , "2834122":{"a":"TOT_L","g_descr":"Aggregate Losses","c":"L","seq2":"4","seq3":"4","s_descr":""}
+  , "2834121":{"a":"TOT_T","g_descr":"Aggregate Ties","c":"T","seq2":"5","seq3":"5","s_descr":""}
+  , "2834123":{"a":"TOT_GF","g_descr":"Goals For","c":"GF","seq2":"6","seq3":"6","s_descr":""}
+  , "2834124":{"a":"TOT_GA","g_descr":"Goals Against","c":"GA","seq2":"7","seq3":"7","s_descr":""}
+  , "2834125":{"a":"TOT_GD","g_descr":"Goal Differential","c":"GD","seq2":"8","seq3":"8","s_descr":""}
+}
+,
+  descrsA: [],
+  colsp: 0,
+  pts_special: '-',
+  init: function(){
+    diiStand.init_descrs();
+    var tmsA = diiH2A(diiStand.tms);
+    var tgsA = diiStand.gather_tgs(tmsA);
+    tgsA.sort(diiStand.compare_tgs);
+    diiStand.render_tgs(tgsA);
+  }, // init
+  init_descrs: function(){
+    diiStand.descrsA = diiH2A(diiStand.descrs);
+    diiStand.descrsA.sort(diiStand.compare_descrs);
+    diiStand.colsp = 2 + diiStand.descrsA.length;
+  }, // init_descrs
+  compare_descrs: function(a,b){
+    function fixi(x,y){if (x[y+'i'] === undefined) {if (!x[y]) {x[y] = '99999';} x[y+'i'] = parseInt(x[y],10);}}
+    fixi(a,'seq2'); fixi(a,'seq3');
+    fixi(b,'seq2'); fixi(b,'seq3');
+    return (
+      (b.seq2i > a.seq2i)
+      ? -1
+      : ((a.seq2i > b.seq2i)
+         ? 1
+         : ((b.seq3i > a.seq3i)
+            ? -1
+            : ((a.seq3i > b.seq3i)
+               ? 1
+               : 0
+              )
+           )
+        )
+    );
+  }, // compare_descrs
+  compare_flts: function(a,b){
+    return (
+      (b.key > a.key)
+      ? -1
+      : ((a.key > b.key)
+         ? 1
+         : 0
+        )
+    );
+  }, // compare_flts
+  compare_tgs: function(a,b){
+    if (a.tgseqi === undefined) {if (!a.tgseq) {a.tgseq = '99999';} a.tgseqi = parseInt(a.tgseq,10);}
+    if (b.tgseqi === undefined) {if (!b.tgseq) {b.tgseq = '99999';} b.tgseqi = parseInt(b.tgseq,10);}
+    return (
+      (b.tgseqi > a.tgseqi)
+      ? -1
+      : ((a.tgseqi > b.tgseqi)
+         ? 1
+         : ((b.tgnm > a.tgnm)
+            ? -1
+            : ((a.tgnm > b.tgnm)
+               ? 1
+               : 0
+              )
+           )
+        )
+    );
+  }, // compare_tgs
+  compare_tms: function(a,b){
+    if (a.ranki === undefined) {if (!a.rank) {a.rank = '99999';} a.ranki = parseInt(a.rank,10);}
+    if (b.ranki === undefined) {if (!b.rank) {b.rank = '99999';} b.ranki = parseInt(b.rank,10);}
+     if (b.tghr=='X' && a.tghr=='X') {b.ranki=a.ranki='99999'};
+    return (
+      (b.ranki > a.ranki)
+      ? -1
+      : ((a.ranki > b.ranki)
+         ? 1
+         : ((b.tmnm > a.tmnm)
+            ? -1
+            : ((a.tmnm > b.tmnm)
+               ? 1
+               : 0
+              )
+           )
+        )
+    );
+  }, // compare_tms
+  gather_flts: function(tmsA) {
+    var flts = {};
+    $j.each(tmsA, function() {
+      var tm = this, flt = tm.flt;
+      if (!flt || flt === '') {
+        tm.flt = 'A'; flt = 'A';
+      }
+      if (!flts[flt]) {
+        flts[flt] = {tmsA: []};
+      }
+      flts[flt].tmsA.push(tm);
+    });
+    return diiH2A(flts);
+  }, // gather_flts
+  gather_tgs: function(tmsA){
+    var tgs = {};
+    $j.each(tmsA, function(){
+      var tm = this, tg = tm.tg;
+      if (!tgs[tg]) {
+        tgs[tg] = {tgnm: tm.tgnm, tgseq: tm.tgseq, tmsA: []};
+      }
+      tgs[tg].tmsA.push(tm);
+    });
+    return diiH2A(tgs);
+  }, // gather_tgs
+  render_flts: function(mu, fltsA){
+    $j.each(fltsA, function(){
+      var flt = this;
+      if (fltsA.length > 1) {
+       mu.push('<tr class="flt-hd"><td colspan="' + diiStand.colsp + '">Flight ' + flt.key + '</td></tr>');
+      }
+      flt.tmsA.sort(diiStand.compare_tms);
+      diiStand.render_tms(mu, flt.tmsA);
+    });
+  }, // render_flts
+  render_tgs: function(tgsA){
+    function dispTGhdr(tg) {
+      var mu = [];
+      mu.push('<tr class="tg-hd">');
+      mu.push(  '<td class="tgnm" colspan="2">' + tg.tgnm + '</td>');
+      $j.each(diiStand.descrsA, function() {
+        mu.push('<td>' + this.c + '</td>');
+      });
+      mu.push('</tr>');
+      return mu.join('');
+    } // dispTGhdr
+    function dispftr() {
+      var mu = [];
+      mu.push('<tr class="ftr">');
+      mu.push(  '<td colspan="' + diiStand.colsp + '">');
+      var mv = [];
+      $j.each(diiStand.descrsA, function(i, descr){
+        /* use season_dimvaldescription if available; otherewise use the geardescription */
+        var d = descr['s_descr'] ? descr['s_descr'] : descr['g_descr'];
+        mv.push('<span class="a"><span class="b">' + descr['c'] + '</span>: ' + d + '</span>');
+      });
+      mu.push(    mv.join(', '));
+      mu.push(  '</td>');
+      mu.push('</tr>');
+      return mu.join('');
+    } // dispftr
+    var mu = [];
+    mu.push('<table id="tbl1" cellspacing="1">');
+    mu.push('<tbody>');
+    $j.each(tgsA, function(tgi){
+      var tg = this;
+      mu.push(dispTGhdr(tg));
+      var fltsA = diiStand.gather_flts(tg.tmsA);
+      fltsA.sort(diiStand.compare_flts);
+      diiStand.render_flts(mu, fltsA);
+      mu.push('<tr class="tg-ft"><td colspan="' + diiStand.colsp + '"></td></tr>');
+    });
+    mu.push(dispftr());
+    mu.push('</tbody>');
+    mu.push('</table>');
+    $j('#here47896448').html(mu.join(''));
+    $j('#here47896448 table#tbl1 > tbody > tr.tm:odd' ).addClass('odd');
+    $j('#here47896448 table#tbl1 > tbody > tr.tm:even').addClass('even');
+  }, // render_tgs
+  render_tms: function(mu, tmsA) {
+    var homeurlA = 'www.oregonpremierleague.com'.split('/'),
+        urlDir = homeurlA.length > 1 ? '/' + homeurlA[1] : '';
+    function disp(tm,vnm){
+      var val = tm[vnm], td = [];
+      if (val === '') {
+        val = '-';
+      } else {
+        if ((vnm === 'TOT_PTS') && (diiStand.pts_special === 'X')) {
+          val = parseInt(val,10)/10;
+          val = val.toFixed(1);
+        } else if (vnm === 'AVG_PTS_PER_GM') {
+          val = parseFloat(val);
+          val = val.toFixed(2);
+        } else if (vnm === 'CONF_PPG') {
+          val = parseFloat(val);
+          val = val.toFixed(2);
+        } else if (vnm === 'CONF_WIN_PCT') {
+          val = parseFloat(val);
+          val = val.toFixed(3).replace(/^0/,'');
+        } else if (vnm === 'WIN_PCT') {
+          val = parseFloat(val);
+          val = val.toFixed(3).replace(/^0/,'');
+        } else if (vnm === 'TOT_SPORTINGAVG') {
+          var sp1 = parseFloat(tm['TOT_SPORTING1AVG']), sp2 = parseFloat(tm['TOT_SPORTING2AVG']), sp3 = parseFloat(tm['TOT_SPORTING3AVG']);
+          var title = 'Coach: ' + sp1.toFixed(2) + ', Parents: ' + sp2.toFixed(2) + ', Players: ' + sp3.toFixed(2);
+          td.push('<td id="spavg' + tm.tm + '" class="spdata" title="' + title + '">');
+     td.push(  '<a href="javascript:diiSPWindow(' + tm.tm + ',' + tm.tg + ')">'); td.push(    parseFloat(val).toFixed(1)); td.push(  '</a>');
+          td.push('</td>');
+        } else if (vnm === 'REC_SPORTINGAVG') { /* note REC means RECENT */
+          var sp1 = parseInt(tm['REC_SPORTING1'],10), sp2 = parseInt(tm['REC_SPORTING2'],10), sp3 = parseInt(tm['REC_SPORTING3'],10);
+          var title = 'Coach: ' + sp1 + ', Parents: ' + sp2 + ', Players: ' + sp3;
+          td.push('<td id="spwk' + tm.tm + '" class="spdata" title="' + title + '">');
+     td.push( parseInt(val,10) );
+          td.push('</td>');
+        }
+      }
+      if (td.length === 0) {
+        td.push('<td>' + val + '</td>');
+      }
+      return td.join('');
+    } // disp
+    $j.each(tmsA, function(tmi, tm) {
+      var html = [],
+          rnd4 = rand4(); // one is enough among the team urls
+      html.push('<tr class="tm">');
+      html.push(  '<td class="tmseq">' + (tmi+1) + '.</td>');
+      html.push(  '<td class="tmnm">');
+        html.push(  '<a href="' + urlDir + '/teams/47896448/' + tm.tm + '-' + tm.tg + '/TEAM.html">');
+      html.push(    tm.tmnm);
+      html.push(    '</a>');
+      if (tm.bp && tm.bp !== '0') {
+        html.push(    ' (' + tm.bp + ')');
+      }
+      html.push(  '</td>');
+      $j.each(diiStand.descrsA, function(i, descr) {
+        if (tm.gp === '0') {
+          html.push('<td>-</td>');
+        } else {
+          html.push( disp(tm, descr.a) );
+        }
+      });
+      html.push('</tr>');
+      mu.push(html.join(''));
+    });
+  } // render_tms
+};
+return diiStand;
+}());
+document.observe('dom:loaded',diiStand47896448.init);
+</script>
+<table width="100%" bgcolor=#C39B0F cellpadding="4" cellspacing="1" border="0" style="margin-bottom: 1px;"><tr><td class="textlarge" nowrap><font color=#FFFFFF><b>&nbsp; Oregon Premier League Fall 2012 Standings</b></font></td></tr></table><table id="tblStand" width="100%" cellpadding="4" cellspacing="0" border="0" class="MainContent"><tr><td><div id="here47896448"></div></td></tr></table> <script type="text/javascript"> function diiSPWindow(tm,tg){ var a = '/scripts/runisa.dll?M2:gp::73450+Elements/DisplayBlank+E+47107+SP/+' + tm + '+' + tg; clickpop1=window.open(a,"clickpop1","toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,top=50,left=50,width=400,height=450"); } </script>
+</div>
+</td></tr>
+</table>
+ <!-- HTMLFootJS -->
+<div class="ww-js-requires" style="display: none;">Prototype;953MenuMain;DIIElementsJSPart;DIIImageModule;Date;JQuery;Taffy;JQueryCycle;JQueryScrollTo;</div>
+  <script src="http://www.oregonpremierleague.com/common/js/jquery-1.4.2/jquery.min.js" type="text/javascript"></script>
+<script>
+  var $j = jQuery.noConflict();
+var isMac = window.navigator.platform.toLowerCase().indexOf('mac') != -1 ? 1:0;
+var isFirefox = window.navigator.userAgent.toLowerCase().indexOf('firefox') != -1 ? 1:0;
+</script>
+ <script src="http://www.oregonpremierleague.com/common/js/jquery-ui-1.8.1/jquery-ui.full.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*
+Copyright (c) 2012 Demosphere International Inc. No permission is
+granted for any purpose without prior written consent from Demosphere
+International Inc.
+*/
+var diiMenu = (function() {
+  var MENUDIR_LEFT = 'left';
+  var fetchMenu = function(e) {
+    var menuclass = $j(e).attr('menuclass');
+    if (menuclass) {
+      $j.ajax({
+            url: '/menu-' + menuclass + '.js',
+            type: 'GET',
+            dataType: 'json',
+            success: function(json) {
+              var jsontext = json.toJSON();
+              renderHTML(e, jsontext);
+            }
+      });
+    }
+  } // fetchMenu
+  var renderHTML = function(e, jsontext) {
+    function makeMenu(mu,lvl,id1,nodes) {
+      var loggedin = 0, sess = '298994';
+      mu.push('<ul class="diimenu-L' + lvl + '">');
+      $j.each(nodes, function(i) {
+        var id = id1 + '-' + (i + 1), itemid = this.attributes.id, dyn = this.attributes.stuff, title = this.data.title;
+        title = title.replace(/&apos;/, "'"); // IE fix
+        mu.push('<li id="'+ id + '"' + (itemid?' itemid="' + itemid + '"':'') + ' class="diimenu-L' + lvl + ' diimenu-L' + lvl + '-' + (i + 1)+'">');
+        if (dyn && loggedin && sess) { // get rid of any session
+          dyn = dyn.replace(/(\/scripts\/runisa.dll\?(M2|S7)(.\d+)?:gp:)(.*)?(:73450\+)/,'$1'+sess+'$5');
+        }
+        mu.push(  '<a href="'  + (dyn?dyn:'') + '" class="diimenu-L' + lvl + ' diimenu-L' + lvl + '-' + (i + 1)+'"><span class="menutitle diimenu-L' + lvl + '">' + title + '</span><br></a>');
+        if (this.children && this.children.length > 0)
+          makeMenu(mu,lvl+1,id,this.children);
+        mu.push('</li>');
+      });
+      mu.push('</ul>');
+    } // makeMenu
+    var mu = [];
+    var json = eval('(' + jsontext + ')');
+    var $div = $j(e);
+    makeMenu(mu, 0, $div.attr('id'), json);
+    $div.html(mu.join(''));
+    var $ul_main = $div.find('ul.diimenu-L0');
+    $ul_main.find('ul').css({display: 'none'}); // Opera Fix
+    $ul_main.find('> li:first > a').css({borderLeftWidth: '1px'});
+    var $L0_lis = $ul_main.find('> li');
+    $L0_lis.find('> a').css({borderTopWidth: '1px'});
+    $L0_lis.find('> ul > li > a').css({borderLeftWidth: '1px'});
+    if ($L0_lis.length > 4) {
+      $L0_lis.slice(-2).attr('menudir', MENUDIR_LEFT);
+    }
+    $ul_main.find('li').hover(function(){
+      var $li = $j(this), $ul_child = $li.find('> ul');
+      if ($ul_child.length === 0) return;
+      var lvl0 = $li.hasClass('diimenu-L0');
+      if (lvl0) {
+        var menudir = $li.attr('menudir');
+      } else {
+        var $top_li = $li.parents('li.diimenu-L0');
+        var menudir = $top_li.attr('menudir');
+      }
+      if (menudir === MENUDIR_LEFT) {
+        $ul_child.css( {'margin-left': 0} ).show();
+        var wid_ul = $ul_child.outerWidth();
+        if (lvl0) {
+          $ul_child.css( {right: -(wid_ul/2)});
+          $ul_child.animate( { right: 0}, 400);
+        } else {
+          $ul_child.css( {left: -(wid_ul/2), right: (wid_ul/2)});
+          $ul_child.animate( {left: -wid_ul, right: wid_ul}, 400);
+        }
+      } else {
+        $ul_child.show(400, function(){
+          if ($j.browser.msie) {
+            // prevent crazy reformatting upon rotation steps by image module
+            // don't allow the li's enough room to float
+            var wid_li = $ul_child.find('>li:first').outerWidth();
+            $ul_child.css( {width: wid_li} );
+          }
+        });
+      }
+    }, function(){
+      var $li = $j(this), $ul_child = $li.find('> ul'), menudir = $li.attr('menudir');
+      $ul_child.stop().hide(400, function(){
+        $j(this).css({margin: '', padding: '', overflow: '', display: '', height: '', width: '', opacity: ''}).hide();
+      });
+    }); // hover
+    $ul_main.find('li a[href=""]').click(function(e) {
+      // prevent reloading page when no link provided in menu
+      var $a = $j(this), href = $a.attr('href');
+      if (!href) { // double check in case things change
+        e.preventDefault();
+      }
+    }); // click
+    $div.show();
+  } // renderHTML
+  return {
+    init: function() {
+      var menudivs = $j('div.diimenu');
+      $j.each(menudivs,function(){
+        fetchMenu(this);
+      });
+    }, // init
+    renderHTML: renderHTML
+  } // return
+})(); // diiMenu
+document.observe('dom:loaded', diiMenu.init);
+</script>
+ <script src="http://www.oregonpremierleague.com/common/js/date-en-US.js" language="JavaScript" type="text/javascript"></script> <script src="http://www.oregonpremierleague.com/common/js/time.js" language="JavaScript" type="text/javascript"></script>
+ <script src="http://www.oregonpremierleague.com/common/js/taffydb-1.7.2/taffy-min.js" language="JavaScript" type="text/javascript"></script>
+<script type="text/javascript">
+/*
+Copyright (c) 2012 Demosphere International Inc. No permission is
+granted for any purpose without prior written consent from Demosphere
+International Inc.
+*/
+rand4 = function (){return (''+Math.random()).slice(2,6);}
+diiGetV = function (v){
+  if(!v||!v.length||v=='')return '';
+  var ls = /^\s*/;  // Leading space regular expression
+  var ts = /\s*$/;  // Trailing space regular expression
+  return v.replace(ls, "").replace(ts, "");
+}
+diiClearTbody = function (tbody){while (tbody.rows.length>0) tbody.deleteRow(tbody.rows.length-1);}
+diiSetRowClassOddEven = function (tbody){if (tbody){
+  var cn1 = new RegExp("^\\s*odd|\\s+odd\\s*$", "g");
+  var cn2 = new RegExp("^\\s*even|\\s+even\\s*$", "g");
+  for (var i=0; tbody.rows.length>i; i++){
+    var clsnm = tbody.rows[i].className;
+    clsnm = clsnm.replace(cn1, "");
+    clsnm = clsnm.replace(cn2, "");
+    clsnm += (i % 2) ? ' odd' : ' even';
+    tbody.rows[i].className = normalizeString(clsnm);
+  }
+  }
+}
+function imBusy(idPrefix,msg){
+  return '<div style="height:40px;padding-top:10px;">'
+       + '<span id="'+idPrefix+'indicatorImg" style="margin-top:0px;">'
+       + '<img alt="Indicator" src="http://www.oregonpremierleague.com/common/images/indicator.gif" /> '
+       + '</span>'
+       + '<span id="'+idPrefix+'indicatorMsg" style="margin-top:0px;">'
+       + msg
+       + '</span>'
+       + '</div>';
+} // imBusy
+function appendBusyRow(tbodyId,msg,nCols){
+  var tbod = $(tbodyId); diiClearTbody(tbod);
+  var tr; var td;
+  tr = document.createElement('tr');
+  td = document.createElement('td');
+  td.innerHTML = imBusy(tbodyId,msg); td.colSpan = nCols;
+  tr.appendChild(td);
+  tbod.appendChild(tr);
+} // appendBusyRow
+function updateBusyRow(tbodyId,msg){
+  var tbod = $(tbodyId);
+  if (tbod&&tbod.rows&&tbod.rows.length>0){
+    var cells=tbod.rows[tbod.rows.length-1].cells;
+    if(cells&&cells.length>0)
+      cells[cells.length-1].innerHTML = msg;
+    }
+} // updateBusyRow
+function diiDMY_MDY(dt){
+  if(!dt||dt=='')return '';
+  var d=dt.match(/(\d+)-([A-Z]+)-(\d+)/);
+  if(!d||!d.length)return '';
+  var mm=d[2], dd=d[1], yy=d[3];
+  var mos=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  for (var i=0;mos.length>i;i++){if(mos[i]==mm){mm=(i+1)+'';break;}}
+  if(mm.length==1)mm='0'+mm;
+  if(dd.length==1)dd='0'+dd;
+  if(yy.length==4)yy=yy.slice(2,4);
+  return mm+'/'+dd+'/'+yy;
+}
+function diiH2A(h){
+  var a=$H(h).map(function(pair){
+    var k=pair.key;
+    var v=pair.value;
+    v.key=k;
+    return v;
+  })||[];
+  return $A(a);
+}
+var diiDateTimes = {
+  dates:{},
+  times:{},
+  getDateObj: function (dt, fullParseFlag) {
+    diiDateTimes.putDate(dt, fullParseFlag);
+    return diiDateTimes.dates[dt];
+  }, // getDateObj
+  getTimeInMinutes: function (tim) {
+    var timobj = diiDateTimes.getTimeObj(tim);
+    if (!timobj.timMinutes) {
+      timobj.timMinutes = parseInt(timobj.timH, 10) * 60 + parseInt(timobj.timM, 10);
+    }
+    return timobj.timMinutes;
+  }, // getTimeInMinutes
+  getTimeObj: function(tim) {
+    if (!tim) tim = 'TBD';
+    diiDateTimes.putTime(tim);
+    return diiDateTimes.times[tim];
+  }, // getTimeObj
+  putDate:function(dt,fullParseFlag){
+    if(!diiDateTimes.dates[dt]){
+      var dateobj = {D: '', M: '', Y: '', YMD: '', DDD: '', MMMD: '', MMMMYYYY: ''}, dtA = dt.match(/(\d+)-(\w+)-(\d+)/);
+      if (dtA) {
+        dateobj.D = dtA[1];
+        dateobj.M = dtA[2];
+        dateobj.Y = dtA[3];
+      }
+      diiDateTimes.dates[dt] = dateobj;
+    }
+    if(fullParseFlag === true && !diiDateTimes.dates[dt].date && dt !== ''){
+      var dateobj = diiDateTimes.dates[dt];
+      var dtA = dt.match(/(\d+)-(\w+)-(\d+)/);
+      if (!dtA) {
+        dtA = dt.match(/(\d+)\/(\d+)\/(\d+)/);
+      }
+      if (dtA) {
+        dateobj.date = Date.parse(dt);
+        dateobj.YMD      = dateobj.date.toString("yyyyMMdd");
+        dateobj.DDD      = dateobj.date.toString("ddd");
+        dateobj.MMMD     = dateobj.date.toString("MMM d");
+        dateobj.MMMMYYYY = dateobj.date.toString("MMMM yyyy");
+      }
+    }
+  }, // putDate
+  putTime: function(tim) {
+    function makeEntry(a1, a2, a3) {
+      var timeobj = {};
+      var h = parseInt(a1, 10);
+      if (a3 && a3.toUpperCase() === 'PM' && 12 > h) {
+        h = h + 12;
+      }
+      a1 = '' + h;
+      timeobj.timH = a1;
+      timeobj.timM = a2;
+      timeobj.timHHMM = (a1.length == 1 ? '0' : '') + a1 +
+                        (a2.length == 1 ? '0' : '') + a2;
+      timeobj.timDisp = (h > 11) ? '' + ((h > 12) ? h - 12 : h) + ':' + a2 + ' PM' : ((h == 0) ? '12' : a1) + ':' + a2 + ' AM';
+      return timeobj;
+    } // makeEntry
+    if (!tim) tim = 'TBD';
+    if (!diiDateTimes.times[tim]) {
+      var timeobj = {};
+      var timA = tim.match(/30-DEC-1899\s(\d+):(\d+)/);
+      if (timA && timA.length && timA.length > 0) {
+        timeobj = makeEntry (timA[1], timA[2], '');
+      } else {
+        var timA = tim.match(/(\d+):(\d+)\s(AM|PM)/i);
+        if (timA && timA.length && timA.length > 0) {
+          timeobj = makeEntry (timA[1], timA[2], timA[3]);
+        } else {
+          timeobj.timH='';
+          timeobj.timM='';
+          timeobj.timDisp = 'TBD';
+        }
+      }
+      diiDateTimes.times[tim] = timeobj;
+    }
+  }, // putTime
+  rangesOverlap:function(range1Lo, range1Hi, range2Lo, range2Hi) {
+  return ( (range1Hi.compareTo(range2Lo) >= 0) && (range1Lo.compareTo(range2Hi) <= 0) );
+  } // rangesOverlap
+}
+/******************************************************************/
+/* normalizeString Copyright 2002 by Mike Hall                    */
+/* Please see http://www.brainjar.com for terms of use.           */
+/******************************************************************/
+var whtSpEnds = new RegExp("^\\s*|\\s*$", "g");
+var whtSpMult = new RegExp("\\s\\s+", "g");
+function normalizeString(s) {
+  s = s.replace(whtSpMult, " ");  // Collapse any multiple whites space.
+  s = s.replace(whtSpEnds, "");   // Remove leading or trailing white space.
+  return s;
+} // normalizeString
+/* copyright Stephen Chapman 24th March 2006, 10th February 2007 */
+/* permission to use this function is granted by Stephen Chapman */
+/* provided that this copyright notice is retained intact        */
+function formatNumber(num,dec,thou,pnt,curr1,curr2,n1,n2) {
+  var x = Math.round(num * Math.pow(10,dec));if (x >= 0) n1=n2='';
+  var y = (''+Math.abs(x)).split('');var z = y.length - dec; if (0 > z) z--; for(var i = z; 0 > i; i++) y.unshift('0');y.splice(z, 0, pnt);
+  while (z > 3) {z-=3; y.splice(z,0,thou);}var r = curr1+n1+y.join('')+n2+curr2;return r;
+}
+function formatComma(n,dec){
+  if (!dec) dec=0;
+  var pnt = (dec>0)?'.':'';
+  return formatNumber(n,dec,',',pnt,'','','-','');
+}
+function diiMemoLink(key) {
+  if (key !== undefined) {
+    var clickpop1 = window.open('http://www.oregonpremierleague.com/scripts/runisa.dll?M2:gp::73450+Elements/Memo+' + key + '+SiteMap', "clickpop1",
+                                'toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,top=50,left=50,width=400,height=300');
+    clickpop1.focus();
+  }
+} // diiMemoLink
+function diiInitMemoLinks() {
+  if ($j === undefined || !$j) return;
+  var $memolinks = $j('span.dii-memo-link[key]'), $done = $memolinks.find('> img').parent();
+  $memolinks = $memolinks.not($done);
+  $memolinks.each(function(){
+    var $span = $j(this), imgsize = $span.attr('imgsize');
+    if (!imgsize) imgsize = '12';
+    if (imgsize === '0') {
+      var txt = $span.text();
+      if (txt && txt === $span.html()) {
+        $span.html('<a href="#">' + txt + '</a>');
+      }
+    } else {
+      var s = '<img src="http://www.oregonpremierleague.com/common/images/icons/{{imgsize}}-Help.png" width="{{imgsize}}" height="{{imgsize}}" vspace="0" hspace="0" align="top" border="0"/>';
+      s = s.replace(/{{imgsize}}/g, imgsize);
+      $span.html(s).css({cursor: 'pointer'});
+    }
+  })
+  .click(function(e){
+    e.preventDefault();
+    var $span = $j(this), key = $span.attr('key');
+    if (key !== undefined) {
+      diiMemoLink(key);
+    }
+  });
+} // diiInitMemoLinks
+document.observe('dom:loaded', diiInitMemoLinks);
+</script>
+ <script src="http://www.oregonpremierleague.com/common/js/jquery.cycle/jquery.cycle.all.min.js" language="JavaScript" type="text/javascript"></script>
+ <script src="http://www.oregonpremierleague.com/common/js/jquery-1.3.2/jquery.scrollTo-1.4.1-min.js" language="JavaScript" type="text/javascript"></script>
+  <script src="http://www.oregonpremierleague.com/common/js/modules/dii_image_module-0.0.4.js" language="JavaScript" type="text/javascript"></script>
+  <!---- End Main Content ---->
+</td></tr>
+</table>
+</td>
+<td><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="10" height="1" border="0"/></td>
+</tr>
+</table>
+</div>
+<table id="pageFooter" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td class="textsmall">
+<img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="734" height="1" border="0"/><br/>
+<div class="copyright">&copy; 2012
+ Oregon Premier Council. All rights reserved.</div>
+<div class="copyrightDII">&copy; 2012
+ <a href="http://www.demosphere.com" style="color: #416956; text-decoration: none;" target="new">Demosphere International, Inc.</a> All rights reserved.</div>
+</td>
+<td width="100%"><img src="http://www.oregonpremierleague.com/common/images/1x1.gif" width="1" height="55" border="0"/></td>
+<td align="right"><a href="http://www.demosphere.com"><img src="http://www.oregonpremierleague.com/images/2011/demosphere.png" width="225" height="55" border="0" alt="Youth Sports WebWriter Websites, Online Registration Management, Tournament and League Scheduling Systems"/></a></td>
+</tr>
+</table>
+<br/><br/>
+</td></tr>
+</table>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23149230-41']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- HTMLFootJS -->
+<div class="ww-js-requires" style="display: none;">Prototype;953MenuMain;DIIElementsJSPart;DIIImageModule;Date;JQuery;Taffy;JQueryCycle;JQueryScrollTo;</div>
+</body>
+</html>
