@@ -139,7 +139,6 @@ def get_all_schedule_results(gd=None):
 
 	rowarray_list = []
 	for r in q.run():
-		logger.debug("code: "+r.gamecode)
 		t = OrderedDict()
 		t['id'] = r.key().id()
 		t['gamecode'] = r.gamecode
