@@ -131,7 +131,7 @@ def fetch_schedule_results():
 
 def get_all_schedule_results(gd=None):
 	q = opl_db.Game.all()
-	if gd is not None:
+	if gd:
 		logging.debug("gamedate ="+gd)
 		q.filter("gamedate = ", gd)
 

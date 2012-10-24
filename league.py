@@ -77,13 +77,13 @@ def get_agegroups(league=None, gender=None, age=None):
 
 	ld("in get agegroups")
 	q = opl_db.AgeGroup.all()
-	if league is not None:
+	if league:
 		ld("league is not none: "+league)
 		q.filter("league =", league)
-	if gender is not None:
+	if gender:
 		ld("gender is not none: "+gender)
 		q.filter("gender =", gender)
-	if age is not None:
+	if age:
 		ld("age is not none: "+age)
 		q.filter("age =", age)
 	
