@@ -22,13 +22,13 @@ import collections
 import division
 from google.appengine.api import users
 import opl_db
-from division import DivisionsHandler
-from opl import GetSchedule
-from opl import THandler
-from location import LocationHandler
-from league import LeagueHandler
-from league import GetAgeGroups
-from league import GetDistinctAgeGroups
+from division import FetchDivisions
+from opl import FetchGameSchedule
+from location import FetchLocation
+from league import StoreLeagues
+from league import FetchLeagues
+from league import FetchAgeGroups
+from league import FetchDistinctAgeGroups
 from opl import StoreGameSchedule
 from opl import DeleteGameSchedule
 import logging
@@ -40,16 +40,15 @@ class MainPage(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
 	(r'/', MainPage),
-	(r'/fetch-divisions', DivisionsHandler),
+	(r'/fetch-divisions', FetchDivisions),
 	(r'/store-schedule', StoreGameSchedule),
-	(r'/fetch-schedule-results', GetSchedule),
-	(r'/fetch-location', LocationHandler),
-	(r'/t', THandler),
-	(r'/store-leagues', LeagueHandler),
-	(r'/fetch-agegroups', GetAgeGroups),
+	(r'/fetch-schedule', FetchGameSchedule),
+	(r'/fetch-location', FetchLocation),
+	(r'/store-leagues', StoreLeagues),
+	(r'/fetch-agegroups', FetchAgeGroups),
 	(r'/delete-schedule', DeleteGameSchedule),
-	(r'/get-distinct-agegroups', GetDistinctAgeGroups),
-	## (r'/fetch-leagues', GetLeagues),
+	(r'/fetch-distinct-agegroups', FetchDistinctAgeGroups),
+	(r'/fetch-leagues', FetchLeagues),
 ],
 debug=True)
 

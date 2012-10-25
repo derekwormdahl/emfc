@@ -72,7 +72,9 @@ def delete_all_agegroups():
 def ld(msg):
 	logging.debug(msg)
 	
-def get_distinct_agegroups(league=None, gender=None, age=None):
+
+### ** need to add league to result set ** 
+def fetch_distinct_agegroups(league=None, gender=None, age=None):
 	q = opl_db.AgeGroup.all()
 	if league:
 		ld("league is not none: "+league)
@@ -90,9 +92,39 @@ def get_distinct_agegroups(league=None, gender=None, age=None):
 		if obj.agegroup not in ur:
 			ur.append(obj.agegroup)		
 
-	return ur		
+	ur.sort()
+
+	agegroups = OrderedDict()
+
+	rowarray_list = []
+	for r in ur:
+		t = OrderedDict()
+		t['agegroup'] = r
+		t['gender'] = r[0:1]
+		t['age'] = r[1:]
+		rowarray_list.append(t)
+
+	agegroups['agegroups'] = rowarray_list
+			
+	j = json.dumps(agegroups)
+	return j		
+
+def fetch_leagues():
+	q = opl_db.League.all()
+	leagues = OrderedDict()
+
+	rowarray_list = []
+	for r in q.run():
+		t = OrderedDict()
+		t['name'] = r.name
+		rowarray_list.append(t)
+
+	leagues['leagues'] = rowarray_list
+			
+	j = json.dumps(leagues)
+	return j		
 		
-def get_agegroups(league=None, gender=None, age=None):
+def fetch_agegroups(league=None, gender=None, age=None):
 
 	ld("in get agegroups")
 	q = opl_db.AgeGroup.all()
@@ -128,25 +160,30 @@ def get_agegroups(league=None, gender=None, age=None):
 	return j		
 		
 
-class LeagueHandler(webapp2.RequestHandler):
+class StoreLeagues(webapp2.RequestHandler):
 	def get(self): 
 		delete_all_leagues()
 		delete_all_agegroups()
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(store_leagues())
-		
-class GetAgeGroups(webapp2.RequestHandler):
-	def get(self): 
-		league = self.request.get("l")
-		gender = self.request.get("g")
-		age = self.request.get("a")
-		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(get_agegroups(league, gender, age))
 
-class GetDistinctAgeGroups(webapp2.RequestHandler):
+class FetchLeagues(webapp2.RequestHandler):
+	def get(self): 
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(fetch_leagues())
+		
+class FetchAgeGroups(webapp2.RequestHandler):
 	def get(self): 
 		league = self.request.get("l")
 		gender = self.request.get("g")
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(get_distinct_agegroups(league, gender, age))
+		self.response.write(fetch_agegroups(league, gender, age))
+
+class FetchDistinctAgeGroups(webapp2.RequestHandler):
+	def get(self): 
+		league = self.request.get("l")
+		gender = self.request.get("g")
+		age = self.request.get("a")
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(fetch_distinct_agegroups(league, gender, age))

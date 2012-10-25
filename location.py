@@ -26,7 +26,7 @@ def fetch_location(url):
 
 	return street_number + "  " + address + "  " + city + "  " + county + "  " + state + "  " + country + "  " + zip
 	
-class LocationHandler(webapp2.RequestHandler):
+class FetchLocation(webapp2.RequestHandler):
 	def get(self): 
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(fetch_location('+5105+SE+302nd+Avenue+Gresham'))

@@ -124,11 +124,19 @@ def fetch_schedule_results(url, league, agegroup, gender, age):
 					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), agegroup = agegroup.strip(), gender = gender.strip(), age = age.strip()).put()
 						
 
-def get_all_schedule_results(gd=None):
+def fetch_all_schedule_results(gd=None, league=None, agegroup=None, gender=None, age=None):
 	q = opl_db.Game.all()
 	if gd:
 		logging.debug("gamedate ="+gd)
 		q.filter("gamedate = ", gd)
+	if league:
+		q.filter("league = ", league)
+	if agegroup:
+		q.filter("agegroup = ", agegroup)
+	if gender:
+		q.filter("gender = ", gender)
+	if age:
+		q.filter("age = ", age)
 
 	games = OrderedDict()
 
@@ -162,7 +170,7 @@ def delete_all_schedule_results():
 		r1.delete()
 	return 'Done'
 
-def store_all_schedule_results(gender):
+def store_game_schedule(gender):
 	
 	q = opl_db.AgeGroup.all()
 	if gender:
@@ -188,13 +196,17 @@ class StoreGameSchedule(webapp2.RequestHandler):
 	def get(self):
 		gender = self.request.get("g")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(store_all_schedule_results(gender))
+		self.response.write(store_game_schedule(gender))
 		
 
-class GetSchedule(webapp2.RequestHandler):
+class FetchGameSchedule(webapp2.RequestHandler):
 	def get(self):
 		dt = self.request.get("d")
+		league = self.request.get("l")
+		agegroup = self.request.get("ag")
+		gender = self.request.get("g")
+		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(get_all_schedule_results(dt))
+		self.response.write(fetch_all_schedule_results(dt, l, ag, g, a))
 
 		

@@ -49,7 +49,7 @@ def delete_all_divisions():
 	for r in t.run():
 		r.delete()
 
-class DivisionsHandler(webapp2.RequestHandler):
+class FetchDivisions(webapp2.RequestHandler):
 	def get(self): 
 		delete_all_divisions()
 		fetch_divisions()
