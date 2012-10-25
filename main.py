@@ -28,6 +28,7 @@ from opl import THandler
 from location import LocationHandler
 from league import LeagueHandler
 from league import GetAgeGroups
+from league import GetDistinctAgeGroups
 from opl import StoreGameSchedule
 from opl import DeleteGameSchedule
 import logging

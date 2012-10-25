@@ -85,9 +85,12 @@ def get_distinct_agegroups(league=None, gender=None, age=None):
 		q.filter("age =", age)		
 		agegroups = OrderedDict()
 		
-	ags = opl_db.unique_result(q)
+	ur = []
+	for obj in q:
+		if obj.agegroup not in ur:
+			ur.append(obj.agegroup)		
 
-	return ags		
+	return ur		
 		
 def get_agegroups(league=None, gender=None, age=None):
 
