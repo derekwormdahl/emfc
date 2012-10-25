@@ -9,6 +9,7 @@ class League(db.Model):
 
 class AgeGroup(db.Model):
   	name = db.StringProperty()
+	agegroup = db.StringProperty()
 	gender = db.StringProperty()
 	age = db.StringProperty()
 	url = db.StringProperty()
@@ -62,3 +63,9 @@ class Location(db.Model):
 	created_date = db.DateTimeProperty(auto_now_add = True)
 	last_updated_date = db.DateTimeProperty(auto_now = True)
 	
+def unique_result(array):
+	unique_results = []
+	for obj in array:
+		if obj.city not in unique_results:
+			unique_results.append(obj.city)
+		return unique_results

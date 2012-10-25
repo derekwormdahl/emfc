@@ -29,6 +29,7 @@ from location import LocationHandler
 from league import LeagueHandler
 from league import GetAgeGroups
 from opl import StoreGameSchedule
+from opl import DeleteGameSchedule
 import logging
 
 class MainPage(webapp2.RequestHandler):
@@ -45,6 +46,8 @@ app = webapp2.WSGIApplication([
 	(r'/t', THandler),
 	(r'/store-leagues', LeagueHandler),
 	(r'/fetch-agegroups', GetAgeGroups),
+	(r'/delete-schedule', DeleteGameSchedule),
+	(r'/get-distinct-agegroups', GetDistinctAgeGroups),
 	## (r'/fetch-leagues', GetLeagues),
 ],
 debug=True)

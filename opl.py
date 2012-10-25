@@ -63,7 +63,9 @@ def fetch_schedule_results(url, league, agegroup, gender, age):
 			awayscore = ''
 			
 			if(sib.select(".GameHeader")):
-				gd = opl_db.GameDay(gamedate = sib.previous_sibling.previous_sibling.text.strip())
+				gdate = sib.previous_sibling.previous_sibling.text.strip()
+				gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdate)
+				#gd = opl_db.GameDay(key_name = gdate, gamedate = gdate)
 				gd.put()
 
 			##t = convert(sib.get("class",''))
@@ -158,6 +160,7 @@ def delete_all_schedule_results():
 	t1 = opl_db.Game.all()
 	for r1 in t1.run():
 		r1.delete()
+	return 'Done'
 
 def store_all_schedule_results(gender):
 	
@@ -176,13 +179,16 @@ class THandler(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(t())
 
+class DeleteGameSchedule(webapp2.RequestHandler):
+	def get(self):
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(delete_all_schedule_results())
+
 class StoreGameSchedule(webapp2.RequestHandler):
 	def get(self):
 		gender = self.request.get("g")
-		delete_all_schedule_results()
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(store_all_schedule_results(gender))
-		#self.response.write(get_all_schedule_results())
 		
 
 class GetSchedule(webapp2.RequestHandler):
