@@ -207,6 +207,6 @@ class FetchGameSchedule(webapp2.RequestHandler):
 		gender = self.request.get("g")
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(fetch_all_schedule_results(dt, l, ag, g, a))
+		self.response.write(fetch_all_schedule_results(dt, league, agegroup, gender, age))
 
 		
