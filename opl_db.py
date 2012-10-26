@@ -4,6 +4,7 @@ from google.appengine.api import users
 
 class League(db.Model):
   	name = db.StringProperty()
+  	url = db.StringProperty()
 	created_date = db.DateTimeProperty(auto_now_add = True)
 	last_updated_date = db.DateTimeProperty(auto_now = True)
 
@@ -27,7 +28,7 @@ class GameDay(db.Model):
 class Game(db.Model):
   	gamecode = db.StringProperty()
 	league = db.StringProperty()
-  	agegroup = db.StringProperty()
+  	division = db.StringProperty()
 	gender = db.StringProperty()
 	age = db.StringProperty()
 	url = db.StringProperty()
@@ -41,9 +42,11 @@ class Game(db.Model):
 	last_updated_date = db.DateTimeProperty(auto_now = True)
 
 class Division(db.Model):
+	league = db.StringProperty()
+	division = db.StringProperty()
+	agegroup = db.StringProperty()
 	gender = db.StringProperty()
 	age = db.StringProperty()
-	title = db.StringProperty()
 	url = db.StringProperty()
   	created_date = db.DateTimeProperty(auto_now_add = True)
   	last_updated_date = db.DateTimeProperty(auto_now = True)

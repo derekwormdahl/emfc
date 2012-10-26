@@ -22,6 +22,7 @@ import collections
 import division
 from google.appengine.api import users
 import opl_db
+from division import StoreDivisions
 from division import FetchDivisions
 from opl import FetchGameSchedule
 from location import FetchLocation
@@ -40,6 +41,7 @@ class MainPage(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
 	(r'/', MainPage),
+	(r'/store-divisions', StoreDivisions),
 	(r'/fetch-divisions', FetchDivisions),
 	(r'/store-schedule', StoreGameSchedule),
 	(r'/fetch-schedule', FetchGameSchedule),

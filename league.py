@@ -12,7 +12,7 @@ from google.appengine.ext import db
 import logging
 
 def store_leagues():
-	f2012 = opl_db.League(name="Fall 2012")
+	f2012 = opl_db.League(name="Fall 2012", url="http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html")
 	f2012.put()
 
 	opl_db.AgeGroup(name="BU11 Timbers NPL Premier Division",agegroup="BU11", gender="B",age="U11",url="http://www.oregonpremierleague.com/schedules/Fall2012/47896535.html", league="Fall 2012").put()

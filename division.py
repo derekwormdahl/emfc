@@ -9,7 +9,14 @@ from collections import OrderedDict
 from time import strftime
 import webapp2
 
-def fetch_divisions():
+def store_all_divisions():
+	t = opl_db.League.all()
+	for r in t.run():
+		store_divisions(r.name)
+
+	return 'Done'
+
+def store_divisions(l):
 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html","html5lib"));
 
 	t = doc.find("table").select(".MainContent")
@@ -17,28 +24,37 @@ def fetch_divisions():
 
 	scheds = doc2.table.table.find_all("div","tg")
 	for sched in scheds:
-		title = sched.text.strip()
+		league = l
+		division = sched.text.strip()
 		url = sched.a.get('href').strip()
-		gender = title.split()[0][0].strip()
-		age = title.split()[0][1:].strip()
-		opl_db.Division(gander = gender, age = age, title = title, url = url).put()
+		agegroup = division.split()[0].strip()
+		gender = agegroup[:1].strip()
+		age = agegroup[1:].strip()
+		#gender = division.split()[0][:1].strip()
+		#age = division.split()[0][1:].strip()
+		opl_db.Division(league = league, agegroup = agegroup, gender = gender, age = age, division = division, url = url).put()
 
 
-def get_all_divisions():
+def fetch_divisions(league, agegroup):
 	t = opl_db.Division.all()
+
+	if league:
+		t.filter("league =", league)
+	if agegroup: 
+		t.filter("agegroup =", agegroup)
 
 	rowarray_list = []
 	for r in t.run():
 		t = OrderedDict()
 		t['id'] = r.key().id()
+		t['league'] = r.league
+		t['division'] = r.division
+		t['agegroup'] = r.agegroup
 		t['gender'] = r.gender
 		t['age'] = r.age
-		t['title'] = r.title
 		t['url'] = r.url
 		t['created_date'] = r.created_date.strftime('%d-%b-%Y %H:%M:%S')
 		t['last_updated_date'] = r.last_updated_date.strftime('%d-%b-%Y %H:%M:%S')
-		#t['created_date'] = strftime(r.created_date, '%d-%b-%Y %H:%M:%S')
-		#t['last_updated_date'] = strftime(r.last_updated_date, '%d-%b-%Y %H:%M:%S')
 		rowarray_list.append(t)
 
 	j = json.dumps(rowarray_list)
@@ -49,10 +65,15 @@ def delete_all_divisions():
 	for r in t.run():
 		r.delete()
 
-class FetchDivisions(webapp2.RequestHandler):
+class StoreDivisions(webapp2.RequestHandler):
 	def get(self): 
 		delete_all_divisions()
-		fetch_divisions()
-		##t = opl_db.Division.all()
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(get_all_divisions())
+		self.response.write(store_all_divisions())
+
+class FetchDivisions(webapp2.RequestHandler):
+	def get(self): 
+		league = self.request.get("l")
+		agegroup = self.request.get("ag")
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(fetch_divisions(league, agegroup))

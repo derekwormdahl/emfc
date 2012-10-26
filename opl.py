@@ -43,13 +43,13 @@ def t():
 		pass
  
 
-def fetch_schedule_results(url, league, agegroup, gender, age):
+def fetch_schedule_results(url, league, division, gender, age):
 
 	#doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
 	logging.debug(url)
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
-	t = doc.find("table").find(id="tblListGames2").find("tbody")	
+	t = doc.find("table").find(id="tblListGames2").find("tbody")
 
 	for sib in t.tr.next_siblings:
 		if not isinstance(sib, NavigableString):
@@ -120,19 +120,18 @@ def fetch_schedule_results(url, league, agegroup, gender, age):
 						except TypeError:
 							pass
 
-					logging.debug(agegroup + " awayscore ="+awayscore)
-					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), agegroup = agegroup.strip(), gender = gender.strip(), age = age.strip()).put()
+					logging.debug(division+ " awayscore ="+awayscore)
+					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
 						
 
-def fetch_all_schedule_results(gd=None, league=None, agegroup=None, gender=None, age=None):
+def fetch_games(gd=None, league=None, division=None, gender=None, age=None):
 	q = opl_db.Game.all()
 	if gd:
-		logging.debug("gamedate ="+gd)
 		q.filter("gamedate = ", gd)
 	if league:
 		q.filter("league = ", league)
-	if agegroup:
-		q.filter("agegroup = ", agegroup)
+	if division:
+		q.filter("division= ", division)
 	if gender:
 		q.filter("gender = ", gender)
 	if age:
@@ -201,12 +200,12 @@ class StoreGameSchedule(webapp2.RequestHandler):
 
 class FetchGameSchedule(webapp2.RequestHandler):
 	def get(self):
-		dt = self.request.get("d")
+		dt = self.request.get("dt")
 		league = self.request.get("l")
-		agegroup = self.request.get("ag")
+		division = self.request.get("d")
 		gender = self.request.get("g")
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(fetch_all_schedule_results(dt, league, agegroup, gender, age))
+		self.response.write(fetch_games(dt, league, division, gender, age))
 
 		
