@@ -114,30 +114,64 @@ def fetch_distinct_agegroups(league=None, gender=None, age=None):
 	j = json.dumps(agegroups)
 	return j
 	
-def store_division_standings():
-	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html","html5lib"));
+def delete_division_standings():
+	t = opl_db.DivisionStandings.all()
+	for r in t.run():
+		r.delete()
 
-	t = doc.find("tr", "tg hd")  ##.select(".MainContent")
-	doc2 = BeautifulSoup(str(t[0]),"html5lib")
-		
-	logging.debug('in store_divisions')
+def store_division_standings(league, url):
+
+	f = urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html")
+
+	found = False
+	standings = []
+
+	for line in f:
+		if not found:
+			try:
+				if (line.lstrip().index('diiStand = {')):
+					found = True
+			except ValueError:
+				pass
+		else:
+			if re.match("^tms:", line.lstrip()):
+				standings.append(line.lstrip().replace('tms','"tms"'))
+			elif  re.match("^}", line.lstrip()):
+				standings.append(line.lstrip())
+				break
+			elif  re.match("^{", line.lstrip()):
+				standings.append(line.lstrip())
+			else:
+				standings.append(line.lstrip().replace(':', ': [', 1)+"]")
+	       
+
+	standings_str = string.join(standings, '')
+
+	j = json.loads('{'+standings_str+'}')
+
+	for t,v in j['tms'].iteritems():
+		for i in v:
+			league = league 
+			division = i['tgnm']
+			agegroup = i['tgnm'][0:3]
+			gender = i['tgnm'][0:1]
+			age = i['tgnm'][1:3]
+			pts = i['TOT_PTS']
+			gp = i['TOT_GP']
+			w = i['TOT_W']
+			l = i['TOT_L']
+			t = i['TOT_T']
+			gf = i['TOT_GF']
+			ga = i['TOT_GA']
+			gd = i['TOT_GD']
+
+			opl_db.DivisionStandings(league = league, division = division, agegroup = agegroup, gender = gender, age = age, pts = pts, gp = gp, w = w, l = l, t = t, gf = gf, ga = ga, gd = gd).put()
 	
-	#scheds = doc2.table.table.find_all("div","tg")
-	scheds = doc2.find_all("div","tg")
-	logging.debug(scheds)
-	for sched in scheds:
-		logging.debug('league'+l)
-		league = l
-		division = sched.text.strip()
-		url = "http://www.oregonpremierleague.com"+sched.a.get('href').strip()
-		sched_urls = store_division_sched_urls(url)
-		agegroup = division.split()[0].strip()
-		gender = agegroup[:1].strip()
-		age = agegroup[1:].strip()
-		opl_db.Division(league = league, agegroup = agegroup, gender = gender, age = age, division = division, url = url, sched_urls = sched_urls).put()
-
-
-	
+class StoreDivisionStandings(webapp2.RequestHandler):
+	def get(self): 
+		delete_division_standings()
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(store_division_standings('Fall 2012'))
 
 class StoreDivisions(webapp2.RequestHandler):
 	def get(self): 
