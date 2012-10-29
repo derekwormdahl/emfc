@@ -154,9 +154,9 @@ def store_division_standings(league, url):
 		for i in v:
 			league = league 
 			division = i['tgnm']
-			agegroup = i['tgnm'][0:3]
+			agegroup = i['tgnm'][0:4]
 			gender = i['tgnm'][0:1]
-			age = i['tgnm'][1:3]
+			age = i['tgnm'][1:4]
 			pts = i['TOT_PTS']
 			gp = i['TOT_GP']
 			w = i['TOT_W']
