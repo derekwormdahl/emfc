@@ -10,6 +10,7 @@ from time import strftime
 import webapp2
 import re
 import logging
+import string
 
 def store_all_divisions():
 	t = opl_db.League.all()
