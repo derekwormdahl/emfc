@@ -157,6 +157,8 @@ def store_division_standings(league, url):
 			agegroup = i['tgnm'][0:4]
 			gender = i['tgnm'][0:1]
 			age = i['tgnm'][1:4]
+			teamname = i['tmnm']
+			teamcode = i['tm']
 			pts = i['TOT_PTS']
 			gp = i['TOT_GP']
 			w = i['TOT_W']
@@ -166,7 +168,7 @@ def store_division_standings(league, url):
 			ga = i['TOT_GA']
 			gd = i['TOT_GD']
 
-			opl_db.DivisionStandings(league = league, division = division, agegroup = agegroup, gender = gender, age = age, pts = pts, gp = gp, w = w, l = l, t = t, gf = gf, ga = ga, gd = gd).put()
+			opl_db.DivisionStandings(league = league, division = division, agegroup = agegroup, gender = gender, age = age, teamname = teamname, teamcode = teamcode, pts = pts, gp = gp, w = w, l = l, t = t, gf = gf, ga = ga, gd = gd).put()
 	
 class StoreDivisionStandings(webapp2.RequestHandler):
 	def get(self): 

@@ -73,6 +73,8 @@ class DivisionStandings(db.Model):
 	agegroup = db.StringProperty()
 	gender = db.StringProperty()
 	age = db.StringProperty()
+	teamname = db.StringProperty()
+	teamcode = db.StringProperty()
 	pts = db.StringProperty()
 	gp = db.StringProperty()
 	w = db.StringProperty()
