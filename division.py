@@ -171,7 +171,7 @@ class StoreDivisionStandings(webapp2.RequestHandler):
 	def get(self): 
 		delete_division_standings()
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(store_division_standings('Fall 2012'))
+		self.response.write(store_division_standings('Fall 2012','ldjf'))
 
 class StoreDivisions(webapp2.RequestHandler):
 	def get(self): 
