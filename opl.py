@@ -45,7 +45,6 @@ def t():
 
 def fetch_schedule_results(url, league, division, gender, age):
 
-	#doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896539.20129.html","html5lib"));
 	logging.debug(url)
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
@@ -65,10 +64,8 @@ def fetch_schedule_results(url, league, division, gender, age):
 			if(sib.select(".GameHeader")):
 				gdate = sib.previous_sibling.previous_sibling.text.strip()
 				gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdate)
-				#gd = opl_db.GameDay(key_name = gdate, gamedate = gdate)
 				gd.put()
 
-			##t = convert(sib.get("class",''))
 			t = sib.get("class")
 			if isinstance(t,list):
 				if(t.index('sch-main-gm') > 0):
@@ -131,7 +128,7 @@ def fetch_games(gd=None, league=None, division=None, gender=None, age=None):
 	if league:
 		q.filter("league = ", league)
 	if division:
-		q.filter("division= ", division)
+		q.filter("division = ", division)
 	if gender:
 		q.filter("gender = ", gender)
 	if age:
@@ -169,14 +166,26 @@ def delete_all_schedule_results():
 		r1.delete()
 	return 'Done'
 
-def store_game_schedule(gender):
+def store_game_schedule(gd=None, league=None, division=None, gender=None, age=None):
 	
-	q = opl_db.AgeGroup.all()
+	q = opl_db.Division.all()
+	if gd:
+		q.filter("gamedate = ", gd)
+	if league:
+		q.filter("league = ", league)
+	if division:
+		q.filter("division = ", division)
 	if gender:
 		q.filter("gender =",gender)
+	if age:
+		q.filter("age = ", age)
 
 	for r in q.run():
-		fetch_schedule_results(r.url, r.league, r.name, r.gender, r.age)
+		if len(r.sched_urls) > 0:
+			for u in r.sched_urls:
+				fetch_schedule_results(u, r.league, r.division, r.gender, r.age)
+		else:
+			fetch_schedule_results(r.url, r.league, r.division, r.gender, r.age)
 	return 'done'
 		
 
@@ -193,9 +202,13 @@ class DeleteGameSchedule(webapp2.RequestHandler):
 
 class StoreGameSchedule(webapp2.RequestHandler):
 	def get(self):
+		dt = self.request.get("dt")
+		league = self.request.get("l")
+		division = self.request.get("d")
 		gender = self.request.get("g")
+		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(store_game_schedule(gender))
+		self.response.write(store_game_schedule(dt, league, division, gender, age))
 		
 
 class FetchGameSchedule(webapp2.RequestHandler):

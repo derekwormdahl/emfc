@@ -11,6 +11,12 @@ import webapp2
 from google.appengine.ext import db
 import logging
 
+##########################################
+##########################################
+# DO NOT USE -- league is deprecated
+##########################################
+##########################################
+
 def store_leagues():
 	f2012 = opl_db.League(name="Fall 2012", url="http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html")
 	f2012.put()
@@ -73,41 +79,6 @@ def ld(msg):
 	logging.debug(msg)
 	
 
-### ** need to add league to result set ** 
-def fetch_distinct_agegroups(league=None, gender=None, age=None):
-	q = opl_db.AgeGroup.all()
-	if league:
-		ld("league is not none: "+league)
-		q.filter("league =", league)
-	if gender:
-		ld("gender is not none: "+gender)
-		q.filter("gender =", gender)
-	if age:
-		ld("age is not none: "+age)
-		q.filter("age =", age)		
-		agegroups = OrderedDict()
-		
-	ur = []
-	for obj in q:
-		if obj.agegroup not in ur:
-			ur.append(obj.agegroup)		
-
-	ur.sort()
-
-	agegroups = OrderedDict()
-
-	rowarray_list = []
-	for r in ur:
-		t = OrderedDict()
-		t['agegroup'] = r
-		t['gender'] = r[0:1]
-		t['age'] = r[1:]
-		rowarray_list.append(t)
-
-	agegroups['agegroups'] = rowarray_list
-			
-	j = json.dumps(agegroups)
-	return j		
 
 def fetch_leagues():
 	q = opl_db.League.all()
@@ -180,10 +151,4 @@ class FetchAgeGroups(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(fetch_agegroups(league, gender, age))
 
-class FetchDistinctAgeGroups(webapp2.RequestHandler):
-	def get(self): 
-		league = self.request.get("l")
-		gender = self.request.get("g")
-		age = self.request.get("a")
-		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(fetch_distinct_agegroups(league, gender, age))
+

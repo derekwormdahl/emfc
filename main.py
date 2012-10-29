@@ -29,7 +29,7 @@ from location import FetchLocation
 from league import StoreLeagues
 from league import FetchLeagues
 from league import FetchAgeGroups
-from league import FetchDistinctAgeGroups
+from division import FetchDistinctAgeGroups
 from opl import StoreGameSchedule
 from opl import DeleteGameSchedule
 import logging

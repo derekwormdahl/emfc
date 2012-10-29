@@ -48,6 +48,7 @@ class Division(db.Model):
 	gender = db.StringProperty()
 	age = db.StringProperty()
 	url = db.StringProperty()
+	sched_urls = db.StringListProperty()
   	created_date = db.DateTimeProperty(auto_now_add = True)
   	last_updated_date = db.DateTimeProperty(auto_now = True)
 
@@ -65,3 +66,20 @@ class Location(db.Model):
 	longitude = db.StringProperty()
 	created_date = db.DateTimeProperty(auto_now_add = True)
 	last_updated_date = db.DateTimeProperty(auto_now = True)
+	
+class DivisionStandings(db.Model):
+	league = db.StringProperty()
+	division = db.StringProperty()
+	agegroup = db.StringProperty()
+	gender = db.StringProperty()
+	age = db.StringProperty()
+	pts = db.StringProperty()
+	gp = db.StringProperty()
+	w = db.StringProperty()
+	l = db.StringProperty()
+	t = db.StringProperty()
+	gf = db.StringProperty()
+	ga = db.StringProperty()
+	gd = db.StringProperty()
+  	created_date = db.DateTimeProperty(auto_now_add = True)
+  	last_updated_date = db.DateTimeProperty(auto_now = True)
