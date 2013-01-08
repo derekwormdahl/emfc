@@ -94,7 +94,7 @@ def fetch_leagues():
 			
 	j = json.dumps(leagues)
 	return j		
-		
+
 def fetch_agegroups(league=None, gender=None, age=None):
 
 	ld("in get agegroups")
@@ -129,7 +129,7 @@ def fetch_agegroups(league=None, gender=None, age=None):
 			
 	j = json.dumps(agegroups)
 	return j		
-		
+	
 
 class StoreLeagues(webapp2.RequestHandler):
 	def get(self): 
