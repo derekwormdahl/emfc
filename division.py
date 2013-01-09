@@ -12,10 +12,17 @@ import re
 import logging
 import string
 
+def store_all_division_standings():
+	t = opl_db.League.all()
+	for r in t.run():
+		store_division_standings(r.name, r.url)
+
+	return 'Done'
+
 def store_all_divisions():
 	t = opl_db.League.all()
 	for r in t.run():
-		store_divisions(r.name)
+		store_divisions(r.name, r.url)
 
 	return 'Done'
 	
@@ -30,8 +37,8 @@ def store_division_sched_urls(url):
 	return ret_urls
 	
 	
-def store_divisions(l):
-	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html","html5lib"));
+def store_divisions(l, url):
+	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
 	t = doc.find("table").select(".MainContent")
 	doc2 = BeautifulSoup(str(t[0]),"html5lib")
@@ -122,7 +129,7 @@ def delete_division_standings():
 
 def store_division_standings(league, url):
 
-	f = urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html")
+	f = urllib2.urlopen(url)
 
 	found = False
 	standings = []
@@ -172,14 +179,18 @@ def store_division_standings(league, url):
 	
 class StoreDivisionStandings(webapp2.RequestHandler):
 	def get(self): 
+		url = self.request.get("u")
 		delete_division_standings()
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(store_division_standings('Fall 2012','ldjf'))
+		# self.response.write(store_division_standings('Fall 2012','http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html'))
+		self.response.write(store_all_division_standings())
 
 class StoreDivisions(webapp2.RequestHandler):
 	def get(self): 
+		# url = self.request.get("u")
 		delete_all_divisions()
 		self.response.headers['Content-Type'] = 'text/html'
+		# self.response.write(store_all_divisions('http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html'))
 		self.response.write(store_all_divisions())
 
 class FetchDivisions(webapp2.RequestHandler):
