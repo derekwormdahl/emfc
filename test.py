@@ -209,14 +209,18 @@ def t1():
 
 	p = doc2.find_all('div',text=re.compile('Girls'));
 	for ps in p:
-		print ps
+		gender = ps.text.strip()
+		print '# ', gender
 		enclosing = ps.find_previous('td')
 		u = enclosing.find_all('div',text=re.compile('Under'))
 		for us in u:
-			print us
+			agegroup = us.text.strip()
+			print '    ', agegroup
 			tms = us.find_next_sibling('table').find_all('div','tg')
 			for tm in tms:
-				print tm
+				url = tm.a['href']
+				name = tm.a.text.strip()
+				print '        ',url,'  ',name
 			
 
 
