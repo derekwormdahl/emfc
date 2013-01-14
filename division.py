@@ -36,8 +36,40 @@ def store_division_sched_urls(url):
 	        ret_urls.append("http://www.oregonpremierleague.com"+u['href'])
 	return ret_urls
 	
-	
 def store_divisions(l, url):
+	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
+
+	t = doc.find("table").select(".MainContent")
+	doc2 = BeautifulSoup(str(t[0]),"html5lib")
+	
+	logging.debug('in store_divisions')
+
+	#scheds = doc2.table.table.find_all("div","tg")
+	scheds = doc2.find_all("div","tg")
+	logging.debug(scheds)
+
+	for g in ['Boys','Girls']:
+		p = doc2.find_all('div',text=re.compile(g))
+		for ps in p:	
+			gender = ps.text.strip()
+			enclosing = ps.find_previous('td')
+			u = enclosing.find_all('div',re.compile('Under'))
+			for us in u:
+				agegroup = gender[0:1]+'U'+us.text.strip()[6:8]
+				tms = us.find_next_sibling('table').find_all('div','tg')
+				for tm in tms:
+					logging.debug('league'+l)
+					league = l
+					division = tm.text.strip()
+					url = "http://www.oregonpremierleague.com"+tm.a.get('href').strip()
+					sched_urls = store_division_sched_urls(url)
+					#agegroup = division.split()[0].strip()
+					#gender = agegroup[:1].strip()
+					#age = agegroup[1:].strip()
+					age = agegroup[1:].strip()
+					opl_db.Division(league = league, agegroup = agegroup, gender = gender, age = age, division = division, url = url, sched_urls = sched_urls).put()
+	
+def store_divisions_old(l, url):
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
 	t = doc.find("table").select(".MainContent")

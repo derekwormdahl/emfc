@@ -191,8 +191,10 @@ class ScheduleResultsHandler(webapp2.RequestHandler):
 """
 
 def t1():
- 	# doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html", "html5lib"));
- 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/springleague/index_E.html", "html5lib"));
+ 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html", "html5lib"));
+
+ 	#doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/springleague/index_E.html", "html5lib"));
+
 	# t = doc.find("table").find(id="tblListGames2").find("tbody")
 
 	t = doc.find("table").select(".MainContent")
@@ -203,31 +205,23 @@ def t1():
 	
 	scheds = doc2.find_all("div","tg")
 
-	#p = scheds.find_parents("div")
-	#for ps in p:
-	#	print ps.text.strip()
-
-	p = doc2.find_all('div',text=re.compile('Girls'));
-	for ps in p:
-		gender = ps.text.strip()
-		print '# ', gender
-		enclosing = ps.find_previous('td')
-		u = enclosing.find_all('div',text=re.compile('Under'))
-		for us in u:
-			agegroup = us.text.strip()
-			print '    ', agegroup
-			tms = us.find_next_sibling('table').find_all('div','tg')
-			for tm in tms:
-				url = tm.a['href']
-				name = tm.a.text.strip()
-				print '        ',url,'  ',name
+	for g in ['Boys','Girls']:
+		p = doc2.find_all('div',text=re.compile(g));
+		for ps in p:
+			gender = ps.text.strip()
+			print '# ', gender
+			enclosing = ps.find_previous('td')
+			u = enclosing.find_all('div',text=re.compile('Under'))
+			for us in u:
+				agegroup = us.text.strip()
+				print '    ', agegroup
+				tms = us.find_next_sibling('table').find_all('div','tg')
+				for tm in tms:
+					url = tm.a['href']
+					name = tm.a.text.strip()
+					print '        ',url,'  ',name
 			
 
-
-	doc2.encode("utf-8")
-	#print doc2.prettify()
-	#for sched in scheds:
-	#	print sched.text.strip()
 
 def main():
 	print " in main"
