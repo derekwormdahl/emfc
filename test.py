@@ -10,6 +10,7 @@ import json
 ###import webapp2
 ###import opl_db
 import re
+import sys
 
 def convert(data):
     if isinstance(data, unicode):
@@ -190,10 +191,39 @@ class ScheduleResultsHandler(webapp2.RequestHandler):
 """
 
 def t1():
- 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html", "html5lib"));
+ 	# doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html", "html5lib"));
+ 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/standingsandschedules/springleague/index_E.html", "html5lib"));
 	# t = doc.find("table").find(id="tblListGames2").find("tbody")
 
-	print doc.prettify()
+	t = doc.find("table").select(".MainContent")
+	doc2 = BeautifulSoup(str(t[0]),"html5lib")
+
+	reload(sys)
+	sys.setdefaultencoding('utf-8')
+	
+	scheds = doc2.find_all("div","tg")
+
+	#p = scheds.find_parents("div")
+	#for ps in p:
+	#	print ps.text.strip()
+
+	p = doc2.find_all('div',text=re.compile('Girls'));
+	for ps in p:
+		print ps
+		enclosing = ps.find_previous('td')
+		u = enclosing.find_all('div',text=re.compile('Under'))
+		for us in u:
+			print us
+			tms = us.find_next_sibling('table').find_all('div','tg')
+			for tm in tms:
+				print tm
+			
+
+
+	doc2.encode("utf-8")
+	#print doc2.prettify()
+	#for sched in scheds:
+	#	print sched.text.strip()
 
 def main():
 	print " in main"
