@@ -220,13 +220,56 @@ def t1():
 					url = tm.a['href']
 					name = tm.a.text.strip()
 					print '        ',url,'  ',name
-			
 
+def t2():
+ 	doc = BeautifulSoup(urllib2.urlopen("http://www.oregonpremierleague.com/schedules/Fall2012/47896541.html", "html5lib"));
+
+	fullscore = False
+
+	teamname = ''
+	pts = ''
+	gp = ''
+	w = ''
+	l = ''
+	t = ''
+	gf = ''
+	ga = ''
+	gd = ''
+
+	if doc.find("td", text=re.compile('PTS')):
+		fullscore = True
+
+	t = doc.find("td",text=re.compile('GP'))
+
+ 	tbl = t.find_parent("tr").find_parent("table")
+	trs = tbl.find_all("tr", "tms")
+	for tr in trs:
+		tds = tr.find_all("td")
+		if(fullscore):
+			teamname = tds[0].a.text.strip()
+			pts = tds[1].text.strip()
+			gp = tds[2].text.strip()
+			w = tds[3].text.strip()
+			l = tds[4].text.strip()
+			t = tds[5].text.strip()
+			gf = tds[6].text.strip()
+			ga = tds[7].text.strip()
+			gd = tds[8].text.strip()
+			print teamname, "pts: " , pts, "  gp: " , gp 
+		else:
+			teamname = tds[0].a.text.strip()
+			gp = tds[1].text.strip()
+			w = tds[2].text.strip()
+			l = tds[3].text.strip()
+			t = tds[4].text.strip()
+			print teamname, "gp: " , gp, "  w: " ,w
+
+		 
 
 def main():
 	print " in main"
 	# fetch_schedule_results()
-	t1()
+	t2()
 		
 if __name__ == "__main__":
 	main()
