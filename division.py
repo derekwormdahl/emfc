@@ -34,6 +34,10 @@ def store_division_sched_urls(url):
 	sched_urls = doc.find_all('a', href=re.compile("\/schedules\/.*[0-9]*\.[0-9]*\.html"))
 	for u in sched_urls:
 	        ret_urls.append("http://www.oregonpremierleague.com"+u['href'])
+	
+	if not ret_urls:
+		ret_urls.append(url)
+		
 	return ret_urls
 	
 def store_divisions(l, url):
