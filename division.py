@@ -57,7 +57,7 @@ def store_divisions(l, url):
 		for ps in p:	
 			gender = ps.text.strip()
 			enclosing = ps.find_previous('td')
-			u = enclosing.find_all('div',re.compile('Under'))
+			u = enclosing.find_all('div',text=re.compile('Under'))
 			for us in u:
 				agegroup = gender[0:1]+'U'+us.text.strip()[6:8]
 				tms = us.find_next_sibling('table').find_all('div','tg')
