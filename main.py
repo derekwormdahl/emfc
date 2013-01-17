@@ -44,19 +44,19 @@ class MainPage(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
 	(r'/', MainPage),
-	(r'/store-division-standings', StoreDivisionStandings),
-	(r'/store-divisions', StoreDivisions),
-	(r'/fetch-divisions', FetchDivisions),
 	##(r'/store-schedule', StoreGameSchedule),
+ 	(r'/store-league', StoreLeague),
+	(r'/fetch-leagues', FetchLeagues),
 	(r'/store-schedule-results', StoreScheduleResults),
 	(r'/worker/store-all-schedules', StoreAllSchedules),
 	(r'/fetch-schedule', FetchGameSchedule),
-	(r'/fetch-location', FetchLocation),
- 	(r'/store-league', StoreLeague),
-#	(r'/fetch-agegroups', FetchAgeGroups),
 	(r'/delete-schedules', DeleteSchedules),
+	(r'/store-division-standings', StoreDivisionStandings),
+	(r'/store-divisions', StoreDivisions),
+	(r'/fetch-divisions', FetchDivisions),
+	(r'/fetch-location', FetchLocation),
+#	(r'/fetch-agegroups', FetchAgeGroups),
 	(r'/fetch-distinct-agegroups', FetchDistinctAgeGroups),
-	(r'/fetch-leagues', FetchLeagues),
 ],
 debug=True)
 
