@@ -25,9 +25,9 @@ def convert(data):
 
 
 ##################################################################
-## Store all the games and results 
+## Store the games and results 
 ##################################################################
-def store_schedule_results(url, league, division, gender, age):
+def store_schedule(url, league, division, gender, age):
 
 	logging.debug(url)
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
@@ -244,7 +244,7 @@ class FetchGameSchedule(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(fetch_games(dt, league, division, gender, age))
 
-class StoreScheduleResults(webapp2.RequestHandler):
+class StoreSchedule(webapp2.RequestHandler):
 	def get(self):
 		url = self.request.get("u")
 		league = self.request.get("l")
@@ -252,5 +252,5 @@ class StoreScheduleResults(webapp2.RequestHandler):
 		gender = self.request.get("g")
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(store_schedule_results(url, league, division, gender, age))
+		self.response.write(store_schedule(url, league, division, gender, age))
 		
