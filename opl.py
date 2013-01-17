@@ -24,6 +24,9 @@ def convert(data):
         return data
 
 
+##################################################################
+## Store all the games and results 
+##################################################################
 def store_schedule_results(url, league, division, gender, age):
 
 	logging.debug(url)
@@ -102,6 +105,9 @@ def store_schedule_results(url, league, division, gender, age):
 					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
 						
 
+##################################################################
+## Fetch all the games and results and return via json to user
+##################################################################
 def fetch_games(gd=None, league=None, division=None, gender=None, age=None):
 	q = opl_db.Game.all()
 	if gd:
@@ -137,16 +143,45 @@ def fetch_games(gd=None, league=None, division=None, gender=None, age=None):
 	j = json.dumps(games)
 	return j
 
-def delete_all_schedule_results():
-	t = opl_db.GameDay.all()
-	for r in t.run():
-		r.delete()
+##################################################################
+## Delete game schedule results
+##################################################################
+def delete_schedules(league=None, division=None, gender=None, age=None):
 
-	t1 = opl_db.Game.all()
-	for r1 in t1.run():
+#	q = opl_db.GameDay.all()
+#	if league:
+#		q.filter("league = ", league)
+#	if division:
+#		q.filter("division = ", division)
+#	if gender:
+#		q.filter("gender =",gender)
+#	if age:
+#		q.filter("age = ", age)
+#	for r in q.run():
+#		r.delete()
+
+	q1 = opl_db.Game.all()
+	if league:
+		q.filter("league = ", league)
+	if division:
+		q.filter("division = ", division)
+	if gender:
+		q.filter("gender =",gender)
+	if age:
+		q.filter("age = ", age)
+
+	for r1 in q1.run():
 		r1.delete()
 	return 'Done'
 
+
+##################################################################
+## Store all game schedule results
+## 	* for all the Division entries add a new Queue task
+##        to call the /store-schedule-results handler.
+##        this allows us to break up all the work of parsing
+##        the page
+##################################################################
 def store_all_schedules(league=None, division=None, gender=None, age=None):
 	
 	q = opl_db.Division.all()
@@ -167,7 +202,7 @@ def store_all_schedules(league=None, division=None, gender=None, age=None):
 				t.add()
 				##fetch_schedule_results(u, r.league, r.division, r.gender, r.age)
 		else:
-			###fetch_schedule_results(r.url, r.league, r.division, r.gender, r.age)
+			##fetch_schedule_results(r.url, r.league, r.division, r.gender, r.age)
 			parms = { 'u' : r.url, 'l' : r.league, 'g' : r.gender, 'd' : r.division, 'a' : r.age }
 			t = Task(method='GET', url='/store-schedule-results?'+urllib2.urlencode(parms));
 			t.add()
@@ -180,10 +215,14 @@ class THandler(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(t())
 
-class DeleteGameSchedule(webapp2.RequestHandler):
+class DeleteSchedules(webapp2.RequestHandler):
 	def get(self):
+		league = self.request.get("l")
+		division = self.request.get("d")
+		gender = self.request.get("g")
+		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(delete_all_schedule_results())
+		self.response.write(delete_schedules(league, division, gender, age))
 
 class StoreAllSchedules(webapp2.RequestHandler):
 	def get(self):
