@@ -106,9 +106,9 @@ def store_schedule(url, league, division, gender, age):
 						
 
 ##################################################################
-## Fetch all the games and results and return via json to user
+## Fetch the schedule and results and return via json to user
 ##################################################################
-def fetch_games(gd=None, league=None, division=None, gender=None, age=None):
+def fetch_schedule(gd=None, league=None, division=None, gender=None, age=None):
 	q = opl_db.Game.all()
 	if gd:
 		q.filter("gamedate = ", gd)
@@ -240,7 +240,7 @@ class StoreSchedule(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(store_schedule(url, league, division, gender, age))
 
-class FetchGameSchedule(webapp2.RequestHandler):
+class FetchSchedule(webapp2.RequestHandler):
 	def get(self):
 		dt = self.request.get("dt")
 		league = self.request.get("l")
@@ -248,7 +248,7 @@ class FetchGameSchedule(webapp2.RequestHandler):
 		gender = self.request.get("g")
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(fetch_games(dt, league, division, gender, age))
+		self.response.write(fetch_schedule(dt, league, division, gender, age))
 
 class DeleteSchedules(webapp2.RequestHandler):
 	def get(self):

@@ -14,7 +14,7 @@ from google.appengine.api import users
 from division import StoreDivisions
 from division import FetchDivisions
 from division import StoreDivisionStandings
-from opl import FetchGameSchedule
+from opl import FetchSchedule
 from location import FetchLocation
 from league import StoreLeague
 from league import FetchLeagues
@@ -35,7 +35,7 @@ app = webapp2.WSGIApplication([
 	(r'/fetch-leagues', FetchLeagues),
 	(r'/store-schedule', StoreSchedule),
 	(r'/worker/store-all-schedules', StoreAllSchedules),
-	(r'/fetch-schedule', FetchGameSchedule),
+	(r'/fetch-schedule', FetchSchedule),
 	(r'/delete-schedules', DeleteSchedules),
 	(r'/store-division-standings', StoreDivisionStandings),
 	(r'/store-divisions', StoreDivisions),
