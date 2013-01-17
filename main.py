@@ -32,7 +32,9 @@ from league import FetchLeagues
 # from league import FetchAgeGroups
 from division import FetchDistinctAgeGroups
 from opl import StoreGameSchedule
+from opl import StoreScheduleResults
 from opl import DeleteGameSchedule
+from opl import StoreAllSchedules
 import logging
 
 class MainPage(webapp2.RequestHandler):
@@ -45,7 +47,9 @@ app = webapp2.WSGIApplication([
 	(r'/store-division-standings', StoreDivisionStandings),
 	(r'/store-divisions', StoreDivisions),
 	(r'/fetch-divisions', FetchDivisions),
-	(r'/store-schedule', StoreGameSchedule),
+	##(r'/store-schedule', StoreGameSchedule),
+	(r'/store-schedule-results', StoreScheduleResults),
+	(r'/worker/store-all-schedules', StoreAllSchedules),
 	(r'/fetch-schedule', FetchGameSchedule),
 	(r'/fetch-location', FetchLocation),
  	(r'/store-league', StoreLeague),
