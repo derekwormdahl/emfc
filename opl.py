@@ -1,17 +1,17 @@
-#from bs4 import BeautifulSoup
 from bs4 import *
-import urllib2
 from decimal import *
 from datetime import datetime
 from bs4 import NavigableString
-import collections
 from collections import OrderedDict
+from google.appengine.api.taskqueue import Task
+
+import re
 import json
+import collections
+import urllib2
 import webapp2
 import opl_db
-import re
 import logging
-from google.appengine.api.taskqueue import Task
 
 def convert(data):
     if isinstance(data, unicode):
@@ -209,20 +209,17 @@ def store_all_schedules(league=None, division=None, gender=None, age=None):
 	return 'done'
 		
 
+##################################################################
+##################################################################
+## Web handler endpoints
+##################################################################
+##################################################################
+
 
 class THandler(webapp2.RequestHandler):	
 	def get(self):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(t())
-
-class DeleteSchedules(webapp2.RequestHandler):
-	def get(self):
-		league = self.request.get("l")
-		division = self.request.get("d")
-		gender = self.request.get("g")
-		age = self.request.get("a")
-		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(delete_schedules(league, division, gender, age))
 
 class StoreAllSchedules(webapp2.RequestHandler):
 	def get(self):
@@ -232,7 +229,16 @@ class StoreAllSchedules(webapp2.RequestHandler):
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(store_all_schedules(league, division, gender, age))
-		
+
+class StoreSchedule(webapp2.RequestHandler):
+	def get(self):
+		url = self.request.get("u")
+		league = self.request.get("l")
+		division = self.request.get("d")
+		gender = self.request.get("g")
+		age = self.request.get("a")
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(store_schedule(url, league, division, gender, age))
 
 class FetchGameSchedule(webapp2.RequestHandler):
 	def get(self):
@@ -244,13 +250,16 @@ class FetchGameSchedule(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(fetch_games(dt, league, division, gender, age))
 
-class StoreSchedule(webapp2.RequestHandler):
+class DeleteSchedules(webapp2.RequestHandler):
 	def get(self):
-		url = self.request.get("u")
 		league = self.request.get("l")
 		division = self.request.get("d")
 		gender = self.request.get("g")
 		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(store_schedule(url, league, division, gender, age))
+		self.response.write(delete_schedules(league, division, gender, age))
+
+		
+
+
 		
