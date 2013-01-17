@@ -18,17 +18,20 @@ def store_league(name, url):
 	opl_db.League(name = name, url = url).put()
 
 ##################################################################
-## Delete the league
+## Delete leagues
 ##################################################################
-def delete_all_leagues():	
-	t = opl_db.League.all()
-	for r in t.run():
+def delete_league(league):	
+	q = opl_db.League.all()
+	if league:
+		q.filter('name = ', league)
+	
+	for r in q.run():
 		r.delete()
 
 ##################################################################
 ## Fetch the league and return as json
 ##################################################################
-def fetch_leagues(gender, age):
+def fetch_leagues():
 	q = opl_db.League.all()
 	leagues = OrderedDict()
 
@@ -61,9 +64,12 @@ class StoreLeague(webapp2.RequestHandler):
 		
 class FetchLeagues(webapp2.RequestHandler):
 	def get(self): 
-		gender = self.request.get("g")
-		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(fetch_leagues(gender, age))
+		self.response.write(fetch_leagues())
 
 
+class DeleteLeague(webapp2.RequestHandler):
+	def get(self): 
+		league = self.request.get('l')
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(delete_league(league))
