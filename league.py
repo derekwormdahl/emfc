@@ -11,20 +11,23 @@ import webapp2
 from google.appengine.ext import db
 import logging
 
+##################################################################
+## Store the league
+##################################################################
 def store_league(name, url):
-	#f2012 = opl_db.League(name="Fall 2012", url="http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html")
 	opl_db.League(name = name, url = url).put()
 
+##################################################################
+## Delete the league
+##################################################################
 def delete_all_leagues():	
 	t = opl_db.League.all()
 	for r in t.run():
 		r.delete()
 
-def ld(msg):
-	logging.debug(msg)
-	
-
-
+##################################################################
+## Fetch the league and return as json
+##################################################################
 def fetch_leagues(gender, age):
 	q = opl_db.League.all()
 	leagues = OrderedDict()
@@ -41,6 +44,13 @@ def fetch_leagues(gender, age):
 	j = json.dumps(leagues)
 	return j		
 	
+
+##################################################################
+##################################################################
+## Web handler endpoints
+##################################################################
+##################################################################
+
 class StoreLeague(webapp2.RequestHandler):
 	def get(self): 
 		name = self.request.get('n')
