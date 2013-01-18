@@ -16,16 +16,16 @@ from division import FetchDivisions
 from division import StoreDivisionStandings
 from division import StoreAllDivisionStandings
 from division import StoreDivisionStandingsWorker
-from opl import FetchSchedule
 from location import FetchLocation
 from league import StoreLeague
 from league import FetchLeagues
 from league import DeleteLeague
 from division import FetchDistinctAgeGroups
-from opl import StoreGameSchedule
-from opl import StoreSchedule
-from opl import DeleteSchedules
-from opl import StoreAllSchedules
+from schedule import FetchSchedule
+from schedule import StoreGameSchedule
+from schedule import StoreSchedule
+from schedule import DeleteSchedules
+from schedule import StoreAllSchedules
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
