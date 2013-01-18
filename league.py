@@ -11,21 +11,27 @@ import webapp2
 from google.appengine.ext import db
 import logging
 
+##################################################################
+## Store the league
+##################################################################
 def store_league(name, url):
-	#f2012 = opl_db.League(name="Fall 2012", url="http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html")
 	opl_db.League(name = name, url = url).put()
 
-def delete_all_leagues():	
-	t = opl_db.League.all()
-	for r in t.run():
+##################################################################
+## Delete leagues
+##################################################################
+def delete_league(league):	
+	q = opl_db.League.all()
+	if league:
+		q.filter('name = ', league)
+	
+	for r in q.run():
 		r.delete()
 
-def ld(msg):
-	logging.debug(msg)
-	
-
-
-def fetch_leagues(gender, age):
+##################################################################
+## Fetch the league and return as json
+##################################################################
+def fetch_leagues():
 	q = opl_db.League.all()
 	leagues = OrderedDict()
 
@@ -41,6 +47,13 @@ def fetch_leagues(gender, age):
 	j = json.dumps(leagues)
 	return j		
 	
+
+##################################################################
+##################################################################
+## Web handler endpoints
+##################################################################
+##################################################################
+
 class StoreLeague(webapp2.RequestHandler):
 	def get(self): 
 		name = self.request.get('n')
@@ -51,9 +64,12 @@ class StoreLeague(webapp2.RequestHandler):
 		
 class FetchLeagues(webapp2.RequestHandler):
 	def get(self): 
-		gender = self.request.get("g")
-		age = self.request.get("a")
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write(fetch_leagues(gender, age))
+		self.response.write(fetch_leagues())
 
 
+class DeleteLeague(webapp2.RequestHandler):
+	def get(self): 
+		league = self.request.get('l')
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(delete_league(league))
