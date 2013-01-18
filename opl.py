@@ -181,6 +181,7 @@ def store_game_schedule(gd=None, league=None, division=None, gender=None, age=No
 		q.filter("age = ", age)
 
 	for r in q.run():
+		logger.debug('R:',r.league,'  ',r.gender)
 		if len(r.sched_urls) > 0:
 			for u in r.sched_urls:
 				fetch_schedule_results(u, r.league, r.division, r.gender, r.age)

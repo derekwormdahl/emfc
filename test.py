@@ -236,7 +236,10 @@ def t2():
 	ga = ''
 	gd = ''
 
-	if doc.find("td", text=re.compile('PTS')):
+	pp = doc.find("td", text=re.compile('Pts'))
+	print pp
+
+	if doc.find("td", text=re.compile('Pts')):
 		fullscore = True
 
 	t = doc.find("td",text=re.compile('GP'))
@@ -263,7 +266,7 @@ def t2():
 			l = tds[3].text.strip()
 			t = tds[4].text.strip()
 			print teamname, "gp: " , gp, "  w: " ,w
-
+		print("valu is %r", teamname)
 		 
 
 def main():

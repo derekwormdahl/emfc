@@ -25,6 +25,8 @@ import opl_db
 from division import StoreDivisions
 from division import FetchDivisions
 from division import StoreDivisionStandings
+from division import StoreAllDivisionStandings
+from division import StoreDivisionStandingsWorker
 from opl import FetchGameSchedule
 from location import FetchLocation
 from league import StoreLeague
@@ -44,6 +46,7 @@ app = webapp2.WSGIApplication([
 	(r'/', MainPage),
 	(r'/store-division-standings', StoreDivisionStandings),
 	(r'/store-divisions', StoreDivisions),
+	(r'/store-all-division-standings', StoreAllDivisionStandings),
 	(r'/fetch-divisions', FetchDivisions),
 	(r'/store-schedule', StoreGameSchedule),
 	(r'/fetch-schedule', FetchGameSchedule),
@@ -53,6 +56,7 @@ app = webapp2.WSGIApplication([
 	(r'/delete-schedule', DeleteGameSchedule),
 	(r'/fetch-distinct-agegroups', FetchDistinctAgeGroups),
 	(r'/fetch-leagues', FetchLeagues),
+	(r'/worker/std', StoreDivisionStandingsWorker)
 ],
 debug=True)
 
