@@ -20,8 +20,8 @@ class AgeGroup(db.Model):
 	last_updated_date = db.DateTimeProperty(auto_now = True)
 
 class GameDay(db.Model):
-  	gamedate = db.StringProperty()
-	#game = db.ReferenceProperty(Game, collection_name='games')
+  	#gamedate = db.StringProperty()
+  	gamedate = db.DateTimeProperty()
 	created_date = db.DateTimeProperty(auto_now_add = True)
 	last_updated_date = db.DateTimeProperty(auto_now = True)
 
@@ -32,7 +32,8 @@ class Game(db.Model):
 	gender = db.StringProperty()
 	age = db.StringProperty()
 	url = db.StringProperty()
-	gamedate = db.StringProperty()
+	# gamedate = db.StringProperty()
+	gamedate = db.DateTimeProperty()
   	gametime = db.StringProperty()
   	hometeam = db.StringProperty()
   	awayteam = db.StringProperty()
