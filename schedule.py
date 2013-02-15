@@ -32,81 +32,85 @@ def store_schedule(url, league, division, gender, age):
 	logging.debug(url)
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
-	t = doc.find("table").find(id="tblListGames2").find("tbody")
+	## fix
+	try:
+		t = doc.find("table").find(id="tblListGames2").find("tbody")
 
-	for sib in t.tr.next_siblings:
-		if not isinstance(sib, NavigableString):
-			gamedate = ''
-			gametime = ''
-			hometeam = ''
-			awayteam = ''
-			gamelocation = ''
-			gamelocation_url = ''
-			homescore = ''
-			awayscore = ''
-			
-			if(sib.select(".GameHeader")):
-				gdate = sib.previous_sibling.previous_sibling.text.strip()
-				gdatef = datetime.strptime(gdate, '%a, %B %d, %Y)	
-				gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdatef)
-				gd.put()
+		for sib in t.tr.next_siblings:
+			if not isinstance(sib, NavigableString):
+				gamedate = ''
+				gametime = ''
+				hometeam = ''
+				awayteam = ''
+				gamelocation = ''
+				gamelocation_url = ''
+				homescore = ''
+				awayscore = ''
+				
+				if(sib.select(".GameHeader")):
+					gdate = sib.previous_sibling.previous_sibling.text.strip()
+					gdatef = datetime.strptime(gdate, '%a, %B %d, %Y)	
+					gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdatef)
+					gd.put()
 
-			t = sib.get("class")
-			if isinstance(t,list):
-				if(t.index('sch-main-gm') > 0):
-					for td in sib.find_all('td'):
-						try:
-							if 'gamecode' in td.span['class']:
-								gamecode = td.span.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'tim' in td['class']:
-								gametime = td.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'schedtm1' in td['class']:
-								hometeam = td.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'schedtm2' in td['class']:
-								awayteam = td.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'tmcode' in td.span['class']:
-								gamelocation = td.text.strip()
-								gamelocation_url = td.span.a['href']
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'sch-main-sc' in td['class']:
-								# if td.span.text.strip() != 'vs':
-								if td.span:
-									homescore = td.span.text.strip().split('-')[0]
-									awayscore = td.span.text.strip().split('-')[1]
-						except KeyError:
-							pass
-						except TypeError:
-							pass
+				t = sib.get("class")
+				if isinstance(t,list):
+					if(t.index('sch-main-gm') > 0):
+						for td in sib.find_all('td'):
+							try:
+								if 'gamecode' in td.span['class']:
+									gamecode = td.span.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'tim' in td['class']:
+									gametime = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'schedtm1' in td['class']:
+									hometeam = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'schedtm2' in td['class']:
+									awayteam = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'tmcode' in td.span['class']:
+									gamelocation = td.text.strip()
+									gamelocation_url = td.span.a['href']
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'sch-main-sc' in td['class']:
+									# if td.span.text.strip() != 'vs':
+									if td.span:
+										homescore = td.span.text.strip().split('-')[0]
+										awayscore = td.span.text.strip().split('-')[1]
+							except KeyError:
+								pass
+							except TypeError:
+								pass
 
-					logging.debug(division+ " awayscore ="+awayscore)
-					formatted_gamedate = datetime.strptime(gd.gamedate.strip(), '%a, %B %d, %Y)	
-					#opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
-					opl_db.Game(gamecode = gamecode.strip(), gamedate = formatted_gamedate, gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
-						
+						logging.debug(division+ " awayscore ="+awayscore)
+						formatted_gamedate = datetime.strptime(gd.gamedate.strip(), '%a, %B %d, %Y)	
+						#opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
+						opl_db.Game(gamecode = gamecode.strip(), gamedate = formatted_gamedate, gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
+							
+	except AttributeError:
+		pass
 
 ##################################################################
 ## Fetch the schedule and results and return via json to user
@@ -147,21 +151,18 @@ def fetch_schedule(gd=None, league=None, division=None, gender=None, age=None):
 	return j
 
 ##################################################################
+## Delete game days
+##################################################################
+def delete_gamedays():
+	q = opl_db.GameDay.all()
+	for r in q.run():
+		r.delete()
+
+##################################################################
 ## Delete game schedule results
 ##################################################################
 def delete_schedules(league=None, division=None, gender=None, age=None):
 
-#	q = opl_db.GameDay.all()
-#	if league:
-#		q.filter("league = ", league)
-#	if division:
-#		q.filter("division = ", division)
-#	if gender:
-#		q.filter("gender =",gender)
-#	if age:
-#		q.filter("age = ", age)
-#	for r in q.run():
-#		r.delete()
 
 	q1 = opl_db.Game.all()
 	if league:
@@ -263,7 +264,8 @@ class DeleteSchedules(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(delete_schedules(league, division, gender, age))
 
-		
-
-
+class DeleteGameDays(webapp2.RequestHandler):
+	def get(self):
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(delete_gamedays())
 		

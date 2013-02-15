@@ -25,6 +25,7 @@ from schedule import FetchSchedule
 from schedule import StoreGameSchedule
 from schedule import StoreSchedule
 from schedule import DeleteSchedules
+from schedule import DeleteGameDays
 from schedule import StoreAllSchedules
 
 class MainPage(webapp2.RequestHandler):
@@ -41,6 +42,7 @@ app = webapp2.WSGIApplication([
 	(r'/worker/store-all-schedules', StoreAllSchedules),
 	(r'/fetch-schedule', FetchSchedule),
 	(r'/delete-schedules', DeleteSchedules),
+	(r'/delete-gamedays', DeleteGameDays),
 	(r'/store-division-standings', StoreDivisionStandings),
 	(r'/store-divisions', StoreDivisions),
 	(r'/store-all-division-standings', StoreAllDivisionStandings),
