@@ -22,7 +22,6 @@ from league import FetchLeagues
 from league import DeleteLeague
 from division import FetchDistinctAgeGroups
 from schedule import FetchSchedule
-from schedule import StoreGameSchedule
 from schedule import StoreSchedule
 from schedule import DeleteSchedules
 from schedule import DeleteGameDays
