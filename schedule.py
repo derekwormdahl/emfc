@@ -49,7 +49,7 @@ def store_schedule(url, league, division, gender, age):
 				
 				if(sib.select(".GameHeader")):
 					gdate = sib.previous_sibling.previous_sibling.text.strip()
-					gdatef = datetime.strptime(gdate.strip(), '%a, %B %d, %Y)	
+					gdatef = datetime.strptime(gdate.strip(), '%a, %B %d, %Y')	
 					gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdatef)
 					gd.put()
 
