@@ -105,7 +105,7 @@ def store_schedule(url, league, division, gender, age):
 								pass
 
 						logging.debug(division+ " awayscore ="+awayscore)
-						formatted_gamedate = datetime.strptime(gd.gamedate.strip(), '%a, %B %d, %Y)	
+						formatted_gamedate = datetime.strptime(gd.gamedate.strip(), '%a, %B %d, %Y')	
 						#opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
 						opl_db.Game(gamecode = gamecode.strip(), gamedate = formatted_gamedate, gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
 							
