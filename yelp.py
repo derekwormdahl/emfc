@@ -53,14 +53,8 @@ if not options.token_secret:
 
 if not options.location and not options.bounds and not options.point:
   parser.error('--location, --bounds, or --point required')
-"""
 
-# Setup URL params from options
 url_params = {}
-url_params['term'] = 'burger'
-url_params['location'] = '4884 Sedona, Eugene, Oregon'
-
-"""
 if options.term:
   url_params['term'] = options.term
 if options.location:
@@ -123,6 +117,12 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
 
   return response
 
+# Setup URL params from options
+url_params = {}
+#url_params['term'] = 'dicks sporting'
+url_params['location'] = '4884 Sedona, Eugene, Oregon'
+url_params['category_filter'] = 'sportgoods,deptstores,sportswear,shoes'
+url_params['radius_filter'] = '20000'
 
 # Oauth Creds
 consumer_key = 'Uh2ayYi2ynzLshuWJjmKNw'
