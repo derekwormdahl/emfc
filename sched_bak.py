@@ -54,6 +54,7 @@ def store_schedule(url, league, division, gender, age):
 					gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdatef)
 					gd.put()
 
+<<<<<<< HEAD
 			t = sib.get("class")
 			if isinstance(t,list):
 				try:
@@ -108,9 +109,68 @@ def store_schedule(url, league, division, gender, age):
 
 					logging.debug(division+ " awayscore ="+awayscore)
 					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
-	except ValueError:
-		pass
+				except ValueError:
+					pass
 						
+=======
+				t = sib.get("class")
+				if isinstance(t,list):
+					if(t.index('sch-main-gm') > 0):
+						for td in sib.find_all('td'):
+							try:
+								if 'gamecode' in td.span['class']:
+									gamecode = td.span.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'tim' in td['class']:
+									gametime = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'schedtm1' in td['class']:
+									hometeam = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'schedtm2' in td['class']:
+									awayteam = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'tmcode' in td.span['class']:
+									gamelocation = td.text.strip()
+									gamelocation_url = td.span.a['href']
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'sch-main-sc' in td['class']:
+									# if td.span.text.strip() != 'vs':
+									if td.span:
+										homescore = td.span.text.strip().split('-')[0]
+										awayscore = td.span.text.strip().split('-')[1]
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+
+						logging.debug(division+ " awayscore ="+awayscore)
+						formatted_gamedate = datetime.strptime(gd.gamedate.strip(), '%a, %B %d, %Y')	
+						opl_db.Game(gamecode = gamecode.strip(), gamedate = formatted_gamedate, gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
+							
+	except AttributeError:
+		pass
+>>>>>>> b61d5bd5fc1bb480b16deee4521de31fd3263a37
 
 ##################################################################
 ## Fetch the schedule and results and return via json to user
