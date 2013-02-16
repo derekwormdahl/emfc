@@ -1,20 +1,24 @@
-#from bs4 import BeautifulSoup
-from bs4 import *
 import urllib2
-from bs4 import NavigableString
 import collections
 import opl_db
 import json
-from collections import OrderedDict
-from time import strftime
 import webapp2
 import re
 import logging
 import string
-from google.appengine.api import taskqueue
-from google.appengine.api.taskqueue import Task
 import urllib
 
+from bs4 import *
+from bs4 import NavigableString
+from collections import OrderedDict
+from time import strftime
+from google.appengine.api import taskqueue
+from google.appengine.api.taskqueue import Task
+
+
+##################################################################
+## Store the divisional standings
+##################################################################
 def store_all_division_standings(league, division, gender, age, agegroup):
 	q = opl_db.Division.all()
 	if league:
@@ -29,7 +33,6 @@ def store_all_division_standings(league, division, gender, age, agegroup):
 		q.filter("agegroup = ", agegroup)
 		
 	for r in q.run():
-		#store_division_standings(r.league, r.url, r.age, r.agegroup, r.gender, r.division)
 		parms = { 'l' : r.league, 'u' : r.url, 'a' : r.age, 'ag' : r.agegroup, 'g' : r.gender, 'd' : r.division}
 		url = '/store-division-standings?'+urllib.urlencode(parms)
 		logging.debug('URL:'+url)
@@ -37,6 +40,9 @@ def store_all_division_standings(league, division, gender, age, agegroup):
 		t.add()
 	return 'Done'
 
+##################################################################
+## Store all the divisions
+##################################################################
 def store_all_divisions():
 	t = opl_db.League.all()
 	for r in t.run():
@@ -44,6 +50,10 @@ def store_all_divisions():
 
 	return 'Done'
 	
+
+##################################################################
+## Store the division schedule urls
+##################################################################
 def store_division_sched_urls(url):
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 	
@@ -58,6 +68,10 @@ def store_division_sched_urls(url):
 		
 	return ret_urls
 	
+
+##################################################################
+## Store the divisions
+##################################################################
 def store_divisions(l, url):
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
@@ -66,7 +80,6 @@ def store_divisions(l, url):
 	
 	logging.debug('in store_divisions')
 
-	#scheds = doc2.table.table.find_all("div","tg")
 	scheds = doc2.find_all("div","tg")
 	logging.debug(scheds)
 
@@ -89,6 +102,9 @@ def store_divisions(l, url):
 					opl_db.Division(league = league, agegroup = agegroup, gender = gender, age = age, division = division, url = url, sched_urls = sched_urls).put()
 
 
+##################################################################
+## Fetch the divisions
+##################################################################
 def fetch_divisions(league, agegroup):
 	t = opl_db.Division.all()
 
@@ -114,11 +130,18 @@ def fetch_divisions(league, agegroup):
 	j = json.dumps(rowarray_list)
 	return j
 
+##################################################################
+## Delete divisions
+##################################################################
 def delete_all_divisions():
 	t = opl_db.Division.all()
 	for r in t.run():
 		r.delete()
 
+
+##################################################################
+## Fetch the distinct list of agegroups
+##################################################################
 def fetch_distinct_agegroups(league=None, gender=None, age=None):
 	q = opl_db.Division.all()
 	if league:
@@ -151,11 +174,19 @@ def fetch_distinct_agegroups(league=None, gender=None, age=None):
 	j = json.dumps(agegroups)
 	return j
 	
+
+##################################################################
+## Delete divisional standings
+##################################################################
 def delete_division_standings():
 	t = opl_db.DivisionStandings.all()
 	for r in t.run():
 		r.delete()
 
+
+##################################################################
+## Store the divisional standings
+##################################################################
 def store_division_standings(league, url, age, agegroup, gender, division):
 	
 	doc = BeautifulSoup(urllib2.urlopen(url, "html5lib"));
@@ -202,18 +233,21 @@ def store_division_standings(league, url, age, agegroup, gender, division):
 			gf = tds[6].text.strip()
 			ga = tds[7].text.strip()
 			gd = tds[8].text.strip()
-			#print teamname, "pts: " , pts, "  gp: " , gp 
 		else:
 			teamname = ''.join(unicode(tds[0].a.text.strip()).splitlines())
 			gp = tds[1].text.strip()
 			w = tds[2].text.strip()
 			l = tds[3].text.strip()
 			t = tds[4].text.strip()
-			#print teamname, "gp: " , gp, "  w: " ,w
 		
 		opl_db.DivisionStandings(league = league.strip(), division = division.strip(), agegroup = agegroup.strip(), gender = gender.strip(), age = age.strip(), teamname = teamname.strip(), teamcode = teamcode.strip(), pts = pts.strip(), gp = gp.strip(), w = w.strip(), l = l.strip(), t = t.strip(), gf = gf.strip(), ga = ga.strip(), gd = gd.strip()).put()
 
-	
+
+##################################################################
+##################################################################
+## Web handler endpoints
+##################################################################
+##################################################################
 class StoreDivisionStandings(webapp2.RequestHandler):
 	def get(self): 
 		league = self.request.get("l")
@@ -239,17 +273,13 @@ class StoreAllDivisionStandings(webapp2.RequestHandler):
 class StoreDivisionStandingsWorker(webapp2.RequestHandler):
 	def post(self):
 		delete_division_standings()
-		#t = Task(payload=None, method='GET', url='/store-all-division-standings')
-		#t.add()
 		store_all_division_standings('','','','','')
 		self.response.write("Done")
 
 class StoreDivisions(webapp2.RequestHandler):
 	def get(self): 
-		# url = self.request.get("u")
 		delete_all_divisions()
 		self.response.headers['Content-Type'] = 'text/html'
-		# self.response.write(store_all_divisions('http://www.oregonpremierleague.com/standingsandschedules/Fall2012/index_E.html'))
 		self.response.write(store_all_divisions())
 
 class FetchDivisions(webapp2.RequestHandler):

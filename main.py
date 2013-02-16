@@ -22,7 +22,6 @@ from league import FetchLeagues
 from league import DeleteLeague
 from division import FetchDistinctAgeGroups
 from schedule import FetchSchedule
-from schedule import StoreGameSchedule
 from schedule import StoreSchedule
 from schedule import DeleteSchedules
 from schedule import StoreAllSchedules
@@ -30,7 +29,16 @@ from schedule import StoreAllSchedules
 class MainPage(webapp2.RequestHandler):
     def get(self):
 		self.response.headers['Content-Type'] = 'text/html'
-		self.response.write("home")
+		output = []
+		output.append("<html><body>")
+		output.append("<table>")
+		output.append("<tr><td>Delete all schedules</td><td><a href='/delete-schedules'>Run</a>")
+		output.append("<tr><td>Store all schedules</td><td><a href='/worker/store-all-schedules'>Run</a>")
+		output.append("<tr><td>Store and delete all division standings</td><td><a href='/worker/store-all-division-standings'>Run</a>")
+		output.append('</table>')
+		output.append('</body></html>')
+		
+		self.response.write(''.join(output))
 
 app = webapp2.WSGIApplication([
 	(r'/', MainPage),
@@ -43,7 +51,7 @@ app = webapp2.WSGIApplication([
 	(r'/delete-schedules', DeleteSchedules),
 	(r'/store-division-standings', StoreDivisionStandings),
 	(r'/store-divisions', StoreDivisions),
-	(r'/store-all-division-standings', StoreAllDivisionStandings),
+	(r'/worker/store-all-division-standings', StoreAllDivisionStandings),
 	(r'/fetch-divisions', FetchDivisions),
 	(r'/fetch-location', FetchLocation),
 #	(r'/fetch-agegroups', FetchAgeGroups),

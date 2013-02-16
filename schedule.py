@@ -12,6 +12,7 @@ import urllib2
 import webapp2
 import opl_db
 import logging
+import urllib
 
 def convert(data):
     if isinstance(data, unicode):
@@ -52,7 +53,8 @@ def store_schedule(url, league, division, gender, age):
 
 			t = sib.get("class")
 			if isinstance(t,list):
-				if(t.index('sch-main-gm') > 0):
+				try:
+					idx = t.index('sch-main-gm')
 					for td in sib.find_all('td'):
 						try:
 							if 'gamecode' in td.span['class']:
@@ -103,6 +105,8 @@ def store_schedule(url, league, division, gender, age):
 
 					logging.debug(division+ " awayscore ="+awayscore)
 					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
+				except ValueError:
+					pass
 						
 
 ##################################################################
@@ -195,17 +199,17 @@ def store_all_schedules(league=None, division=None, gender=None, age=None):
 		q.filter("age = ", age)
 
 	for r in q.run():
-		logger.debug('R:',r.league,'  ',r.gender)
+		logging.debug('R:',r.league,'  ',r.gender)
 		if len(r.sched_urls) > 0:
 			for u in r.sched_urls:
 				parms = { 'u' : u, 'l' : r.league, 'g' : r.gender, 'd' : r.division, 'a' : r.age }
-				t = Task(method='GET', url='/store-schedule-results?'+urllib2.urlencode(parms));
+				t = Task(method='GET', url='/store-schedule?'+urllib.urlencode(parms));
 				t.add()
 				##fetch_schedule_results(u, r.league, r.division, r.gender, r.age)
 		else:
 			##fetch_schedule_results(r.url, r.league, r.division, r.gender, r.age)
 			parms = { 'u' : r.url, 'l' : r.league, 'g' : r.gender, 'd' : r.division, 'a' : r.age }
-			t = Task(method='GET', url='/store-schedule-results?'+urllib2.urlencode(parms));
+			t = Task(method='GET', url='/store-schedule?'+urllib.urlencode(parms));
 			t.add()
 	return 'done'
 		
