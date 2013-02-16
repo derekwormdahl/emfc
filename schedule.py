@@ -33,23 +33,26 @@ def store_schedule(url, league, division, gender, age):
 	logging.debug(url)
 	doc = BeautifulSoup(urllib2.urlopen(url,"html5lib"));
 
-	t = doc.find("table").find(id="tblListGames2").find("tbody")
+	## fix
+	try:
+		t = doc.find("table").find(id="tblListGames2").find("tbody")
 
-	for sib in t.tr.next_siblings:
-		if not isinstance(sib, NavigableString):
-			gamedate = ''
-			gametime = ''
-			hometeam = ''
-			awayteam = ''
-			gamelocation = ''
-			gamelocation_url = ''
-			homescore = ''
-			awayscore = ''
-			
-			if(sib.select(".GameHeader")):
-				gdate = sib.previous_sibling.previous_sibling.text.strip()
-				gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdate)
-				gd.put()
+		for sib in t.tr.next_siblings:
+			if not isinstance(sib, NavigableString):
+				gamedate = ''
+				gametime = ''
+				hometeam = ''
+				awayteam = ''
+				gamelocation = ''
+				gamelocation_url = ''
+				homescore = ''
+				awayscore = ''
+				
+				if(sib.select(".GameHeader")):
+					gdate = sib.previous_sibling.previous_sibling.text.strip()
+					gdatef = datetime.strptime(gdate.strip(), '%a, %B %d, %Y')	
+					gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdatef)
+					gd.put()
 
 			t = sib.get("class")
 			if isinstance(t,list):
@@ -148,21 +151,18 @@ def fetch_schedule(gd=None, league=None, division=None, gender=None, age=None):
 	return j
 
 ##################################################################
+## Delete game days
+##################################################################
+def delete_gamedays():
+	q = opl_db.GameDay.all()
+	for r in q.run():
+		r.delete()
+
+##################################################################
 ## Delete game schedule results
 ##################################################################
 def delete_schedules(league=None, division=None, gender=None, age=None):
 
-#	q = opl_db.GameDay.all()
-#	if league:
-#		q.filter("league = ", league)
-#	if division:
-#		q.filter("division = ", division)
-#	if gender:
-#		q.filter("gender =",gender)
-#	if age:
-#		q.filter("age = ", age)
-#	for r in q.run():
-#		r.delete()
 
 	q1 = opl_db.Game.all()
 	if league:
@@ -264,7 +264,8 @@ class DeleteSchedules(webapp2.RequestHandler):
 		self.response.headers['Content-Type'] = 'text/html'
 		self.response.write(delete_schedules(league, division, gender, age))
 
-		
-
-
+class DeleteGameDays(webapp2.RequestHandler):
+	def get(self):
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(delete_gamedays())
 		
