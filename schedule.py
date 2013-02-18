@@ -13,6 +13,7 @@ import webapp2
 import opl_db
 import logging
 import urllib
+import sys
 
 def convert(data):
     if isinstance(data, unicode):
@@ -54,60 +55,67 @@ def store_schedule(url, league, division, gender, age):
 					gd = opl_db.GameDay.get_or_insert(key_name = gdate, gamedate = gdatef)
 					gd.put()
 
-			t = sib.get("class")
-			if isinstance(t,list):
-				try:
-					idx = t.index('sch-main-gm')
-					for td in sib.find_all('td'):
-						try:
-							if 'gamecode' in td.span['class']:
-								gamecode = td.span.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'tim' in td['class']:
-								gametime = td.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'schedtm1' in td['class']:
-								hometeam = td.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'schedtm2' in td['class']:
-								awayteam = td.text.strip()
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'tmcode' in td.span['class']:
-								gamelocation = td.text.strip()
-								gamelocation_url = td.span.a['href']
-						except KeyError:
-							pass
-						except TypeError:
-							pass
-						try:
-							if 'sch-main-sc' in td['class']:
-								# if td.span.text.strip() != 'vs':
-								if td.span:
-									homescore = td.span.text.strip().split('-')[0]
-									awayscore = td.span.text.strip().split('-')[1]
-						except KeyError:
-							pass
-						except TypeError:
-							pass
+			try: 
+				t = sib.get("class")
+				if isinstance(t,list):
+					try:
+						idx = t.index('sch-main-gm')
+						for td in sib.find_all('td'):
+							try:
+								if 'gamecode' in td.span['class']:
+									gamecode = td.span.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'tim' in td['class']:
+									gametime = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try: 
+								if 'schedtm1' in td['class']:
+									hometeam = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'schedtm2' in td['class']:
+									awayteam = td.text.strip()
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'tmcode' in td.span['class']:
+									gamelocation = td.text.strip()
+									gamelocation_url = td.span.a['href']
+							except KeyError:
+								pass
+							except TypeError:
+								pass
+							try:
+								if 'sch-main-sc' in td['class']:
+									# if td.span.text.strip() != 'vs':
+									if td.span:
+										homescore = td.span.text.strip().split('-')[0]
+										awayscore = td.span.text.strip().split('-')[1]
+							except KeyError:
+								pass
+							except TypeError:
+								pass
 
-					logging.debug(division+ " awayscore ="+awayscore)
-					opl_db.Game(gamecode = gamecode.strip(), gamedate = gd.gamedate.strip(), gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
+						logging.debug(division+ " awayscore ="+awayscore)
+						opl_db.Game(gamecode = gamecode.strip(), gamedate = gdatef, gametime = gametime.strip(), hometeam = hometeam.strip(), awayteam = awayteam.strip(), homescore = homescore.strip(), awayscore = awayscore.strip(), league = league.strip(), division = division.strip(), gender = gender.strip(), age = age.strip()).put()
+					except ValueError as e:
+						# logging.debug('Value error:')
+						pass
+			except AttributeError as a:
+				# logging.debug('Attribute error:')
+				pass
 	except ValueError:
 		pass
 						
