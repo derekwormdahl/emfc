@@ -164,7 +164,7 @@ def delete_gamedays():
 def delete_schedules(league=None, division=None, gender=None, age=None):
 
 
-	q1 = opl_db.Game.all()
+	q = opl_db.Game.all()
 	if league:
 		q.filter("league = ", league)
 	if division:
@@ -174,7 +174,7 @@ def delete_schedules(league=None, division=None, gender=None, age=None):
 	if age:
 		q.filter("age = ", age)
 
-	for r1 in q1.run():
+	for r1 in q.run():
 		r1.delete()
 	return 'Done'
 
