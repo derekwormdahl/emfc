@@ -136,6 +136,8 @@ def fetch_schedule(gd=None, league=None, division=None, gender=None, age=None):
 	if age:
 		q.filter("age = ", age)
 
+	q.order("gamedate")
+
 	games = OrderedDict()
 
 	rowarray_list = []
@@ -143,7 +145,7 @@ def fetch_schedule(gd=None, league=None, division=None, gender=None, age=None):
 		t = OrderedDict()
 		t['id'] = r.key().id()
 		t['gamecode'] = r.gamecode
-		t['gamedate'] = r.gamedate.strftime('%d-%b-%Y %H:%M:%S')
+		t['gamedate'] = r.gamedate.strftime('%a, %B %d, %Y')
 		t['gametime'] = r.gametime
 		t['hometeam'] = r.hometeam
 		t['awayteam'] = r.awayteam
