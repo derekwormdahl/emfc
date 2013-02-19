@@ -1,0 +1,897 @@
+URL: http://api.yelp.com/v2/search?category_filter=sportgoods%2Cdeptstores%2Csportswear%2Cshoes&radius_filter=20000&location=4884+Sedona%2C+Eugene%2C+Oregon
+Signed URL: http://api.yelp.com/v2/search?oauth_body_hash=2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D&oauth_nonce=68023866&oauth_timestamp=1361234232&radius_filter=20000&oauth_signature_method=HMAC-SHA1&category_filter=sportgoods%2Cdeptstores%2Csportswear%2Cshoes&oauth_token=a4jbqA5tLyFfeH1vf07EhM6xFdqgG4z3&location=4884+Sedona%2C+Eugene%2C+Oregon&oauth_signature=IqU3EBJ2ij7wa0YNBFxjGCLpgm8%3D&oauth_consumer_key=Uh2ayYi2ynzLshuWJjmKNw
+
+{
+  "businesses": [
+    {
+      "categories": [
+        [
+          "Outdoor Gear", 
+          "outdoorgear"
+        ], 
+        [
+          "Sports Wear", 
+          "sportswear"
+        ], 
+        [
+          "Shoe Stores", 
+          "shoes"
+        ]
+      ], 
+      "display_phone": "+1-541-349-0087", 
+      "id": "tactics-boardshop-eugene", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/H3bg1wpHp7cENpjiuF_i7Q/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "375 W 4th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.055760900000003, 
+          "longitude": -123.09826700000001
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "375 W 4th Ave", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/tactics-boardshop-eugene", 
+      "name": "Tactics Boardshop", 
+      "phone": "5413490087", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 12, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/07ecbaa39caf/gfx/blank_user_medium.gif", 
+      "snippet_text": "These guys are good.", 
+      "url": "http://www.yelp.com/biz/tactics-boardshop-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Sports Wear", 
+          "sportswear"
+        ], 
+        [
+          "Bookstores", 
+          "bookstores"
+        ], 
+        [
+          "Art Supplies", 
+          "artsupplies"
+        ]
+      ], 
+      "display_phone": "+1-541-346-4331", 
+      "id": "the-duck-store-eugene-4", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/7FIuovzkaJ6avr0jX77VWQ/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "895 E 13th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.045822999999999, 
+          "longitude": -123.078982
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "895 E 13th Ave", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/the-duck-store-eugene-4", 
+      "name": "The Duck Store", 
+      "phone": "5413464331", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 37, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/CU8IVSDkSTNXoQqOIVIHcA/ms.jpg", 
+      "snippet_text": "Located right across the campus. Its so easy and convenient to get to. \nRight when you walk in you see O's and Ducks all over the place.\nFrom wall to wall...", 
+      "url": "http://www.yelp.com/biz/the-duck-store-eugene-4"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ], 
+        [
+          "Bike Rentals", 
+          "bikerentals"
+        ]
+      ], 
+      "display_phone": "+1-541-686-2994", 
+      "id": "life-cycle-bike-shop-eugene", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/x1txBwAJEYEBvOLt0GwjgA/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "1733 Pearl St", 
+          "Ste B"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.045968191161997, 
+          "longitude": -123.08982126283
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "1733 Pearl St", 
+          "Ste B", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 9, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/life-cycle-bike-shop-eugene", 
+      "name": "Life Cycle Bike Shop", 
+      "phone": "5416862994", 
+      "rating": 4.5, 
+      "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png", 
+      "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png", 
+      "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png", 
+      "review_count": 12, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/07ecbaa39caf/gfx/blank_user_medium.gif", 
+      "snippet_text": "Fear Not!  I was so afraid to go see Dr. David the first time, but my pain drove me to Body Of Light. Not sure what to expect I was SO Pleased with all....", 
+      "url": "http://www.yelp.com/biz/life-cycle-bike-shop-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ], 
+        [
+          "Bike Rentals", 
+          "bikerentals"
+        ]
+      ], 
+      "display_phone": "+1-541-344-4105", 
+      "id": "pauls-bicycle-way-of-life-eugene", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/3nMpmNPyE0frjcym1knpQw/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "152 W 5th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.054322399999997, 
+          "longitude": -123.0950601
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "152 W 5th Ave", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/pauls-bicycle-way-of-life-eugene", 
+      "name": "Paul's Bicycle Way Of Life", 
+      "phone": "5413444105", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 9, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/LQS065eZzwBaH4ij3EARxA/ms.jpg", 
+      "snippet_text": "I was looking for a urban commuter bike and wasn't specifically looking to buy a new one. However, after comparing prices of refurbished bikes, some used...", 
+      "url": "http://www.yelp.com/biz/pauls-bicycle-way-of-life-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Shoe Stores", 
+          "shoes"
+        ]
+      ], 
+      "display_phone": "+1-541-683-4115", 
+      "id": "burchs-shoes-eugene", 
+      "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/KqehS5QhTfziQsKB2fU3gw/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "16 Oakway Ctr"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.0667343, 
+          "longitude": -123.0750019
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "16 Oakway Ctr", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/burchs-shoes-eugene", 
+      "name": "Burch's Shoes", 
+      "phone": "5416834115", 
+      "rating": 4.5, 
+      "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png", 
+      "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png", 
+      "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png", 
+      "review_count": 6, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/u9eY4Hj81lpfca1pJbJRsg/ms.jpg", 
+      "snippet_text": "I am impressed.  Burch's offers some of the best customer service I have ever encountered.  The sales staff is not just polite and helpful, they know more...", 
+      "url": "http://www.yelp.com/biz/burchs-shoes-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Shoe Stores", 
+          "shoes"
+        ]
+      ], 
+      "display_phone": "+1-541-687-0898", 
+      "id": "shoe-a-holic-eugene", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "957 Willamette St"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.049300000000002, 
+          "longitude": -123.09231
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "957 Willamette St", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/shoe-a-holic-eugene", 
+      "name": "Shoe-A-Holic", 
+      "phone": "5416870898", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 9, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/FIeg7NGDMuh6eMDgaLKbIQ/ms.jpg", 
+      "snippet_text": "After running all around town with no shoe success I  finally found this gem.\n\nShoe-a-holic has a HUGE selection! And all last pair shoes are 50 % off....", 
+      "url": "http://www.yelp.com/biz/shoe-a-holic-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ], 
+        [
+          "Outdoor Gear", 
+          "outdoorgear"
+        ], 
+        [
+          "Sports Wear", 
+          "sportswear"
+        ]
+      ], 
+      "display_phone": "+1-541-465-1800", 
+      "id": "rei-eugene", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/q9D0IQ_rrYWS1BkERFu7Sg/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "306 Lawrence St"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.056413999999997, 
+          "longitude": -123.099299
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "306 Lawrence St", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/rei-eugene", 
+      "name": "REI", 
+      "phone": "5414651800", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 14, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/2uMMvMgGjpkXkfPCILnFqQ/ms.jpg", 
+      "snippet_text": "Went in looking for a Gamin run/triathlon watch. After talking to Adam and comparing the Timex to the Garmin. I left with the Timex. No sales pressure and...", 
+      "url": "http://www.yelp.com/biz/rei-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-541-684-4589", 
+      "id": "target-eugene", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/rP1zwNmjZ5mP_qJsj3HsNA/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "4575 W 11th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.049098999999998, 
+          "longitude": -123.170519
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "4575 W 11th Ave", 
+          "Eugene, OR 97402"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97402", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/target-eugene", 
+      "name": "Target", 
+      "phone": "5416844589", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 9, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/lBj5EEz_PkjxlLSVf-OKaQ/ms.jpg", 
+      "snippet_text": "I love Target! Good stuff, good prices, and a fun atmosphere. Nice and clean, well stocked, and lots of selection.", 
+      "url": "http://www.yelp.com/biz/target-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-541-285-2000", 
+      "id": "costco-wholesale-eugene", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "2828 Chad Dr"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.089117000000002, 
+          "longitude": -123.06635
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "2828 Chad Dr", 
+          "Eugene, OR 97408"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97408", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/costco-wholesale-eugene", 
+      "name": "Costco Wholesale", 
+      "phone": "5412852000", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 27, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/sf0XTDunxOA9Io6faX3GFQ/ms.jpg", 
+      "snippet_text": "This rating is about food - specifically the food court!\n\nI'd pay the membership fee just to eat here!  This is by far one of the best values in the state...", 
+      "url": "http://www.yelp.com/biz/costco-wholesale-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Outdoor Gear", 
+          "outdoorgear"
+        ]
+      ], 
+      "display_phone": "+1-541-485-4007", 
+      "id": "backcountry-gear-eugene", 
+      "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/ltWFnXDJnDYSGrLsnZAkHg/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "1855 W 2nd Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.057580999999999, 
+          "longitude": -123.120475
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "1855 W 2nd Ave", 
+          "Eugene, OR 97402"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97402", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/backcountry-gear-eugene", 
+      "name": "Backcountry Gear", 
+      "phone": "5414854007", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 6, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/vAejcvZIEs1maZyA13fPRQ/ms.jpg", 
+      "snippet_text": "I wish all companies had service like Backcountry Gear. While, their in-store selection is limited and you can probably get it cheaper online, the follow-up...", 
+      "url": "http://www.yelp.com/biz/backcountry-gear-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Department Stores", 
+          "deptstores"
+        ]
+      ], 
+      "display_phone": "+1-541-687-7600", 
+      "id": "bi-mart-eugene-3", 
+      "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/19mJNqIydhECtQ6utb1-xg/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "2030 River Rd"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.094333300000002, 
+          "longitude": -123.127706
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "2030 River Rd", 
+          "Eugene, OR 97404"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97404", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/bi-mart-eugene-3", 
+      "name": "Bi-Mart", 
+      "phone": "5416877600", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 3, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/07ecbaa39caf/gfx/blank_user_medium.gif", 
+      "snippet_text": "EMPLOYEE OWNED!!!!\nI'm giving this a 5 star because it is an employee owned company.  I've made a pledge to myself to do what I can to support companies...", 
+      "url": "http://www.yelp.com/biz/bi-mart-eugene-3"
+    }, 
+    {
+      "categories": [
+        [
+          "Shoe Stores", 
+          "shoes"
+        ]
+      ], 
+      "display_phone": "+1-541-485-5432", 
+      "id": "miss-meers-eugene", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "25 Oakway Ctr"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.066745599999997, 
+          "longitude": -123.0749964
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "25 Oakway Ctr", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/miss-meers-eugene", 
+      "name": "Miss Meer's", 
+      "phone": "5414855432", 
+      "rating": 4.5, 
+      "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png", 
+      "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png", 
+      "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png", 
+      "review_count": 3, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/LQS065eZzwBaH4ij3EARxA/ms.jpg", 
+      "snippet_text": "Ladies, are you in the market for some fashionable, fabulous footwear found in a chic boutique? Whether your tastes are hip and trendy, classy and...", 
+      "url": "http://www.yelp.com/biz/miss-meers-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ]
+      ], 
+      "display_phone": "+1-541-342-6155", 
+      "id": "pauls-bicycle-way-of-life-eugene-2", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "2480 Alder St"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.032528900000003, 
+          "longitude": -123.08065999999999
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "2480 Alder St", 
+          "Eugene, OR 97405"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97405", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/pauls-bicycle-way-of-life-eugene-2", 
+      "name": "Paul's Bicycle Way of Life", 
+      "phone": "5413426155", 
+      "rating": 4.5, 
+      "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png", 
+      "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png", 
+      "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png", 
+      "review_count": 7, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/6OPpfvOgIXOGjGZNpe1y-A/ms.jpg", 
+      "snippet_text": "This is the bike store I always go to for my meager bike needs. These guys are really nice. I don't know diddly about expert level bikes but every time I go...", 
+      "url": "http://www.yelp.com/biz/pauls-bicycle-way-of-life-eugene-2"
+    }, 
+    {
+      "categories": [
+        [
+          "Sports Wear", 
+          "sportswear"
+        ]
+      ], 
+      "display_phone": "+1-541-344-6399", 
+      "id": "eugene-running-company-eugene", 
+      "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/omdZ7Xdpis1RgNHemXk92A/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "116 Oakway Ctr"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.066853500000001, 
+          "longitude": -123.0749972
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "116 Oakway Ctr", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/eugene-running-company-eugene", 
+      "name": "Eugene Running Company", 
+      "phone": "5413446399", 
+      "rating": 4.0, 
+      "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png", 
+      "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png", 
+      "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png", 
+      "review_count": 6, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/7FE-0BgeVznwqw4km02tKQ/ms.jpg", 
+      "snippet_text": "Excellent local business - owner & staff are passionate and knowledgeable about their niche and go the extra mile to support the local running community....", 
+      "url": "http://www.yelp.com/biz/eugene-running-company-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ]
+      ], 
+      "display_phone": "+1-541-525-5428", 
+      "id": "veloguy-mobile-bicycle-service-eugene", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/U-TBwpk8ka2EPZSZoKCMNg/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.0637173, 
+          "longitude": -123.08470610000001
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 5, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/veloguy-mobile-bicycle-service-eugene", 
+      "name": "VeloGuy Mobile Bicycle Service", 
+      "phone": "5415255428", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 3, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/yQqkmJmVO-HZWR2gsqBqCw/ms.jpg", 
+      "snippet_text": "I recently moved to Eugene from New York City, and so of course I brought along my bike, but it didn't do so well during the cross-country trip in the back...", 
+      "url": "http://www.yelp.com/biz/veloguy-mobile-bicycle-service-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ], 
+        [
+          "Active Life", 
+          "active"
+        ]
+      ], 
+      "display_phone": "+1-541-687-0487", 
+      "id": "bike-friday-eugene", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "3364 W 11th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.046973999999999, 
+          "longitude": -123.142458
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "3364 W 11th Ave", 
+          "Eugene, OR 97402"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97402", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/bike-friday-eugene", 
+      "name": "Bike Friday", 
+      "phone": "5416870487", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 2, 
+      "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/KjdVPYpsLWNF1-MckP0v0w/ms.jpg", 
+      "snippet_text": "I have found the cutest folding bicycle company!  I bought one in 1993 as a gift for someone who did not wind up using it.  Just recently, I searched for...", 
+      "url": "http://www.yelp.com/biz/bike-friday-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Sporting Goods", 
+          "sportgoods"
+        ]
+      ], 
+      "display_phone": "+1-541-343-2250", 
+      "id": "pauls-bicycle-way-of-life-eugene-3", 
+      "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/Md8mjs1Fa7fDjfa4zFIbRA/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "3870 W 11th"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.047371499999997, 
+          "longitude": -123.15337390000001
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "3870 W 11th", 
+          "Eugene, OR 97402"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97402", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/pauls-bicycle-way-of-life-eugene-3", 
+      "name": "Paul's Bicycle Way of Life", 
+      "phone": "5413432250", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 2, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/A-dfTTuh3l8jxnlbLfg7-g/ms.jpg", 
+      "snippet_text": "I went in last night at 5:30 after having a bad experience at another store. I really wanted instant gratification and to go home with a bike. I'd been told...", 
+      "url": "http://www.yelp.com/biz/pauls-bicycle-way-of-life-eugene-3"
+    }, 
+    {
+      "categories": [
+        [
+          "Sporting Goods", 
+          "sportgoods"
+        ]
+      ], 
+      "display_phone": "+1-541-342-7005", 
+      "id": "caddis-fly-angling-shop-the-eugene", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "168 W 6th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.053089999999997, 
+          "longitude": -123.09544390000001
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "168 W 6th Ave", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/caddis-fly-angling-shop-the-eugene", 
+      "name": "Caddis Fly Angling Shop the", 
+      "phone": "5413427005", 
+      "rating": 5.0, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png", 
+      "review_count": 2, 
+      "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/n7PxKcgy7AEApFab_nDYtw/ms.jpg", 
+      "snippet_text": "The ONLY place to go.\n\nI'm not an Elite Fly Fisherman but the guys down at the Caddis sure make me feel like it. Everytime I walk in I'm greeted with a...", 
+      "url": "http://www.yelp.com/biz/caddis-fly-angling-shop-the-eugene"
+    }, 
+    {
+      "categories": [
+        [
+          "Sports Wear", 
+          "sportswear"
+        ], 
+        [
+          "Shoe Stores", 
+          "shoes"
+        ]
+      ], 
+      "display_phone": "+1-541-686-3141", 
+      "id": "nike-store-eugene-2", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/hgETatWad077Sw9HmFcr3g/ms.jpg", 
+      "is_claimed": false, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "135 Oakway Rd", 
+          "Oakway Center"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.064450100000002, 
+          "longitude": -123.08009680000001
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "135 Oakway Rd", 
+          "Oakway Center", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 9, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/nike-store-eugene-2", 
+      "name": "Nike Store", 
+      "phone": "5416863141", 
+      "rating": 3.5, 
+      "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png", 
+      "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png", 
+      "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png", 
+      "review_count": 11, 
+      "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/zd-TVMwa8UONvbmQlNkQYQ/ms.jpg", 
+      "snippet_text": "I have always shopped this store for my son's running shoes.  We have never had an issue.  Sunday I called, asked for a pair of Victory's to be held and my...", 
+      "url": "http://www.yelp.com/biz/nike-store-eugene-2"
+    }, 
+    {
+      "categories": [
+        [
+          "Bikes", 
+          "bikes"
+        ], 
+        [
+          "Bike Repair/Maintenance", 
+          "bike_repair_maintenance"
+        ]
+      ], 
+      "display_phone": "+1-541-342-4878", 
+      "id": "collins-cycle-shop-eugene", 
+      "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/WFe-vfvsCsNm1WAJu2yngw/ms.jpg", 
+      "is_claimed": true, 
+      "is_closed": false, 
+      "location": {
+        "address": [
+          "60 E 11th Ave"
+        ], 
+        "city": "Eugene", 
+        "coordinate": {
+          "latitude": 44.047460000000001, 
+          "longitude": -123.091801
+        }, 
+        "country_code": "US", 
+        "display_address": [
+          "60 E 11th Ave", 
+          "Eugene, OR 97401"
+        ], 
+        "geo_accuracy": 8, 
+        "postal_code": "97401", 
+        "state_code": "OR"
+      }, 
+      "mobile_url": "http://m.yelp.com/biz/collins-cycle-shop-eugene", 
+      "name": "Collin's Cycle Shop", 
+      "phone": "5413424878", 
+      "rating": 4.5, 
+      "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png", 
+      "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png", 
+      "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png", 
+      "review_count": 5, 
+      "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/Rs3vYz0c9dfcTUqIye8eDQ/ms.jpg", 
+      "snippet_text": "This place is great. The manager Derek is awesome. He really took his time and explained what work would be done on my  bike. He spent nearly a half hour...", 
+      "url": "http://www.yelp.com/biz/collins-cycle-shop-eugene"
+    }
+  ], 
+  "region": {
+    "center": {
+      "latitude": 44.063431100000003, 
+      "longitude": -123.11843450000001
+    }, 
+    "span": {
+      "latitude_delta": 0.067984839999994051, 
+      "longitude_delta": 0.11458590000000868
+    }
+  }, 
+  "total": 73
+}
