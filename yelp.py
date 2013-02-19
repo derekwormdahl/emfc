@@ -12,6 +12,10 @@ import oauth2
 import optparse
 import urllib
 import urllib2
+import re
+import collections
+import webapp2
+import logging
 
 """
 parser = optparse.OptionParser()
@@ -83,14 +87,15 @@ if options.sort:
   url_params['sort'] = options.sort
 """
 
-def request(host, path, url_params, consumer_key, consumer_secret, token, token_secret):
+### def request(host, path, url_params, consumer_key, consumer_secret, token, token_secret):
+def _request(lat, lon, term):
   """Returns response for API request."""
   # Unsigned URL
   encoded_params = ''
   if url_params:
     encoded_params = urllib.urlencode(url_params)
   url = 'http://%s%s?%s' % (host, path, encoded_params)
-  print 'URL: %s' % (url,)
+  ###print 'URL: %s' % (url,)
 
   # Sign the URL
   consumer = oauth2.Consumer(consumer_key, consumer_secret)
@@ -103,7 +108,7 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
   token = oauth2.Token(token, token_secret)
   oauth_request.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer, token)
   signed_url = oauth_request.to_url()
-  print 'Signed URL: %s\n' % (signed_url,)
+  ###print 'Signed URL: %s\n' % (signed_url,)
 
   # Connect
   try:
@@ -117,19 +122,30 @@ def request(host, path, url_params, consumer_key, consumer_secret, token, token_
 
   return response
 
-# Setup URL params from options
-url_params = {}
-#url_params['term'] = 'dicks sporting'
-url_params['location'] = '4884 Sedona, Eugene, Oregon'
-url_params['category_filter'] = 'sportgoods,deptstores,sportswear,shoes'
-url_params['radius_filter'] = '20000'
+def yelp_request(lat, lon, term):
+  # Setup URL params from options
+  url_params = {}
+  url_params['term'] = term
+  url_params['lat'] = lat
+  url_params['long'] = lon
+  #url_params['location'] = '4884 Sedona, Eugene, Oregon'
+  # url_params['category_filter'] = 'sportgoods,deptstores,sportswear,shoes'
+  url_params['radius_filter'] = '10'
 
-# Oauth Creds
-consumer_key = 'Uh2ayYi2ynzLshuWJjmKNw'
-consumer_secret = 'MRKZEVW5mNW2JeAHB7HmvYUl89k'
-token = 'a4jbqA5tLyFfeH1vf07EhM6xFdqgG4z3'
-token_secret = 'f02QB3RdENeMp-KTEDQm89JtQU4'
+  # Oauth Creds
+  consumer_key = 'Uh2ayYi2ynzLshuWJjmKNw'
+  consumer_secret = 'MRKZEVW5mNW2JeAHB7HmvYUl89k'
+  tk = 'a4jbqA5tLyFfeH1vf07EhM6xFdqgG4z3'
+  token_secret = 'f02QB3RdENeMp-KTEDQm89JtQU4'
 
-response = request('api.yelp.com', '/v2/search', url_params, consumer_key, consumer_secret, token, token_secret)
-print json.dumps(response, sort_keys=True, indent=2)
+  response = _request('api.yelp.com', '/v2/search', url_params, consumer_key, consumer_secret, tk, token_secret)
+  return json.dumps(response, sort_keys=True, indent=2)
 
+
+class YelpSearch(webapp2.RequestHandler):
+	def get(self):
+		term = self.request.get("t")
+		lat = self.request.get("lat")
+		lon = self.request.get("lon")
+		self.response.headers['Content-Type'] = 'text/html'
+		self.response.write(yelp_search(lat, lon, term))

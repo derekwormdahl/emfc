@@ -26,6 +26,7 @@ from schedule import StoreSchedule
 from schedule import DeleteSchedules
 from schedule import DeleteGameDays
 from schedule import StoreAllSchedules
+from yelp import YelpSearch
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
@@ -59,7 +60,8 @@ app = webapp2.WSGIApplication([
 #	(r'/fetch-agegroups', FetchAgeGroups),
 	(r'/fetch-distinct-agegroups', FetchDistinctAgeGroups),
 	(r'/fetch-leagues', FetchLeagues),
-	(r'/worker/std', StoreDivisionStandingsWorker)
+	(r'/worker/std', StoreDivisionStandingsWorker),
+	(r'/search-yelp', YelpSearch)
 ],
 debug=True)
 
