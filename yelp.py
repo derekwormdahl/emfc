@@ -122,7 +122,7 @@ def _request(lat, lon, term):
 
   return response
 
-def yelp_request(lat, lon, term):
+def yelp_search(lat, lon, term):
   # Setup URL params from options
   url_params = {}
   url_params['term'] = term
