@@ -87,8 +87,8 @@ if options.sort:
   url_params['sort'] = options.sort
 """
 
-### def request(host, path, url_params, consumer_key, consumer_secret, token, token_secret):
-def _request(lat, lon, term):
+def _request(host, path, url_params, consumer_key, consumer_secret, token, token_secret):
+##def _request(lat, lon, term):
   """Returns response for API request."""
   # Unsigned URL
   encoded_params = ''
